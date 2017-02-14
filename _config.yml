@@ -1,7 +1,7 @@
 # ----------------------- #
 #      Main Configs       #
 # ----------------------- #
-
+exclude: [node_modules, gulpfile.js]
 url: http://yoursite.com
 title: Veux Labs
 email: your-email@domain.com
