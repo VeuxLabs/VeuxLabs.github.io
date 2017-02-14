@@ -4,7 +4,15 @@ Veux Labs Site, theme based on [landing-page bootstrap theme ](http://startboots
 
 ## Development
 
-To run this project locally, open a terminal in the root of the project and run:
+You will need to have node (https://nodejs.org/en/) installed in your environment. 
+
+** With node installed, open a terminal window in the root of the project and type:
+```sh
+npm install
+```
+** This step is only needed the first time you run the app in your local environment.
+
+After installing the dependencies,type:
 ```sh
 gulp
 ```
