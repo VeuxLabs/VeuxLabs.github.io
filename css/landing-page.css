@@ -150,6 +150,7 @@ h6 {
     color: #ffffff;
     padding-left: 50px;
     padding-right: 50px;
+    position: relative;
 }
 
 .research .section2 {
@@ -173,6 +174,51 @@ h6 {
     line-height: 28px;
 }
 
+@media(max-width:1199px) {
+    .research{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.research .squares-wrapper {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.research .squares-wrapper .blue-square {
+    width: 77.5px;
+    height: 124px;
+    background-color: #7bc4e3;
+    display: inline-block;
+}
+
+.design .design-img{
+    margin-top: -15%;
+}
+
+.design h2{
+    color: #2691bf;
+    font-size: 18px;
+    line-height: 36px;
+}
+.design .design-img img{
+    display: inline-block;
+}
+
+.design h3{
+    font-size: 28px;
+    line-height: 36px;
+    color: #171616;
+}
+
+.design p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #171616;
+}
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
