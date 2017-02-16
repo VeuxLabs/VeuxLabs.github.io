@@ -34,6 +34,25 @@ h6 {
     background-color: #2691bf;
 }
 
+.navbar-default {
+    background-color: rgba(37, 145, 191, 0.8);
+}
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-fixed-top {
+    border-width: 0 0 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
 .intro-header {
     /*If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     /*padding-top: 50px;
@@ -86,11 +105,9 @@ h6 {
     padding-top: 200px;
 }
 
-.intro-header .container > h1 {
+.intro-header .container > svg {
     margin: 0;
     padding: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
 }
 
 .services {
