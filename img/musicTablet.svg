@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="158" height="110" viewBox="0 0 158 110" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <rect id="a" width="110" height="158" rx="3.761"/>
+    <mask id="k" width="110" height="158" x="0" y="0" fill="white">
+      <use xlink:href="#a"/>
+    </mask>
+    <rect id="b" width="35.726" height="22.571" y="69.595" rx="2.821"/>
+    <mask id="l" width="35.726" height="22.571" x="0" y="0" fill="white">
+      <use xlink:href="#b"/>
+    </mask>
+    <rect id="c" width="85.556" height="22.571" x="40.427" y="69.595" rx="2.821"/>
+    <mask id="m" width="85.556" height="22.571" x="0" y="0" fill="white">
+      <use xlink:href="#c"/>
+    </mask>
+    <rect id="d" width="125.983" height="51.726" y="13.167" rx="2.821"/>
+    <mask id="n" width="125.983" height="51.726" x="0" y="0" fill="white">
+      <use xlink:href="#d"/>
+    </mask>
+    <ellipse id="e" cx="6.111" cy="7.054" rx="6.111" ry="6.113"/>
+    <mask id="o" width="15.983" height="15.987" x="-1.88" y="-1.88">
+      <rect width="15.983" height="15.987" x="-1.88" y="-.94" fill="white"/>
+      <use fill="black" xlink:href="#e"/>
+    </mask>
+    <ellipse id="f" cx="6.111" cy="7.054" rx="6.111" ry="6.113"/>
+    <mask id="p" width="15.983" height="15.987" x="-1.88" y="-1.88">
+      <rect width="15.983" height="15.987" x="-1.88" y="-.94" fill="white"/>
+      <use fill="black" xlink:href="#f"/>
+    </mask>
+    <ellipse id="g" cx="6.111" cy="7.054" rx="6.111" ry="6.113"/>
+    <mask id="q" width="15.983" height="15.987" x="-1.88" y="-1.88">
+      <rect width="15.983" height="15.987" x="-1.88" y="-.94" fill="white"/>
+      <use fill="black" xlink:href="#g"/>
+    </mask>
+    <ellipse id="h" cx="6.111" cy="7.054" rx="6.111" ry="6.113"/>
+    <mask id="r" width="15.983" height="15.987" x="-1.88" y="-1.88">
+      <rect width="15.983" height="15.987" x="-1.88" y="-.94" fill="white"/>
+      <use fill="black" xlink:href="#h"/>
+    </mask>
+    <ellipse id="i" cx="6.111" cy="7.054" rx="6.111" ry="6.113"/>
+    <mask id="s" width="15.983" height="15.987" x="-1.88" y="-1.88">
+      <rect width="15.983" height="15.987" x="-1.88" y="-.94" fill="white"/>
+      <use fill="black" xlink:href="#i"/>
+    </mask>
+    <ellipse id="j" cx="6.111" cy="7.054" rx="6.111" ry="6.113"/>
+    <mask id="t" width="15.983" height="15.987" x="-1.88" y="-1.88">
+      <rect width="15.983" height="15.987" x="-1.88" y="-.94" fill="white"/>
+      <use fill="black" xlink:href="#j"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="rotate(90 79 79)">
+    <use fill="#171615" stroke="#4E4B49" stroke-width="1.88" mask="url(#k)" xlink:href="#a"/>
+    <polygon fill="#4E4B49" points="6.581 11.286 104.359 11.286 104.359 146.714 6.581 146.714"/>
+    <g transform="rotate(-90 74.279 67.713)">
+      <rect width="123.162" height="6.583" x="1.88" fill="#E85740"/>
+      <use stroke="#979797" stroke-width="1.88" mask="url(#l)" xlink:href="#b"/>
+      <use fill="#171615" stroke="#979797" stroke-width="1.88" mask="url(#m)" xlink:href="#c"/>
+      <use stroke="#979797" stroke-width="1.88" mask="url(#n)" xlink:href="#d"/>
+      <rect width=".94" height="22.571" x="11.282" y="38.56" fill="#171615" transform="matrix(-1 0 0 1 23.504 0)" rx=".47"/>
+      <g transform="translate(1.88 18.81)">
+        <g transform="rotate(133 7.378 8.812)">
+          <use fill="#777675" xlink:href="#e"/>
+          <use stroke="#3E3D3B" stroke-width="3.761" mask="url(#o)" xlink:href="#e"/>
+          <use stroke="#DBD9DB" stroke-width=".94" xlink:href="#e"/>
+          <rect width=".94" height="3.762" x="5.641" fill="#171615" transform="matrix(-1 0 0 1 12.222 0)" rx=".47"/>
+        </g>
+        <g transform="rotate(56 15.68 30.98)">
+          <use fill="#777675" xlink:href="#f"/>
+          <use stroke="#3E3D3B" stroke-width="3.761" mask="url(#p)" xlink:href="#f"/>
+          <use stroke="#DBD9DB" stroke-width=".94" xlink:href="#f"/>
+          <rect width=".94" height="3.762" x="5.641" fill="#171615" transform="matrix(-1 0 0 1 12.222 0)" rx=".47"/>
+        </g>
+        <g transform="rotate(115 27.776 22.369)">
+          <use fill="#777675" xlink:href="#g"/>
+          <use stroke="#3E3D3B" stroke-width="3.761" mask="url(#q)" xlink:href="#g"/>
+          <use stroke="#DBD9DB" stroke-width=".94" xlink:href="#g"/>
+          <rect width=".94" height="3.762" x="5.641" fill="#171615" transform="matrix(-1 0 0 1 12.222 0)" rx=".47"/>
+        </g>
+        <g transform="rotate(19 29.647 199.014)">
+          <use fill="#777675" xlink:href="#h"/>
+          <use stroke="#3E3D3B" stroke-width="3.761" mask="url(#r)" xlink:href="#h"/>
+          <use stroke="#DBD9DB" stroke-width=".94" xlink:href="#h"/>
+          <rect width=".94" height="3.762" x="5.641" fill="#171615" transform="matrix(-1 0 0 1 12.222 0)" rx=".47"/>
+        </g>
+        <g transform="rotate(-141 48.918 -6.988)">
+          <use fill="#777675" xlink:href="#i"/>
+          <use stroke="#3E3D3B" stroke-width="3.761" mask="url(#s)" xlink:href="#i"/>
+          <use stroke="#DBD9DB" stroke-width=".94" xlink:href="#i"/>
+          <rect width=".94" height="3.762" x="5.641" fill="#171615" transform="matrix(-1 0 0 1 12.222 0)" rx=".47"/>
+        </g>
+        <g transform="rotate(91 57.374 59.733)">
+          <use fill="#777675" xlink:href="#j"/>
+          <use stroke="#3E3D3B" stroke-width="3.761" mask="url(#t)" xlink:href="#j"/>
+          <use stroke="#DBD9DB" stroke-width=".94" xlink:href="#j"/>
+          <rect width=".94" height="3.762" x="5.641" fill="#171615" transform="matrix(-1 0 0 1 12.222 0)" rx=".47"/>
+        </g>
+        <rect width=".94" height="22.571" x="30.085" y="18.81" fill="#171615" transform="matrix(-1 0 0 1 61.111 0)" rx=".47"/>
+        <rect width=".94" height="22.571" x="50.769" y="18.81" fill="#171615" transform="matrix(-1 0 0 1 102.479 0)" rx=".47"/>
+        <rect width=".94" height="22.571" x="69.573" y="18.81" fill="#171615" transform="matrix(-1 0 0 1 140.085 0)" rx=".47"/>
+        <rect width=".94" height="22.571" x="90.256" y="18.81" fill="#171615" transform="matrix(-1 0 0 1 181.453 0)" rx=".47"/>
+        <rect width=".94" height="22.571" x="110.94" y="18.81" fill="#171615" transform="matrix(-1 0 0 1 222.82 0)" rx=".47"/>
+        <rect width=".94" height="17.869" x="9.402" y="24.452" fill="#E85740" transform="matrix(-1 0 0 1 19.744 0)" rx=".47"/>
+        <rect width=".94" height="11.286" x="30.085" y="30.095" fill="#E85740" transform="matrix(-1 0 0 1 61.111 0)" rx=".47"/>
+        <rect width=".94" height="13.167" x="50.769" y="28.214" fill="#E85740" transform="matrix(-1 0 0 1 102.479 0)" rx=".47"/>
+        <rect width=".94" height="6.583" x="69.573" y="34.798" fill="#E85740" transform="matrix(-1 0 0 1 140.085 0)" rx=".47"/>
+        <rect width=".94" height="17.869" x="90.256" y="23.512" fill="#E85740" transform="matrix(-1 0 0 1 181.453 0)" rx=".47"/>
+        <rect width=".94" height="13.167" x="110.94" y="28.214" fill="#E85740" transform="matrix(-1 0 0 1 222.82 0)" rx=".47"/>
+      </g>
+      <rect width="10.342" height="6.583" x="6.581" y="80.881" fill="#171615" rx="1.88"/>
+      <ellipse cx="11.752" cy="76.649" fill="#EC6D54" rx="1.41" ry="1.411"/>
+      <ellipse cx="24.915" cy="76.649" fill="#EC6D54" rx="1.41" ry="1.411"/>
+      <rect width="10.342" height="6.583" x="19.744" y="80.881" fill="#171615" rx="1.88"/>
+    </g>
+  </g>
+</svg>
