@@ -266,10 +266,72 @@ h6 {
 }
 
 footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #4e4b49;
+    max-width: 100%;
+}
+
+footer .first-row {
+    height: 393px;
+    background-color: #2591bf;
+}
+footer .first-row .col-md-12 {
+    float: none;
+    max-width: 865px;
+    margin: 0 auto;
+    padding: 90px 20px;
+}
+
+footer .first-row .text {
+    color: white;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25.2px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: 0.7px;
+}
+
+footer .first-row .button {
+    text-align: center;
+    margin-top: 80px;
+}
+
+footer .first-row .button button {
+    width:  370px;
+    height: 60px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 25.2px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    border: none;
+}
+
+footer .second-row {
+    height: 393px;
+    background-color: #4e4b49;
+    display: table-cell;
+    vertical-align: bottom;
+}
+footer .second-row p {
+    margin: 10px;
 }
 
 p.copyright {
-    margin: 15px 0 0;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #ffffff;
 }
