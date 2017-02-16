@@ -3,13 +3,17 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
 
 body,
 html {
     width: 100%;
     height: 100%;
 }
-
+* {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
 body,
 h1,
 h2,
@@ -26,25 +30,130 @@ h6 {
     font-weight: 400;
 }
 
+.bg-blue {
+    background-color: #2691bf;
+}
+
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    /*If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.intro-message {
+    /*background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;*/
+    background-color: #2691bf;
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    height: 532px;
+    margin-bottom: 30px;
 }
 
-.intro-message > h1 {
+.intro-header .pros {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    width: 267px;
+    left: 50%;
+    position: relative;
+    margin-left: -134px;
+}
+
+.intro-header .pros ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    width: auto;
+}
+
+.intro-header .triangle-blue-down {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 23px 27px 0 27px;
+    border-color: #2691bf transparent transparent transparent;
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    margin-left: -27px;
+}
+
+.intro-header .container {
+    padding-top: 200px;
+}
+
+.intro-header .container > h1 {
     margin: 0;
+    padding: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
+}
+
+.services {
+    padding-top: 38px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 5%;
+}
+
+.services .col-lg-6 {
+    /*max-width: 613px;*/
+}
+.services .col-lg-6:nth-child(2) {
+    padding-left: 58px;
+}
+
+.services h2 {
+    color: #2691bf;
+    font-size: 25px;
+}
+
+.services h3 {
+    font-size: 39px;
+    line-height: 50px;
+}
+
+.services p {
+    font-size: 25px;
+    line-height: 39px;
+}
+
+.research {
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.research .section2 {
+    margin-top: -5%;
+    float: right;
+}
+
+.research h2 {
+    font-size: 18px;
+    line-height: 36px;
+    color: #171616;
+}
+
+.research h3 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.research p {
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .intro-divider {
