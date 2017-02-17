@@ -434,7 +434,8 @@ footer .first-row .button {
 }
 
 footer .first-row .button button {
-    width:  370px;
+    max-width:  320px;
+    width: 70%;
     height: 60px;
     border-radius: 7px;
     background-color: #ffffff;
@@ -621,6 +622,12 @@ p.copyright {
     background: url(../img/aviationBackground2.svg) no-repeat;
     background-size: contain;
     margin-top: 100px;
+}
+
+
+.project-management-top .row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .project-management {
