@@ -485,6 +485,8 @@ p.copyright {
     text-align: left;
     color: #ffffff;
 }
+ 
+/* Home page Styling Sections */
 
 .product-development h2 {
     font-family: 'Ubuntu';
@@ -626,13 +628,27 @@ p.copyright {
     margin-top: 190px;
 }
 
+.project-management img {
+    width: 50%;
+    margin: -190px auto 70px auto;
+}
+
 .project-management {
     font-family: 'Ubuntu';
     font-size: 25px;
     font-weight: 300;
     color: white;
     line-height: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 400px;
+}
+
+.project-management h2 {
+    font-family: 'Ubuntu';
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 300;
+    color: white;
+    line-height: 50px;
 }
 
 .project-management h3 {
@@ -650,14 +666,28 @@ p.copyright {
     color: white;
     line-height: 50px;
 }
+
+.project-management .container {
+    width: auto;
+}
+
+ @media only screen and (min-width: 991px) {
+  .project-management .container.internal, .support .container.internal {
+    width: auto;
+  }  
+
+}
  
  @media only screen and (max-width: 480px) {
     .project-management { 
         margin-top: 55px;
+        padding-bottom: 200px;
     }
     .project-management img {
-        margin-top: -60px;
-        margin-left: 50px;
+        margin-top: -75px;
+        margin-left: 80px;
+        margin-bottom: 0;
+        width: 60%;
     }
     .project-management h2 {
         margin-top: 60px;
@@ -674,6 +704,14 @@ p.copyright {
     }
 } 
 
+ @media only screen and (min-width: 480px) and (max-width: 991px) {
+    .project-management {
+        margin-top: 120px;
+    }
+    .project-management img {
+       margin: -125px auto 70px auto;
+    }
+}
 
 .support {
     margin-bottom: 60px;
@@ -681,40 +719,53 @@ p.copyright {
 .support-top {
     background: url(../img/spaceCurvedBackground2.svg) no-repeat;
     background-size: contain;
-    margin-top: -130px;
+    margin-top: -260px;
 }
 .support img {
-    margin-top: -20px;
+    margin-top: 100px;
+    margin-left: 10%;
+    width: 55%;
 }
 .support h2 {
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 50px;
     letter-spacing: normal;
     color: #2691bf;
 }
 .support h3 {
     font-family: 'Ubuntu';
-    font-size: 28px;
+    font-size: 39px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 50px;
     letter-spacing: normal;
     color: #171616;
 }
 .support p {
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 300;
     line-height: 36px;
     letter-spacing: normal;
     color: #171616;
 }
 
+ @media only screen and (min-width: 900px) { 
+    .support-top {
+        margin-top: -375px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .support .container {
+        width: 90%;
+    }
+}
 
  @media only screen and (max-width: 480px) { 
     .support {
-    margin-bottom: 60px;
+        margin-bottom: 60px;
     }
     .support-top {
         background: url(../img/spaceCurvedBackground2.svg) no-repeat;
@@ -723,6 +774,8 @@ p.copyright {
     }
     .support img {
         margin-top: -20px;
+        margin-left: 0;
+        width: auto;
     }
     .support h2 {
         font-family: 'Ubuntu';
