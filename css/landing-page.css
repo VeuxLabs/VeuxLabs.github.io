@@ -509,6 +509,21 @@ p.copyright {
     margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 480px) {
+    .product-development h2 { 
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .product-development h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .product-development p { 
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
 .product-development-items {
     text-align: center;
 }
@@ -552,16 +567,26 @@ p.copyright {
     text-align: left;
 }
 
-.product-development-items.last  {
-    margin: 10px auto 0 auto;
-    width: 355px;
-    float: none;
-}
-
 .product-development-items.col {
     float: left;
 }
 
+@media only screen and (min-width: 991px) {
+    .product-development-items .false-ui {
+        display: none;
+    }
+    .product-development-items.last {
+        margin: 10px auto 0 auto;
+        width: 355px;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .product-development-items.last {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 580px) {
     .product-development-items .circle {
@@ -593,19 +618,21 @@ p.copyright {
 .project-management-top {
     background: url(../img/aviationBackground2.svg) no-repeat;
     background-size: contain;
+    margin-top: 100px;
 }
 
 .project-management {
     background-color: #2691bf;
-    margin-top: 290px;
+    margin-top: 190px;
 }
 
-.project-management h2 {
+.project-management {
     font-family: 'Ubuntu';
     font-size: 25px;
     font-weight: 300;
     color: white;
     line-height: 50px;
+    padding-bottom: 200px;
 }
 
 .project-management h3 {
@@ -624,4 +651,104 @@ p.copyright {
     line-height: 50px;
 }
  
+ @media only screen and (max-width: 480px) {
+    .project-management { 
+        margin-top: 55px;
+    }
+    .project-management img {
+        margin-top: -60px;
+        margin-left: 50px;
+    }
+    .project-management h2 {
+        margin-top: 60px;
+        line-height: 36px;
+        font-size: 18px;
+    } 
+    .project-management h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .project-management p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+} 
+
+
+.support {
+    margin-bottom: 60px;
+}
+.support-top {
+    background: url(../img/spaceCurvedBackground2.svg) no-repeat;
+    background-size: contain;
+    margin-top: -130px;
+}
+.support img {
+    margin-top: -20px;
+}
+.support h2 {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: normal;
+    color: #2691bf;
+}
+.support h3 {
+    font-family: 'Ubuntu';
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: normal;
+    color: #171616;
+}
+.support p {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: normal;
+    color: #171616;
+}
+
+
+ @media only screen and (max-width: 480px) { 
+    .support {
+    margin-bottom: 60px;
+    }
+    .support-top {
+        background: url(../img/spaceCurvedBackground2.svg) no-repeat;
+        background-size: contain;
+        margin-top: -130px;
+    }
+    .support img {
+        margin-top: -20px;
+    }
+    .support h2 {
+        font-family: 'Ubuntu';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: normal;
+        color: #2691bf;
+    }
+    .support h3 {
+        font-family: 'Ubuntu';
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: normal;
+        color: #171616;
+    }
+    .support p {
+        font-family: 'Ubuntu';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: normal;
+        color: #171616;
+    }
+}
+
+
 
