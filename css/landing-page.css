@@ -21,8 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .lead {
@@ -380,9 +379,24 @@ footer .first-row .button button {
 footer .second-row {
     height: 393px;
     background-color: #4e4b49;
-    display: table-cell;
-    vertical-align: bottom;
+    float: left;
+    width: 100%;
 }
+
+
+footer .second-row .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer .second-row .row.logos {
+    margin-top: 180px;
+}
+
+footer .second-row .row a {
+    color: white;
+}
+
 footer .second-row p {
     margin: 10px;
 }
@@ -398,3 +412,109 @@ p.copyright {
     text-align: left;
     color: #ffffff;
 }
+
+.product-development h2 {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 25px;
+    color: #2691bf;
+}
+
+.product-development h3 {
+    font-family: :'Ubuntu';
+    font-size: 39px;
+    font-weight: 300;
+    color: #171616;
+} 
+
+.product-development p {
+    font-family: 'Ubuntu';
+    font-size: 25px;
+    font-weight: 300;
+    color: #171616;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.product-development-items {
+    text-align: center;
+}
+
+.product-development-items .circle {
+    width: 114px;
+    height: 114px;
+    background-color: #00aad6;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 60px;
+    display: inline-block;
+    margin: 15px 10px;
+    float: left;
+}
+
+.product-development-items .circle span {
+    font-family: Ubuntu;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 1.04;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    top: 26px;
+}
+
+.product-development-items .text {
+    font-family: Ubuntu;
+    font-size: 25.2px;
+    font-weight: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #2691bf;
+    float: left;
+    display: inline-block;
+    max-width: 120px;
+    position: relative;
+    top: 20px;
+    text-align: left;
+}
+
+.product-development-items.last  {
+    margin: 10px auto 0 auto;
+    width: 355px;
+    float: none;
+}
+
+.product-development-items.col {
+    float: left;
+}
+
+
+@media only screen and (max-width: 580px) {
+    .product-development-items .circle {
+        margin: 10px 0;
+        width: 70px;
+        height: 70px;
+    }
+    .product-development-items .circle span {
+        font-size: 30px;
+        top: 18px;
+    }
+    .product-development-items .text {
+        font-size: 14px;
+        top: 19px;
+        left: 5px;
+        max-width: 80px;
+    }
+    .product-development-items .clearfix {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 990px) { 
+    .product-development-items .clearfix {
+        display: none;
+    }
+}
+ 
+
