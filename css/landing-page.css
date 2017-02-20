@@ -650,6 +650,19 @@ p.copyright {
     margin-bottom: 100px;
 }
 
+.container img.music {
+    width: 55%;
+    margin: -100px auto 70px auto;
+    z-index: 100;
+    position: relative;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 480px)  {
+    .container img.music {
+        width: 70%;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .product-development h2 { 
         font-size: 18px;
@@ -662,6 +675,10 @@ p.copyright {
     .product-development p { 
         font-size: 18px;
         line-height: 28px;
+    }
+    .container img.music {
+        width: 90%;
+        margin: -130px auto 70px auto;
     }
 }
 
