@@ -593,6 +593,7 @@ footer .second-row {
     background-color: #4e4b49;
     float: left;
     width: 100%;
+    position: relative;
 }
 
 
@@ -601,16 +602,55 @@ footer .second-row .row {
     margin-right: 0;
 }
 
-footer .second-row .row.logos {
-    margin-top: 180px;
-}
-
 footer .second-row .row a {
     color: white;
 }
 
 footer .second-row p {
-    margin: 10px;
+   margin: 10px 15px;
+}
+
+footer .second-row ul {
+    margin: 30px 0;
+}
+
+footer .second-row li {
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+footer .row.logos li {
+    max-width: 90px;
+}
+
+footer .row.logos ul {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 480px) {
+    footer .second-row li {
+         width: 85%;
+         margin: 10px 0;
+    }
+    footer .second-row li.footer-menu-divider {
+        display: none;
+    }
+    footer .row.logos li {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    footer .row.copyright {
+        position: absolute;
+        bottom: 10px;
+    }
 }
 
 p.copyright {
