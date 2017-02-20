@@ -82,10 +82,18 @@ h6 {
 }
 
 .intro-header .pros ul {
+    padding-top: 40px;
     list-style-type: none;
     padding-left: 0;
     text-align: left;
     width: auto;
+}
+
+.intro-header .pros ul li {
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .intro-header .triangle-blue-down {
@@ -113,7 +121,11 @@ h6 {
     padding-top: 38px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 5%;
+    padding-bottom: 24%;
+}
+
+.services .fit{
+    margin: 0;
 }
 
 .services .col-lg-6 {
@@ -125,17 +137,25 @@ h6 {
 
 .services h2 {
     color: #2691bf;
-    font-size: 25px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-top: 47px;
+    margin-bottom: 0;
 }
 
 .services h3 {
-    font-size: 39px;
-    line-height: 50px;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 
 .services p {
-    font-size: 25px;
-    line-height: 39px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
 }
 
 .research {
@@ -154,7 +174,8 @@ h6 {
 }
 
 .research .section2 {
-    margin-top: -5%;
+    margin-top: -24%;
+    padding-bottom: 45px;
     float: right;
 }
 
@@ -164,6 +185,7 @@ h6 {
     color: #171616;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
+    margin-bottom: 0;
 }
 
 .research h3 {
@@ -171,11 +193,14 @@ h6 {
     line-height: 36px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .research p {
     font-size: 18px;
     line-height: 28px;
+    padding-bottom: 45px;
 }
 
 .research .squares-wrapper {
@@ -202,13 +227,16 @@ h6 {
 }
 
 .design .design-img{
-    margin-top: -15%;
+    margin-top: -32%;
+    padding-bottom: 50px;
 }
 
 .design h2{
     color: #2691bf;
     font-size: 18px;
+    font-weight: 300;
     line-height: 36px;
+    margin-bottom: 0;
 }
 .design .design-img img{
     display: inline-block;
@@ -216,14 +244,19 @@ h6 {
 
 .design h3{
     font-size: 28px;
+    font-weight: 300;
     line-height: 36px;
     color: #171616;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .design p{
     font-size: 18px;
+    font-weight: 300;
     line-height: 28px;
     color: #171616;
+    padding-bottom: 30px;
 }
 
 .app-dev {
@@ -240,21 +273,27 @@ h6 {
 
 .app-dev .dev-img img{
     display: inline-block;
-    margin-top: -50px;
+    margin-top: -60px;
 }
 
 .app-dev h2 {
     font-size: 18px;
+    font-weight: 300;
     line-height: 28px;
+    margin-bottom: 0;
 }
 
 .app-dev h3 {
     font-size: 28px;
+    font-weight: 300;
     line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 35px;
 }
 
 .app-dev p {
     font-size: 18px;
+    font-weight: 300;
     line-height: 1.56;
 }
 
@@ -263,7 +302,7 @@ h6 {
     position: relative;
     bottom: 0;
     left: 0;
-    background: url(../img/dev-bg.png) no-repeat 100% 100% #2691bf;
+    background: url(../img/musicDiagonalBackground1.svg) no-repeat 100% 100% #2691bf;
     height: 252px;
     margin-left: -15px;
     margin-right: -15px;
