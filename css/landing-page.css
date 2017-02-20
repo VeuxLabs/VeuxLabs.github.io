@@ -42,6 +42,7 @@ h6 {
 
 .navbar-fixed-top {
     border-width: 0 0 0;
+    /*height: 100%;*/
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -123,11 +124,15 @@ h6 {
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: transparent;
 }
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #e6ea59;
+}
 
 .navbar-nav.navbar-right {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 18px;
+    text-align: center;
 }
 
 .services {
@@ -344,6 +349,9 @@ h6 {
 @media(max-width:430px) {
     .research .squares-wrapper .blue-square {
         margin-right: 0;
+    }
+    .navbar-default .navbar-collapse {
+        background-color: rgba(0,0,0,0.6);
     }
 }
 
