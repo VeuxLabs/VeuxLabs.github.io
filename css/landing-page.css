@@ -124,6 +124,12 @@ h6 {
     background-color: transparent;
 }
 
+.navbar-nav.navbar-right {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+}
+
 .services {
     padding-top: 38px;
     padding-left: 50px;
@@ -316,6 +322,15 @@ h6 {
     margin-right: -15px;
 }
 
+@media(max-width:768px) {
+    .navbar-default .navbar-brand {
+        display: none;
+    }
+    .navbar-default .navbar-toggle {
+        float: none;
+    }
+}
+
 @media(max-width:1199px) {
     .services, .research, .design, .app-dev{
         padding-left: 30px;
@@ -372,13 +387,16 @@ h6 {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .logo {
         width: 408px;
     }
     .services .fit {
         width: 400px;
     }
+}
+
+@media (min-width: 1200px) {
     .services h2 {
         margin-top: 0;
     }
