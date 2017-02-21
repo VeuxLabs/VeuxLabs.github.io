@@ -15,16 +15,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">  
                 <li>
-                    <a class="page-scroll" href="#">Home</a>
+                    <a class="page-scroll" href="/">Home</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Work</a>
+                    <a class="page-scroll" href="/work/">Work</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="/about">About</a>
                 </li>            
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="/contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -34,26 +34,3 @@
 </nav>
 
 
-<section id="home">
-    <!-- Header -->
-	<div class="intro-header">
-
-		<div class="container">
-            <img src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo" />
-			
-			<div class="pros">{{ page.pros }}</div>
-            <ul>
-                {% for list in site.list %}
-                <li>
-                    <a href="{{ list.url }}">{{ list.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-
-		</div>
-		<!-- /.container -->
-        
-        <div class="triangle-blue-down"></div>
-	</div>
-	<!-- /.intro-header -->
-</section>

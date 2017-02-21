@@ -1184,5 +1184,49 @@ p.copyright {
     }
 }
 
+/* Internal pages */
 
+.internal .app-dev {
+    margin-top: 50px;
+    background-color: white;
+    color: #171616;
+}
 
+.content {
+    padding: 40px;
+}
+
+.content h1 {
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 0.9;
+    letter-spacing: normal;
+    color: #171616;
+}
+
+.oval {
+    width: 225px;
+    height: 225px;
+    background-color: #7bcaec;
+    -moz-border-radius: 120px;
+    -webkit-border-radius: 120px;
+    border-radius: 120px;
+    display: inline-block;
+    margin: 0px 70px;
+}
+
+.oval .name {
+    position: relative;
+    top: 255px;
+}
+
+.circles {
+    text-align: center;
+    margin: 70px 0 0;
+}
+
+.circles > div {
+    width: 50%;
+    display: inline;
+}
