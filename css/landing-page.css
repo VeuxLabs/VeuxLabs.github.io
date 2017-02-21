@@ -600,6 +600,8 @@ h6 {
         width: 100%;
         bottom: 0;
         margin: 0;
+        background-size: 580px;
+        height: 457px;
     }
 }
 
