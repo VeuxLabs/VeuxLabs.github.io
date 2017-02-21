@@ -38,6 +38,11 @@ h6 {
     background-color: #ffffff;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
 .navbar-default {
     background-color: rgba(37, 145, 191, 0.8);
 }
@@ -251,6 +256,7 @@ h6 {
     bottom: 0;
     left: 0;
     text-align: center;
+    clear: both;
 }
 
 .research .squares-wrapper .blue-square {
@@ -304,6 +310,8 @@ h6 {
 
 .app-dev {
     color: #ffffff;
+    padding-left: -30px;
+    padding-right: -30px;
 }
 
 .app-dev .dev-img {
@@ -367,7 +375,7 @@ h6 {
 }
 
 @media(max-width:1199px) {
-    .services, .research, .design, .app-dev{
+    .services, .research, .design{
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -431,6 +439,42 @@ h6 {
     }
     .services .fit {
         width: 500px;
+    }
+}
+
+@media (min-width:482px) and (max-width:1200px) {
+    .services .fit {
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+@media (min-width:600px) and (max-width:1200px) {
+    .research .section2 img {
+        margin: -130px auto 0 auto;
+        float: none;
+        width: 80%;
+        max-width: 500px;
+    }
+    .research .section2-text {
+        width: 400px;
+        left: 50%;
+        margin-left: -300px;
+        margin-top: -100px;
+    }
+    .design .design-img img {
+        width: 80%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .app-dev .dev-img img {
+        width: 80%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
 
