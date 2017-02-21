@@ -9,6 +9,7 @@ body,
 html {
     width: 100%;
     height: 100%;
+    background-color: #dad9db;
 }
 * {
     font-family: Ubuntu', sans-serif;
@@ -33,6 +34,10 @@ h6 {
     background-color: #2691bf;
 }
 
+.bg-white {
+    background-color: #ffffff;
+}
+
 .navbar-default {
     background-color: rgba(37, 145, 191, 0.8);
 }
@@ -40,8 +45,27 @@ h6 {
     color: #ffffff;
 }
 
+.navbar-collapse {
+    height: 100vh;
+    margin-top: -48px;
+}
+.navbar-fixed-top .navbar-collapse {
+    max-height: none;
+    border-top: 0 none;
+    vertical-align: middle;
+    display: none;
+}
+.navbar-fixed-top .navbar-collapse.in {
+    display: table-cell;
+}
+.navbar.navbar-default.navbar-fixed-top .container {
+    display: table;
+    width: 100%;
+}
 .navbar-fixed-top {
     border-width: 0 0 0;
+    max-width: 1120px;
+    margin: 0 auto;
     /*height: 100%;*/
 }
 
@@ -64,7 +88,7 @@ h6 {
     background-color: #2691bf;
     position: relative;
     height: 532px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .intro-header .pros {
@@ -136,7 +160,7 @@ h6 {
 }
 
 .services {
-    padding-top: 38px;
+    padding-top: 110px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 110px;
@@ -193,7 +217,7 @@ h6 {
 }
 
 .research .section2 img{
-    margin-top: -78px;
+    margin-top: -130px;
     padding-bottom: 45px;
     float: right;
 }
@@ -327,12 +351,18 @@ h6 {
     margin-right: -15px;
 }
 
+#home, .services, .research, .design, .app-dev {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 @media(max-width:768px) {
     .navbar-default .navbar-brand {
         display: none;
     }
     .navbar-default .navbar-toggle {
         float: none;
+        position: absolute;
     }
 }
 
@@ -400,13 +430,27 @@ h6 {
         width: 408px;
     }
     .services .fit {
-        width: 400px;
+        width: 500px;
     }
 }
 
 @media (min-width: 1200px) {
+    .services {
+        padding-bottom: 200px;
+    }
     .services h2 {
         margin-top: 0;
+        font-size: 24px;
+        line-height: 60px;
+    }
+    .services h3 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 60px;
+    }
+    .services p {
+        font-size: 24px;
+        line-height: 40px;
     }
     .services .section1-text {
         width: 437px;
@@ -417,16 +461,29 @@ h6 {
     .research .section2 img{
         display: inline-block;
         float: none;
-        width: 400px;
+        width: 510px;
         padding-bottom: 0;
     }
     .section2-text {
         width: 531px;
         padding-bottom: 360px;
-
+        margin-top: -150px;
     }
     .research {
         position: relative;
+    }
+    .research h2 {
+        font-size: 24px;
+        line-height: 60px;
+    }
+    .research h3 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 60px;
+    }
+    .research p {
+        font-size: 24px;
+        line-height: 40px;
     }
     .research .squares-wrapper {
         position: absolute;
@@ -440,34 +497,67 @@ h6 {
     }
     .design .design-img {
         text-align: center;
-        margin-top: -145px;
+        margin-top: -195px;
         padding-bottom: 0;
     }
     .design .design-img img {
         display: inline-block;
-        width: 450px;
+        width: 600px;
     }
     .design .section3-text {
         width: 469px;
         float: right;
         margin-top: -100px;
     }
+    .design h2 {
+        font-size: 24px;
+        line-height: 60px;
+    }
+    .design h3 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 50px;
+    }
+    .design p {
+        font-size: 24px;
+        line-height: 40px;
+    }
     .app-dev {
         position: relative;
         padding-bottom: 100px;
     }
     .app-dev .dev-img img {
-        width: 450px;
+        width: 600px;
+    }
+    .app-dev .dev-img {
+        margin-left: -15px;
+        margin-right: -15px;
     }
     .app-dev .section4-text {
         z-index: 1;
         width: 531px;
         margin-left: 103px;
     }
+    .app-dev h2 {
+        font-size: 24px;
+        line-height: 60px;
+        color: #171616;
+    }
+    .app-dev h3 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 60px;
+    }
+    .app-dev p {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 300;
+    }
     .app-dev .dev-footer {
         position: absolute;
         width: 100%;
         bottom: 0;
+        margin: 0;
     }
 }
 
