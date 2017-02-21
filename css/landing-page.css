@@ -675,7 +675,8 @@ footer .first-row .button button {
     height: 60px;
     border-radius: 7px;
     background-color: #ffffff;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
+    color: #171616;
     font-size: 25.2px;
     font-weight: 300;
     font-style: normal;
@@ -744,6 +745,14 @@ footer .row.logos ul {
     }
 }
 
+@media only screen and (max-width: 1200px) { 
+    footer.app-dev {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
 @media only screen and (min-width: 480px) {
     footer .row.copyright {
         position: absolute;
@@ -788,7 +797,11 @@ p.copyright {
     margin-bottom: 100px;
 }
 
-.container img.music {
+.product .dev-img {
+    background: none;
+}
+
+.product img.music {
     width: 55%;
     margin: -100px auto 70px auto;
     z-index: 100;
@@ -796,7 +809,7 @@ p.copyright {
 }
 
 @media only screen and (max-width: 992px) and (min-width: 480px)  {
-    .container img.music {
+    .product img.music {
         width: 70%;
     }
 }
@@ -814,7 +827,7 @@ p.copyright {
         font-size: 18px;
         line-height: 28px;
     }
-    .container img.music {
+    .product img.music {
         width: 90%;
         margin: -130px auto 70px auto;
     }
@@ -913,8 +926,9 @@ p.copyright {
 
 .project-management-top {
     background: url(../img/aviationBackground2.svg) no-repeat;
-    background-size: contain;
-    margin-top: 100px;
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
@@ -971,16 +985,19 @@ p.copyright {
     width: auto;
 }
 
- @media only screen and (min-width: 991px) {
-  .project-management .container.internal, .support .container.internal {
-    width: auto;
-  }  
-
+@media only screen and (min-width: 991px) {
+    .project-management .container.internal, .support .container.internal {
+        width: auto;
+    }  
+    .product-development, .product-development-items {
+        margin: 0;
+        padding: 20px;
+    }    
 }
  
  @media only screen and (max-width: 480px) {
     .project-management { 
-        margin-top: 55px;
+        margin-top: 140px;
         padding-bottom: 200px;
     }
     .project-management img {
@@ -1006,23 +1023,27 @@ p.copyright {
 
  @media only screen and (min-width: 480px) and (max-width: 991px) {
     .project-management {
-        margin-top: 120px;
+        margin-top: 135px;
     }
     .project-management img {
        margin: -125px auto 70px auto;
     }
 }
 
-.support {
-    margin-bottom: 60px;
+.support .bg-white {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
 }
+
 .support-top {
     background: url(../img/spaceCurvedBackground2.svg) no-repeat;
     background-size: contain;
     margin-top: -260px;
+    margin-bottom: 0;
 }
 .support img {
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: 10%;
     width: 55%;
 }
@@ -1049,11 +1070,20 @@ p.copyright {
     line-height: 36px;
     letter-spacing: normal;
     color: #171616;
+    margin-bottom: 100px;
 }
+
+ @media only screen and (min-width: 1200px) { 
+    .support-top { 
+        margin-bottom: -100px;
+    }
+ }
 
  @media only screen and (min-width: 900px) { 
     .support-top {
-        margin-top: -375px;
+        margin-top: -430px;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -1063,14 +1093,21 @@ p.copyright {
     }
 }
 
- @media only screen and (max-width: 480px) { 
-    .support {
-        margin-bottom: 60px;
+@media only screen and (max-width: 992px) and (min-width: 480px)  {
+    .support-top {
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
+}
+
+ @media only screen and (max-width: 480px) { 
     .support-top {
         background: url(../img/spaceCurvedBackground2.svg) no-repeat;
         background-size: contain;
         margin-top: -130px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .support img {
         margin-top: -20px;
