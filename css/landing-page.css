@@ -476,7 +476,11 @@ h6 {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1120px) {
+    .navbar-fixed-top {
+        left: 50%;
+        margin-left: -560px;
+    }
     .services {
         padding-bottom: 200px;
     }
