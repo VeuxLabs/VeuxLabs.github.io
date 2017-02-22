@@ -1216,21 +1216,88 @@ p.copyright {
 
 .internal .app-dev {
     margin-top: 50px;
+    padding-bottom: 40px;
     background-color: white;
     color: #171616;
 }
 
-.content {
+.content, .our-team {
     padding: 40px;
 }
 
-.content h1 {
+.content h1, .our-team h1 {
     font-family: 'Ubuntu';
     font-size: 40px;
     font-weight: 300;
     line-height: 0.9;
     letter-spacing: normal;
     color: #171616;
+}
+
+.our-team h1 {
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 400px;
+}
+
+.our-team.approach h1 {
+    margin-top: 20px;
+} 
+
+.content .description, .our-team .description {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    color: #4e4b4a;
+}
+
+.our-team .description {
+    color: white;
+}
+
+.show-more {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.show-more button {
+    border: solid 0.9px #2591bf;
+    min-width: 250px;
+    height: 46px;
+    border-radius: 4.7px;
+    background-color: white;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.11;
+    text-align: center;
+    color: #2691bf;
+    text-transform: uppercase;
+}
+
+.our-team .show-more button {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.graphic img {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.our-team {
+    height: 712px;
+    background-color: #2591bf;
+}
+
+.our-team.approach {
+    height: auto;
+}
+
+.logos img {
+    margin: 0 auto;
 }
 
 .oval {
@@ -1251,7 +1318,7 @@ p.copyright {
 
 .circles {
     text-align: center;
-    margin: 70px 0 0;
+    margin: 70px 0 105px;
 }
 
 .circles > div {
