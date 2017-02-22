@@ -59,6 +59,7 @@ h6 {
     border-top: 0 none;
     vertical-align: middle;
     display: none;
+    margin-top: 0;
 }
 .navbar-fixed-top .navbar-collapse.in {
     display: table-cell;
@@ -257,18 +258,14 @@ h6 {
     left: 0;
     text-align: center;
     clear: both;
+    padding: 0 20px;
 }
 
 .research .squares-wrapper .blue-square {
-    min-width: 77.5px;
+    width: 90%;
     height: 124px;
     background-color: #7bc4e3;
     display: inline-block;
-    margin-right: 14px;
-}
-
-.research .squares-wrapper .blue-square:last-chid {
-    margin-right: 0;
 }
 
 .design {
@@ -425,8 +422,8 @@ h6 {
     }
 }
 
-@media (max-width: 1200px) {
-    .research .squares-wrapper .blue-square.plus-one {
+@media (max-width: 1120px) {
+    .research .squares-wrapper .plus-one {
         display: none;
     }
 }
