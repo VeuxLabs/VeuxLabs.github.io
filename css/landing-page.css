@@ -193,8 +193,9 @@ h6 {
 }
 
 .services h3 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #4e4b4a;
     font-weight: 300;
     margin-top: 5px;
     margin-bottom: 25px;
@@ -202,12 +203,13 @@ h6 {
 
 .services p {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
     font-weight: 300;
+    color: #4e4b4a;
 }
 
 .research {
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 25px;
     font-weight: 300;
     font-style: normal;
@@ -237,8 +239,8 @@ h6 {
 }
 
 .research h3 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 40px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     margin-top: 0;
@@ -247,7 +249,7 @@ h6 {
 
 .research p {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
     padding-bottom: 45px;
 }
 
@@ -330,14 +332,15 @@ h6 {
 .app-dev h2 {
     font-size: 18px;
     font-weight: 300;
-    line-height: 28px;
+    line-height: 30px;
     margin-bottom: 0;
+    color: #171616;
 }
 
 .app-dev h3 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 40px;
     margin-top: 0;
     margin-bottom: 35px;
 }
@@ -345,7 +348,7 @@ h6 {
 .app-dev p {
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.56;
+    line-height: 30px;
 }
 
 .app-dev .dev-footer {
@@ -496,7 +499,7 @@ h6 {
         color: #4e4b4a;
     }
     .services .section1-text {
-        width: 437px;
+        width: 485px;
     }
     .research .section2 {
         text-align: center;
@@ -842,8 +845,19 @@ p.copyright {
     line-height: 30px;
 }
 
+@media only screen and (min-width: 992px) {
+    .product-development .col-lg-9 {
+        width: 70%;
+    }
+}
+
 .product .dev-img {
     background: none;
+}
+
+.product-development, .product-development-items {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .product img.music {
@@ -1029,6 +1043,16 @@ p.copyright {
     width: auto;
 }
 
+@media only screen and (min-width: 1200px) {
+    .project-management .col-lg-6 {
+        width: 51%;
+    }
+
+    .project-management .col-lg-5 {
+        width: 41%;
+    }
+}
+
 @media only screen and (min-width: 991px) {
     .project-management .container.internal, .support .container.internal {
         width: auto;
@@ -1078,6 +1102,13 @@ p.copyright {
     float: left;
     margin-left: 15px;
     margin-right: 15px;
+   
+}
+
+@media only screen and (min-width: 480px) and (max-width: 991px) {
+    .support .bg-white {
+        padding-left: 20px;
+    }
 }
 
 .support-top {
