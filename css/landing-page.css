@@ -482,17 +482,18 @@ h6 {
     }
     .services h2 {
         margin-top: 0;
-        font-size: 24px;
-        line-height: 60px;
+        font-size: 18px;
+        line-height: 30px;
     }
     .services h3 {
         font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 60px;
+        line-height: 54px;
+        color: #777675;
     }
     .services p {
-        font-size: 24px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #4e4b4a;
     }
     .services .section1-text {
         width: 437px;
@@ -515,17 +516,16 @@ h6 {
         position: relative;
     }
     .research h2 {
-        font-size: 24px;
-        line-height: 60px;
+        font-size: 18px;
+        line-height: 30px;
     }
     .research h3 {
         font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 60px;
+        line-height: 54px;
     }
     .research p {
-        font-size: 24px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 30px;
     }
     .research .squares-wrapper {
         position: absolute;
@@ -552,17 +552,18 @@ h6 {
         margin-top: -100px;
     }
     .design h2 {
-        font-size: 24px;
-        line-height: 60px;
+        font-size: 18px;
+        line-height: 30px;
     }
     .design h3 {
         font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 50px;
+        line-height: 54px;
+        color: #777675;
     }
     .design p {
-        font-size: 24px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #4e4b4a;
     }
     .app-dev {
         position: relative;
@@ -581,18 +582,17 @@ h6 {
         margin-left: 103px;
     }
     .app-dev h2 {
-        font-size: 24px;
-        line-height: 60px;
+        font-size: 18px;
+        line-height: 30px;
         color: #171616;
     }
     .app-dev h3 {
         font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 60px;
+        line-height: 54px;
     }
     .app-dev p {
-        font-size: 24px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 30px;
         font-weight: 300;
     }
     .app-dev .dev-footer {
@@ -821,24 +821,25 @@ p.copyright {
 .product-development h2 {
     font-family: 'Ubuntu';
     font-weight: 300;
-    font-size: 25px;
+    font-size: 18px;
+    line-height: 30px;
     color: #2691bf;
 }
 
 .product-development h3 {
     font-family: :'Ubuntu';
-    font-size: 39px;
+    font-size: 40px;
+    line-height: 54px;
+    color: #777675;
     font-weight: 300;
-    color: #171616;
 } 
 
 .product-development p {
     font-family: 'Ubuntu';
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
-    color: #171616;
-    margin-top: 70px;
-    margin-bottom: 100px;
+    color: #4e4b4a;
+    line-height: 30px;
 }
 
 .product .dev-img {
@@ -1002,27 +1003,26 @@ p.copyright {
 
 .project-management h2 {
     font-family: 'Ubuntu';
-    font-size: 25px;
-    line-height: 50px;
+    font-size: 18px;
+    line-height: 30px;
     font-weight: 300;
-    color: white;
-    line-height: 50px;
+    color: #171616;
 }
 
 .project-management h3 {
     font-family: 'Ubuntu';
-    font-size: 39px;
+    font-size: 40px;
     font-weight: 300;
     color: white;
-    line-height: 50px;
+    line-height: 54px;
 }
 
 .project-management p {
     font-family: 'Ubuntu';
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
     color: white;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 .project-management .container {
@@ -1093,26 +1093,23 @@ p.copyright {
 }
 .support h2 {
     font-family: 'Ubuntu';
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
-    line-height: 50px;
-    letter-spacing: normal;
+    line-height: 30px;
     color: #2691bf;
 }
 .support h3 {
     font-family: 'Ubuntu';
-    font-size: 39px;
+    font-size: 40px;
     font-weight: 300;
-    line-height: 50px;
-    letter-spacing: normal;
-    color: #171616;
+    line-height: 54px;
+    color: #777675;
 }
 .support p {
     font-family: 'Ubuntu';
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
-    line-height: 36px;
-    letter-spacing: normal;
+    line-height: 30px;
     color: #171616;
     margin-bottom: 100px;
 }
