@@ -1217,7 +1217,7 @@ p.copyright {
 
 .internal .app-dev {
     margin-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
     background-color: white;
     color: #171616;
 }

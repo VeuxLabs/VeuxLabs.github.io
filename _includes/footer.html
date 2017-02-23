@@ -1,16 +1,8 @@
 <!-- Footer -->
 <footer class="app-dev">
-    <div class="first-row">
-        <div class="col-md-12">
-            <div class="text">
-                THINKING ABOUT APP-ENABLED SYSTEMS, THE INTERNET OF THINGS, 
-                OR CONNECTIVE MOBILE APPS? 
-            </div>
-            <div class="button">
-                <button>LET'S TALK!</button>
-            </div>
-        </div>
-    </div>
+    {% if page.layout == 'default' %}
+        {% include footer_top.html %}
+    {% endif %}
     <div class="second-row">
         <div class="row">
             <div class="col-md-8">
