@@ -910,7 +910,7 @@ p.copyright {
 }
 
 .product-development-items .circle span {
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 54px;
     font-weight: bold;
     line-height: 1.04;
@@ -922,7 +922,7 @@ p.copyright {
 }
 
 .product-development-items .text {
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 25.2px;
     font-weight: normal;
     line-height: 1.43;
@@ -1238,7 +1238,6 @@ p.copyright {
 .our-team h1 {
     color: white;
     margin-bottom: 40px;
-    margin-top: 400px;
 }
 
 .our-team.approach h1 {
@@ -1289,7 +1288,6 @@ p.copyright {
 }
 
 .our-team {
-    height: 712px;
     background-color: #2591bf;
 }
 
@@ -1299,6 +1297,57 @@ p.copyright {
 
 .logos img {
     margin: 0 auto;
+}
+
+.veux-team {
+    display: none;
+    width: 100%;
+    float: left;
+    margin: 40px 0 30px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #7bcaec;
+}
+
+.veux-team.show {
+    display: block;
+}
+
+.veux-team .col-lg-2 {
+    width: 18.6%;
+    margin: 20px 5px;
+}
+
+.veux-team .circle {
+    width: 114px;
+    height: 114px;
+    background-color: #7bcaec;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    margin: 0 auto;
+}
+
+.veux-team .details {
+    margin-top: 20px;
+}
+
+.veux-team .details span {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+}
+
+.more-approach {
+    display: none;
+}
+
+.more-approach.show {
+    display: block;
 }
 
 .oval {
