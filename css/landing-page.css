@@ -366,7 +366,7 @@ h6 {
     position: relative;
     bottom: 0;
     left: 0;
-    background: url(../img/musicDiagonalBackground1.svg) no-repeat 100% 100% #2691bf;
+    background: url(../img/musicDiagonalBackground1.svg) no-repeat 100% 100% transparent;
     height: 252px;
 }
 
