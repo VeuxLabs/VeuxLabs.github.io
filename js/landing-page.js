@@ -29,3 +29,35 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+function showButton (element, button) {
+    if (element === 'about') {
+        if ($('#about').hasClass('open')) {
+            $('#about').removeClass('open');
+            $(button).text('Show More');
+        } else {
+            $('#about').addClass('open');
+            $(button).text('Show Less');
+        }
+    } else {
+        if (element === 'team') {
+            if ($('.veux-team').hasClass('show')) {
+                $('.veux-team').removeClass('show');
+                $(button).text('Show More');
+            } else {
+                $('.veux-team').addClass('show');
+                $(button).text('Show Less');
+            }
+        } else {
+            if (element === 'approach') {
+                if ($('.more-approach').hasClass('show')) {
+                    $('.more-approach').removeClass('show');
+                    $(button).text('Show More');
+                } else {
+                    $('.more-approach').addClass('show');
+                    $(button).text('Show Less');
+                }
+            }
+        } 
+    }
+}
