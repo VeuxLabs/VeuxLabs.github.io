@@ -12,7 +12,7 @@ html {
     background-color: #dad9db;
 }
 * {
-    font-family: Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
 }
 body,
@@ -90,7 +90,7 @@ h6 {
     top: 20px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
     .navbar-header .logo {
         left: 55px;
     }
@@ -382,6 +382,7 @@ h6 {
     .navbar-default .navbar-toggle {
         float: none;
         position: absolute;
+        top: 10px;
     }
 }
 
@@ -1257,6 +1258,13 @@ p.copyright {
     margin-top: 20px;
 } 
 
+@media only screen and (max-width: 480px) {
+    .content h1, .our-team h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+}
+
 .content .description, .our-team .description {
     font-family: 'Ubuntu';
     font-size: 18px;
@@ -1297,7 +1305,6 @@ p.copyright {
 
 .graphic img {
     margin: 0 auto;
-    max-width: 700px;
 }
 
 .our-team {
@@ -1310,6 +1317,12 @@ p.copyright {
 
 .logos img {
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .logos img {
+        margin: 30px auto;
+    }
 }
 
 .veux-team {
@@ -1325,9 +1338,11 @@ p.copyright {
     display: block;
 }
 
-.veux-team .col-lg-2 {
-    width: 18.6%;
-    margin: 20px 5px;
+@media only screen and (min-width: 1200px) {
+    .veux-team .col-lg-2 {
+        width: 18.6%;
+        margin: 20px 5px;
+    }
 }
 
 .veux-team .circle {
@@ -1379,6 +1394,27 @@ p.copyright {
     top: 255px;
 }
 
+@media only screen and (max-width: 630px) {
+    .oval {
+        margin: 0px 5px;
+        width: 160px;
+        height: 160px;
+    }
+    .oval .name {
+        top: 180px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .oval {
+        width: 120px;
+        height: 120px;
+    }
+    .oval .name {
+        top: 130px;
+    }
+}
+
 .circles {
     text-align: center;
     margin: 70px 0 105px;
@@ -1396,7 +1432,6 @@ p.copyright {
 .circles.open > div .name{
     display: none;
 }
-
 .circles.open > div .desc .about {
     display: table;
 }
@@ -1406,9 +1441,7 @@ p.copyright {
     padding: 0 60px 0 0;
     /*max-width: 450px;*/
 }
-.circles.open > div .desc .about p:last-child{
-    padding-right: 0;
-}
+
 .circles > div {
     width: 49%;
     display: inline-block;
@@ -1444,5 +1477,11 @@ p.copyright {
     }
     .circles.open > div .desc .about {
         padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .circles.open > div .desc .about p {
+        padding-right: 0;
     }
 }
