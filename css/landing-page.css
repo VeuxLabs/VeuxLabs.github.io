@@ -64,16 +64,40 @@ h6 {
 }
 .navbar-fixed-top .navbar-collapse.in {
     display: table-cell;
+    width: 100%;
+}
+.container>.navbar-header {
+    position: absolute;
 }
 .navbar.navbar-default.navbar-fixed-top .container {
     display: table;
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
 .navbar-fixed-top {
     border-width: 0 0 0;
     max-width: 1120px;
     margin: 0 auto;
     /*height: 100%;*/
+}
+
+@media (min-width: 768px) {
+    .navbar-nav.navbar-right:last-child {
+        margin-right: 15px;
+    }
+    .navbar-header .logo {
+        margin-left: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-default .navbar-collapse {
+        background-color: rgba(0,0,0,0.6);
+    }
+}
+.navbar-default .navbar-toggle {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
