@@ -1141,6 +1141,7 @@ p.copyright {
     background-size: contain;
     margin-top: -260px;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 .support img {
     margin-top: 60px;
