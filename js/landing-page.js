@@ -61,3 +61,8 @@ function showButton (element, button) {
         } 
     }
 }
+
+function showMore(element, current) {
+   $(current).hide();
+   $(element).addClass('open');
+}

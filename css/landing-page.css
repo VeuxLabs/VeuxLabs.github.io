@@ -870,9 +870,19 @@ p.copyright {
     background: none;
 }
 
-.product-development, .product-development-items {
+.product-development {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.product-development-items {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.product-development-items {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .product img.music {
@@ -919,7 +929,7 @@ p.copyright {
     -webkit-border-radius: 50px;
     border-radius: 60px;
     display: inline-block;
-    margin: 15px 10px;
+    margin: 15px 5px;
     float: left;
 }
 
@@ -1240,6 +1250,12 @@ p.copyright {
     padding: 40px;
 }
 
+@media only screen and (max-width: 480px) {
+    .content, .our-team {
+        padding: 15px;
+    }
+}
+
 .content h1, .our-team h1 {
     font-family: 'Ubuntu';
     font-size: 40px;
@@ -1271,10 +1287,12 @@ p.copyright {
     font-weight: 300;
     line-height: 1.67;
     color: #4e4b4a;
+    margin-top: 30px;
 }
 
 .our-team .description {
     color: white;
+    margin-top: 0;
 }
 
 .show-more {
@@ -1298,6 +1316,7 @@ p.copyright {
 }
 
 .our-team .show-more button {
+    display: none;
     background-color: transparent;
     color: white;
     border-color: white;
@@ -1326,16 +1345,21 @@ p.copyright {
 }
 
 .veux-team {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    height: 0;
     width: 100%;
     float: left;
-    margin: 40px 0 30px;
-    padding-bottom: 80px;
     border-bottom: 2px solid #7bcaec;
 }
 
 .veux-team.show {
-    display: block;
+    margin: 40px 0 30px;
+    padding-bottom: 80px;
+    visibility: visible;
+    height: auto;
+    opacity: 1;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1367,14 +1391,6 @@ p.copyright {
     letter-spacing: 0.5px;
     text-align: center;
     color: #ffffff;
-    display: block;
-}
-
-.more-approach {
-    display: none;
-}
-
-.more-approach.show {
     display: block;
 }
 
@@ -1420,12 +1436,14 @@ p.copyright {
     margin: 70px 0 105px;
 }
 
+/*
 .circles.open > div {
     width: 100%;
     /*transition-duration: 0.5s;*/
     /*transition-timing-function: linear;
     transition-property: width;*/
-}
+/* } */
+
 .circles.open > div .desc{
     display: block;
 }
@@ -1435,19 +1453,54 @@ p.copyright {
 .circles.open > div .desc .about {
     display: table;
 }
-.circles.open > div .desc .about p{
-    display: table-cell;
-    vertical-align: top;
-    padding: 0 60px 0 0;
-    /*max-width: 450px;*/
+
+.read-more-target-1 {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+} 
+
+.read-more-target-1.open {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
 }
 
-.circles > div {
-    width: 49%;
-    display: inline-block;
+.read-more-target-2 {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+} 
+
+.read-more-target-2.open {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
 }
+
+
+.circles > div {
+    width: 45%;
+    display: inline-table;
+    margin-right: 15px;
+    float: none;
+}
+
+@media only screen and (max-width: 730px) {
+    .circles.open > div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .circles > div {
+       width: 40%
+    }
+}
+
 .circles > div .desc{
-    display: none;
     text-align: left;
 }
 .circles > div .desc h2{
@@ -1468,7 +1521,7 @@ p.copyright {
     font-weight: 300;
     color: #4e4b4a;
     display: inline-block;
-    width: 49%;
+    padding-right: 60px;
 }
 @media only screen and (max-width: 900px) { 
     .circles.open > div .desc .about p {
