@@ -1016,12 +1016,12 @@ p.copyright {
 @media only screen and (max-width: 580px) {
     .product-development-items .circle {
         margin: 10px 0;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
     .product-development-items .circle span {
         font-size: 30px;
-        top: 18px;
+        top: 14px;
     }
     .product-development-items .text {
         font-size: 14px;
@@ -1031,6 +1031,30 @@ p.copyright {
     }
     .product-development-items .clearfix {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .product-development-items .text {
+        max-width: 60px;
+    }
+    .product-development-items .circle span {
+        font-size: 25px;
+        top: 16px;
+    } 
+}
+
+@media only screen and (max-width: 320px) {
+    .product-development-items .text {
+        max-width: 55px;
+    }
+    .product-development-items .circle span {
+        font-size: 20px;
+        top: 15px;
+    }
+    .product-development-items .circle {
+        width: 50px;
+        height: 50px;
     }
 }
 
