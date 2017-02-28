@@ -1341,10 +1341,21 @@ p.copyright {
 }
 
 .our-team .show-more button {
-    display: none;
     background-color: transparent;
     color: white;
     border-color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .our-team .show-more button {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+     .our-team .show-more button {
+        display: none;
+    }
 }
 
 .graphic img {
@@ -1377,15 +1388,26 @@ p.copyright {
     width: 100%;
     float: left;
     border-bottom: 2px solid #7bcaec;
+    margin: 40px 0 30px;
+    padding-bottom: 80px;
 }
 
 .veux-team.show {
-    margin: 40px 0 30px;
-    padding-bottom: 80px;
     visibility: visible;
     height: auto;
     opacity: 1;
 }
+
+@media only screen and (min-width: 480px) {
+    .veux-team {
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+        margin: 40px 0 30px;
+        padding-bottom: 80px;
+    }
+}
+
 
 @media only screen and (min-width: 1200px) {
     .veux-team .col-lg-2 {
@@ -1505,13 +1527,15 @@ p.copyright {
     max-height: 999em;
 }
 
-
-.circles > div {
-    width: 45%;
-    display: inline-table;
-    margin-right: 15px;
-    float: none;
+@media only screen and (min-width: 845px) {
+    .circles > div {
+        width: 45%;
+        display: inline-table;
+        margin-right: 15px;
+        float: none;
+    }
 }
+
 
 @media only screen and (max-width: 730px) {
     .circles.open > div {
@@ -1521,7 +1545,7 @@ p.copyright {
 
 @media only screen and (max-width: 480px) {
     .circles > div {
-       width: 40%
+       width: 100%;
     }
 }
 
@@ -1546,7 +1570,7 @@ p.copyright {
     font-weight: 300;
     color: #4e4b4a;
     display: inline-block;
-    padding-right: 60px;
+    padding-right: 10px;
 }
 @media only screen and (max-width: 900px) { 
     .circles.open > div .desc .about p {
