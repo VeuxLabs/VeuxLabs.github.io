@@ -946,12 +946,12 @@ p.copyright {
 }
 
 .product-development-items .circle {
-    width: 114px;
-    height: 114px;
+    width: 90px;
+    height: 90px;
     background-color: #00aad6;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
-    border-radius: 60px;
+    border-radius: 50px;
     display: inline-block;
     margin: 15px 5px;
     float: left;
@@ -959,33 +959,41 @@ p.copyright {
 
 .product-development-items .circle span {
     font-family: 'Ubuntu';
-    font-size: 54px;
+    font-size: 46px;
     font-weight: bold;
     line-height: 1.04;
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
     position: relative;
-    top: 26px;
+    top: 22px;
 }
 
 .product-development-items .text {
     font-family: 'Ubuntu';
-    font-size: 25.2px;
+    font-size: 18px;
     font-weight: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
     color: #2691bf;
     float: left;
     display: inline-block;
-    max-width: 120px;
-    position: relative;
-    top: 20px;
+    max-width: 150px;
     text-align: left;
+    position: relative;
+    top: 30px;
+    left: 5px;
 }
 
 .product-development-items.col {
     float: left;
+}
+
+@media only screen and (max-width: 630px) {
+    .product-development-items .text {
+        max-width: 100px;
+        top: 20px;
+    }
 }
 
 @media only screen and (min-width: 991px) {
@@ -1018,7 +1026,7 @@ p.copyright {
     .product-development-items .text {
         font-size: 14px;
         top: 19px;
-        left: 5px;
+        left: 10px;
         max-width: 80px;
     }
     .product-development-items .clearfix {
@@ -1100,6 +1108,11 @@ p.copyright {
     .project-management .col-lg-5 {
         width: 41%;
     }
+}
+
+.content .product-development-items {
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 991px) {
@@ -1287,7 +1300,7 @@ p.copyright {
     font-weight: 300;
     line-height: 0.9;
     letter-spacing: normal;
-    color: #171616;
+    color: #777675;
 }
 
 .our-team h1 {
@@ -1318,6 +1331,7 @@ p.copyright {
 .our-team .description {
     color: white;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .show-more {
@@ -1384,9 +1398,6 @@ p.copyright {
 .veux-team { 
     width: 100%;
     float: left;
-    border-bottom: 2px solid #7bcaec;
-    margin: 40px 0 30px;
-    padding-bottom: 80px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1436,6 +1447,7 @@ p.copyright {
 
 .veux-team .details {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .veux-team .details span {
