@@ -31,33 +31,18 @@ $('div.modal').on('show.bs.modal', function() {
 });
 
 function showButton (element, button) {
-    if (element === 'about') {
-        if ($('#about').hasClass('open')) {
-            $('#about').removeClass('open');
-            $(button).text('Show More');
-        } else {
-            $('#about').addClass('open');
-            $(button).text('Show Less');
-        }
+    if ($('.veux-team').find('span').hasClass('show')) {
+        $('.veux-team').find('span').removeClass('show');
+        $(button).text('Show More');
     } else {
-        if (element === 'team') {
-            if ($('.veux-team').hasClass('show')) {
-                $('.veux-team').removeClass('show');
-                $(button).text('Show More');
-            } else {
-                $('.veux-team').addClass('show');
-                $(button).text('Show Less');
-            }
-        } else {
-            if (element === 'approach') {
-                if ($('.more-approach').hasClass('show')) {
-                    $('.more-approach').removeClass('show');
-                    $(button).text('Show More');
-                } else {
-                    $('.more-approach').addClass('show');
-                    $(button).text('Show Less');
-                }
-            }
-        } 
-    }
+        $('.veux-team').find('span').addClass('show');
+        $(button).text('Show Less');
+    }    
+}
+
+function showMore(element, current) {
+   $(current).hide();
+   $('.about p').find('a').hide();
+   $('.read-more-target-1').addClass('open');
+   $('.read-more-target-2').addClass('open');
 }
