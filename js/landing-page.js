@@ -42,5 +42,7 @@ function showButton (element, button) {
 
 function showMore(element, current) {
    $(current).hide();
-   $(element).addClass('open');
+   $('.about p').find('a').hide();
+   $('.read-more-target-1').addClass('open');
+   $('.read-more-target-2').addClass('open');
 }

@@ -1539,7 +1539,7 @@ p.copyright {
     .circles > div {
         width: 45%;
         display: inline-table;
-        margin-right: 15px;
+        margin-right: 30px;
         float: none;
     }
 }
@@ -1548,12 +1548,6 @@ p.copyright {
 @media only screen and (max-width: 730px) {
     .circles.open > div {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .circles > div {
-       width: 100%;
     }
 }
 
@@ -1579,7 +1573,23 @@ p.copyright {
     color: #4e4b4a;
     display: inline-block;
     padding-right: 10px;
+    letter-spacing: 0.5px;
 }
+
+@media only screen and (max-width: 480px) {
+    .circles > div {
+       width: 100%;
+    }
+    .circles > div .desc h2 {
+        font-size: 30px;
+        line-height: 40px;
+    } 
+    .circles > div .desc h3 { 
+        line-height: 30px;
+    }
+}
+
+
 @media only screen and (max-width: 900px) { 
     .circles.open > div .desc .about p {
         width: 100%;
