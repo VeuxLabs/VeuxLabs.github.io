@@ -1349,6 +1349,7 @@ p.copyright {
 @media only screen and (max-width: 767px) {
     .our-team .show-more button {
         display: block;
+        margin: 0 auto;
     }
 }
 
@@ -1380,11 +1381,7 @@ p.copyright {
     }
 }
 
-.veux-team {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-    height: 0;
+.veux-team { 
     width: 100%;
     float: left;
     border-bottom: 2px solid #7bcaec;
@@ -1392,11 +1389,22 @@ p.copyright {
     padding-bottom: 80px;
 }
 
-.veux-team.show {
-    visibility: visible;
-    height: auto;
-    opacity: 1;
+@media only screen and (max-width: 767px) {
+    .veux-team .mobile {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        height: 0;
+        float: left;
+    }
+    .veux-team .mobile.show {
+        visibility: visible;
+        height: auto;
+        opacity: 1; 
+        float: left;
+    } 
 }
+
 
 @media only screen and (min-width: 480px) {
     .veux-team {
