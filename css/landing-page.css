@@ -609,7 +609,6 @@ h6 {
     }
     .app-dev {
         position: relative;
-        padding-bottom: 100px;
     }
     .app-dev .dev-img img {
         width: 600px;
@@ -1143,6 +1142,14 @@ p.copyright {
     margin: 20px auto;
 }
 
+@media only screen and (max-width: 480px) {
+    .content .map {
+        max-width: none;
+        width: 195%;
+        margin: 20px 0;
+    }
+}
+
 .our-team.contact .description {
     margin-top: 100px;
     margin-bottom: 30px;
@@ -1404,6 +1411,9 @@ p.copyright {
 
 .content, .our-team {
     padding: 40px;
+    float: left;
+    background-color: white;
+    width: 100%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -1492,7 +1502,7 @@ p.copyright {
 }
 
 .graphic img {
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .our-team {
@@ -1503,14 +1513,18 @@ p.copyright {
     height: auto;
 }
 
-.logos img {
-    margin: 0 auto;
+.content .logos {
+    float: left;
+    margin: 40px 0;
 }
 
-@media only screen and (max-width: 480px) {
-    .logos img {
-        margin: 30px auto;
-    }
+.content .logos img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer .logos img {
+    margin: 0 auto;
 }
 
 .veux-team { 
@@ -1547,9 +1561,29 @@ p.copyright {
 
 
 @media only screen and (min-width: 1200px) {
-    .veux-team .col-lg-2 {
+    .veux-team .col-lg-2, .content .logos .col-lg-2 {
         width: 18.6%;
         margin: 20px 5px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .content .logos .col-md-2 {
+        width: 18.6%;
+        margin: 20px 5px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .content .logos div {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .content .logos div {
+        margin: 10px 0;
     }
 }
 
