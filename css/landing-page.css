@@ -1139,6 +1139,100 @@ p.copyright {
     margin-bottom: 50px;
 }
 
+.content .map {
+    margin: 20px auto;
+}
+
+.our-team.contact .description {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.our-team.contact .office {
+    color: white;
+}
+
+.our-team.contact .office i {
+    margin-right: 15px;
+}
+
+.our-team.contact .office span {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.our-team.contact .office h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.our-team.contact .office div {
+    padding-left: 0;
+}
+
+#mc_embed_signup form {
+    padding-left: 0 !important;
+}
+
+#mc_embed_signup h1 {
+   color: #4e4b4a;
+   font-size: 30px;
+}
+
+#mc_embed_signup .mc-field-group label {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: #4e4b4a;
+}
+
+#mc_embed_signup .mc-field-group label .asterisk {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: #e85740;
+    top: 0;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #b4b4b4;
+}
+
+#mc_embed_signup .buttons {
+    border: solid 0.9px #2591bf;
+    min-width: 250px;
+    height: 46px;
+    border-radius: 4.7px;
+    background-color:  #2591bf;;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.11;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+    
 @media only screen and (min-width: 991px) {
     .project-management .container.internal, .support .container.internal {
         width: auto;
