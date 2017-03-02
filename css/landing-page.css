@@ -135,7 +135,7 @@ h6 {
 }
 
 .intro-header .pros {
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
     font-style: normal;
@@ -143,10 +143,22 @@ h6 {
     line-height: 1.67;
     letter-spacing: 0.4px;
     color: #ffffff;
-    width: 267px;
-    left: 50%;
+    width: 345px;
+    left: 40%;
     position: relative;
-    margin-left: -134px;
+    margin-left: -99px;
+}
+
+@media only screen and (max-width: 480px) {
+    .intro-header .pros {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+
+    .intro-header .pros ul {
+        text-align: center !important;
+    }
 }
 
 .intro-header .pros ul {
@@ -178,6 +190,15 @@ h6 {
 
 .intro-header .container {
     padding-top: 200px;
+}
+
+.intro-header .container h2 {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: #ffffff;
 }
 
 .intro-header .container > svg {
@@ -308,7 +329,7 @@ h6 {
 }
 
 .design {
-    padding-bottom: 50px;
+    padding-bottom: 250px;
 }
 
 .design .design-img{
@@ -609,7 +630,6 @@ h6 {
     }
     .app-dev {
         position: relative;
-        padding-bottom: 100px;
     }
     .app-dev .dev-img img {
         width: 600px;
@@ -732,10 +752,10 @@ footer .first-row {
     background-color: #2591bf;
 }
 footer .first-row .col-md-12 {
-    float: none;
-    max-width: 865px;
+    float: left;
     margin: 0 auto;
     padding: 90px 20px;
+    background-color: #2591bf;
 }
 
 footer .first-row .text {
@@ -897,6 +917,7 @@ p.copyright {
 .product-development {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 220px;
 }
 
 .product-development-items {
@@ -1093,7 +1114,7 @@ p.copyright {
     font-weight: 300;
     color: white;
     line-height: 50px;
-    padding-bottom: 400px;
+    padding-bottom: 645px;
 }
 
 .project-management h2 {
@@ -1139,6 +1160,108 @@ p.copyright {
     margin-bottom: 50px;
 }
 
+.content .map {
+    margin: 20px auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .content .map {
+        max-width: none;
+        width: 195%;
+        margin: 20px 0;
+    }
+}
+
+.our-team.contact .description {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.our-team.contact .office {
+    color: white;
+}
+
+.our-team.contact .office i {
+    margin-right: 15px;
+}
+
+.our-team.contact .office span {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.our-team.contact .office h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.our-team.contact .office div {
+    padding-left: 0;
+}
+
+#mc_embed_signup form {
+    padding-left: 0 !important;
+}
+
+#mc_embed_signup h1 {
+   color: #4e4b4a;
+   font-size: 30px;
+}
+
+#mc_embed_signup .mc-field-group label {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: #4e4b4a;
+}
+
+#mc_embed_signup .mc-field-group label .asterisk {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: #e85740;
+    top: 0;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #b4b4b4;
+}
+
+#mc_embed_signup .buttons {
+    border: solid 0.9px #2591bf;
+    min-width: 250px;
+    height: 46px;
+    border-radius: 4.7px;
+    background-color:  #2591bf;;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.11;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+    
 @media only screen and (min-width: 991px) {
     .project-management .container.internal, .support .container.internal {
         width: auto;
@@ -1147,6 +1270,9 @@ p.copyright {
         margin: 0;
         padding: 20px;
     }    
+    .product-development {
+        padding-bottom: 270px;
+    }
 }
  
  @media only screen and (max-width: 480px) {
@@ -1191,9 +1317,28 @@ p.copyright {
    
 }
 
+@media only screen and (min-width: 1100px)  {
+    .app-development {
+        height: 1000px;
+    }
+}
+
 @media only screen and (min-width: 480px) and (max-width: 991px) {
     .support .bg-white {
         padding-left: 20px;
+    }
+}
+
+.support .fixed-div {
+    background-color: white;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .support .fixed-div {
+        margin-bottom: 100px;
+        padding-left: 50px;
     }
 }
 
@@ -1269,7 +1414,7 @@ p.copyright {
         padding-right: 0;
     }
     .support img {
-        margin-top: -20px;
+        margin-top: -25px;
         margin-left: 0;
         width: auto;
     }
@@ -1310,6 +1455,9 @@ p.copyright {
 
 .content, .our-team {
     padding: 40px;
+    float: left;
+    background-color: white;
+    width: 100%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -1398,7 +1546,7 @@ p.copyright {
 }
 
 .graphic img {
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .our-team {
@@ -1409,14 +1557,18 @@ p.copyright {
     height: auto;
 }
 
-.logos img {
-    margin: 0 auto;
+.content .logos {
+    float: left;
+    margin: 40px 0;
 }
 
-@media only screen and (max-width: 480px) {
-    .logos img {
-        margin: 30px auto;
-    }
+.content .logos img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer .logos img {
+    margin: 0 auto;
 }
 
 .veux-team { 
@@ -1453,9 +1605,29 @@ p.copyright {
 
 
 @media only screen and (min-width: 1200px) {
-    .veux-team .col-lg-2 {
+    .veux-team .col-lg-2, .content .logos .col-lg-2 {
         width: 18.6%;
         margin: 20px 5px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .content .logos .col-md-2 {
+        width: 18.6%;
+        margin: 20px 5px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .content .logos div {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .content .logos div {
+        margin: 10px 0;
     }
 }
 
