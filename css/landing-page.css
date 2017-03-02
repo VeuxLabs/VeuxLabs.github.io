@@ -146,7 +146,7 @@ h6 {
     width: 345px;
     left: 40%;
     position: relative;
-    margin-left: -134px;
+    margin-left: -99px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -753,7 +753,6 @@ footer .first-row {
 }
 footer .first-row .col-md-12 {
     float: left;
-    max-width: 865px;
     margin: 0 auto;
     padding: 90px 20px;
     background-color: #2591bf;
@@ -918,6 +917,7 @@ p.copyright {
 .product-development {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 220px;
 }
 
 .product-development-items {
@@ -1114,7 +1114,7 @@ p.copyright {
     font-weight: 300;
     color: white;
     line-height: 50px;
-    padding-bottom: 400px;
+    padding-bottom: 645px;
 }
 
 .project-management h2 {
@@ -1270,6 +1270,9 @@ p.copyright {
         margin: 0;
         padding: 20px;
     }    
+    .product-development {
+        padding-bottom: 270px;
+    }
 }
  
  @media only screen and (max-width: 480px) {
@@ -1335,6 +1338,7 @@ p.copyright {
 @media only screen and (min-width: 1200px) {
     .support .fixed-div {
         margin-bottom: 100px;
+        padding-left: 50px;
     }
 }
 
