@@ -89,6 +89,9 @@ h6 {
     .navbar-header .logo {
         margin-left: 15px;
     }
+    .navbar-header .logo-home {
+        margin-left: 15px;
+    }
 }
 @media (max-width: 768px) {
     .navbar-default .navbar-collapse {
@@ -114,8 +117,18 @@ h6 {
     top: 20px;
 }
 
+.navbar-header .logo-home {
+    display: none;
+    max-width: 120px;
+    position: relative;
+    top: 20px;
+}
+
 @media only screen and (max-width: 767px) {
     .navbar-header .logo {
+        left: 55px;
+    }
+    .navbar-header .logo-home {
         left: 55px;
     }
 }
@@ -492,6 +505,9 @@ h6 {
 
 @media (min-width: 768px) {
     .logo {
+        width: 408px;
+    }
+    .logo-home {
         width: 408px;
     }
     .services .fit {
