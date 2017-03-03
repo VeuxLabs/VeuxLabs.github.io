@@ -30,6 +30,9 @@ $('div.modal').on('show.bs.modal', function() {
 	}
 });
 
+
+// To update the text on the show more button when clicked.
+
 function showButton (element, button) {
     if ($('.veux-team').find('span').hasClass('show')) {
         $('.veux-team').find('span').removeClass('show');
@@ -40,9 +43,27 @@ function showButton (element, button) {
     }    
 }
 
+//Animation for the read more button on about page.
+
 function showMore(element, current) {
    $(current).hide();
    $('.about p').find('a').hide();
    $('.read-more-target-1').addClass('open');
    $('.read-more-target-2').addClass('open');
 }
+
+// To show the logo when scroll down in homepage.
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 530) { 
+        $('.navbar-header .logo-home').css({
+            'display': 'block'
+        });
+    } else {
+        $('.navbar-header .logo-home').css({
+            'display': 'none'
+        });
+    }
+});
+
+

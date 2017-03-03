@@ -89,6 +89,9 @@ h6 {
     .navbar-header .logo {
         margin-left: 15px;
     }
+    .navbar-header .logo-home {
+        margin-left: 15px;
+    }
 }
 @media (max-width: 768px) {
     .navbar-default .navbar-collapse {
@@ -114,8 +117,18 @@ h6 {
     top: 20px;
 }
 
+.navbar-header .logo-home {
+    display: none;
+    max-width: 120px;
+    position: relative;
+    top: 20px;
+}
+
 @media only screen and (max-width: 767px) {
     .navbar-header .logo {
+        left: 55px;
+    }
+    .navbar-header .logo-home {
         left: 55px;
     }
 }
@@ -143,10 +156,8 @@ h6 {
     line-height: 1.67;
     letter-spacing: 0.4px;
     color: #ffffff;
-    width: 345px;
-    left: 40%;
+    width: 100%;
     position: relative;
-    margin-left: -99px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -165,7 +176,7 @@ h6 {
     padding-top: 40px;
     list-style-type: none;
     padding-left: 0;
-    text-align: left;
+    text-align: center;
     width: auto;
 }
 
@@ -189,7 +200,10 @@ h6 {
 }
 
 .intro-header .container {
-    padding-top: 200px;
+    padding-top: 155px;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .intro-header .container h2 {
@@ -328,8 +342,16 @@ h6 {
     display: inline-block;
 }
 
-.design {
-    padding-bottom: 250px;
+@media only screen and (max-width: 650px) {
+    .design {
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .design {
+        padding-bottom: 250px;
+    }
 }
 
 .design .design-img{
@@ -382,6 +404,12 @@ h6 {
 .app-dev .dev-img img{
     display: inline-block;
     margin-top: -60px;
+}
+
+@media only screen and (max-width: 650px) {
+    .app-dev .dev-img img {
+        margin-top: -90px;
+    }
 }
 
 .app-dev h2 {
@@ -492,6 +520,9 @@ h6 {
 
 @media (min-width: 768px) {
     .logo {
+        width: 408px;
+    }
+    .logo-home {
         width: 408px;
     }
     .services .fit {
@@ -917,6 +948,12 @@ p.copyright {
     padding-bottom: 220px;
 }
 
+@media only screen and (max-width: 650px) {
+    .product-development {
+        padding-bottom: 0;
+    }
+}
+
 .product-development-items {
     padding-left: 10px;
     padding-right: 10px;
@@ -925,6 +962,17 @@ p.copyright {
 .product-development-items {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.product-development-items img {
+    margin: 0 auto;
+    width: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+    .product-development-items img {
+        width: 100%;
+    }
 }
 
 .product img.music {
@@ -1161,6 +1209,15 @@ p.copyright {
     margin: 20px auto;
 }
 
+.contact h1 {
+    margin: 30px 0px;
+}
+
+.content.contact .description {
+    margin: 40px 0;
+    max-width: 960px;
+}
+
 @media only screen and (max-width: 480px) {
     .content .map {
         max-width: none;
@@ -1170,8 +1227,8 @@ p.copyright {
 }
 
 .our-team.contact .description {
-    margin-top: 100px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .our-team.contact .office {
@@ -1207,6 +1264,10 @@ p.copyright {
     padding-left: 0;
 }
 
+#mc_embed_signup {
+    padding: 20px;
+}
+
 #mc_embed_signup form {
     padding-left: 0 !important;
 }
@@ -1214,6 +1275,7 @@ p.copyright {
 #mc_embed_signup h1 {
    color: #4e4b4a;
    font-size: 30px;
+   margin: 30px 0 60px;
 }
 
 #mc_embed_signup .mc-field-group label {
@@ -1304,6 +1366,7 @@ p.copyright {
  @media only screen and (min-width: 480px) and (max-width: 991px) {
     .project-management {
         margin-top: 135px;
+        padding-bottom: 300px;
     }
     .project-management img {
        margin: -125px auto 70px auto;
@@ -1495,7 +1558,8 @@ p.copyright {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.67;
+    line-height: 30px;
+    letter-spacing: 0.5px;
     color: #4e4b4a;
     margin-top: 30px;
 }
