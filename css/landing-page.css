@@ -964,6 +964,17 @@ p.copyright {
     margin-bottom: 20px;
 }
 
+.product-development-items img {
+    margin: 0 auto;
+    width: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+    .product-development-items img {
+        width: 100%;
+    }
+}
+
 .product img.music {
     width: 55%;
     margin: -100px auto 70px auto;
