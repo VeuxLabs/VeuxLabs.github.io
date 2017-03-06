@@ -249,9 +249,7 @@ h6 {
     display: inline-block;
 }
 
-.services .col-lg-6 {
-    /*max-width: 613px;*/
-}
+
 .services .col-lg-6:nth-child(2) {
     padding-left: 58px;
 }
@@ -261,7 +259,6 @@ h6 {
     font-size: 18px;
     line-height: 26px;
     font-weight: 300;
-    margin-top: 47px;
     margin-bottom: 0;
 }
 
@@ -545,9 +542,7 @@ h6 {
         max-width: 500px;
     }
     .research .section2-text {
-        width: 400px;
-        left: 50%;
-        margin-left: -300px;
+        width: 500px;
         margin-top: -100px;
     }
     .design .design-img img {
@@ -671,7 +666,7 @@ h6 {
     .app-dev .section4-text {
         z-index: 1;
         width: 531px;
-        margin-left: 103px;
+        margin-left: 50px;
     }
     .app-dev h2 {
         font-size: 18px;
@@ -694,6 +689,28 @@ h6 {
         margin: 0;
         background-size: 580px;
         height: 457px;
+    }
+}
+
+@media (max-width: 767px) {
+    .research .col-xs-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .design .col-lg-12 {
+        padding-left: 0;
+        padding-right: 0;
+    } 
+    .app-dev .section4-text {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .app-dev .section4-text {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -835,6 +852,12 @@ footer .second-row .row {
     margin-right: 0;
 }
 
+@media only screen and (min-width: 767px) {
+    footer .second-row .row {
+        margin-left: 55px;
+    }
+}
+
 footer .second-row .row a {
     color: white;
 }
@@ -940,19 +963,26 @@ p.copyright {
 
 .product .dev-img {
     background: none;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 0;
 }
 
 .product-development {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 220px;
+    margin-right: 0;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 992px) {
     .product-development {
         padding-bottom: 0;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
+
 
 .product-development-items {
     padding-left: 10px;
@@ -1366,7 +1396,7 @@ p.copyright {
  @media only screen and (min-width: 480px) and (max-width: 991px) {
     .project-management {
         margin-top: 135px;
-        padding-bottom: 300px;
+        padding-bottom: 450px;
     }
     .project-management img {
        margin: -125px auto 70px auto;
@@ -1402,6 +1432,19 @@ p.copyright {
     .support .fixed-div {
         margin-bottom: 100px;
         padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .support .fixed-div {
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .support .fixed-div {
+       padding-left: 30px;
+       padding-right: 30px;
     }
 }
 
@@ -1477,7 +1520,7 @@ p.copyright {
         padding-right: 0;
     }
     .support img {
-        margin-top: -25px;
+        margin-top: -35px;
         margin-left: 0;
         width: auto;
     }
@@ -1521,6 +1564,14 @@ p.copyright {
     float: left;
     background-color: white;
     width: 100%;
+}
+
+.content.experience {
+    background-color: #2591bf;
+}
+
+.content.experience h1, .content.experience .description {
+    color: white;
 }
 
 @media only screen and (max-width: 480px) {
