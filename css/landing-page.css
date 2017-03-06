@@ -249,9 +249,7 @@ h6 {
     display: inline-block;
 }
 
-.services .col-lg-6 {
-    /*max-width: 613px;*/
-}
+
 .services .col-lg-6:nth-child(2) {
     padding-left: 58px;
 }
@@ -261,7 +259,6 @@ h6 {
     font-size: 18px;
     line-height: 26px;
     font-weight: 300;
-    margin-top: 47px;
     margin-bottom: 0;
 }
 
@@ -545,9 +542,9 @@ h6 {
         max-width: 500px;
     }
     .research .section2-text {
-        width: 400px;
-        left: 50%;
-        margin-left: -300px;
+        width: 500px;
+        left: 35%;
+        margin-left: -230px;
         margin-top: -100px;
     }
     .design .design-img img {
