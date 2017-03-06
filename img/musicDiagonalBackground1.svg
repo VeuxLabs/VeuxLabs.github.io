@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="318" height="251" viewBox="0 0 318 251">
-  <g fill="#FFFFFF" fill-rule="evenodd">
-    <polygon points="70.295 263.776 317.966 66.179 317.966 92.85 182.428 263.776"/>
-    <polygon points="0 252.127 317.88 .015 317.88 26.686 135.479 252.127"/>
-    <polygon points="161.047 247.612 317.966 125.826 317.966 152.497 229.003 263.518"/>
+  <g fill="#FFFFFF" fill-rule="evenodd" transform="translate(-8 -3)">
+    <polygon points="78.295 266.776 328.867 67.581 328.867 92.743 190.428 266.776"/>
+    <polygon points=".418 259.955 329.211 .314 329.211 26.885 132.316 259.955"/>
+    <polygon points="169.047 250.612 329.611 128.5 329.611 153.783 237.003 266.518"/>
   </g>
 </svg>
