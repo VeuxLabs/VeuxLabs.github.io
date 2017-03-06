@@ -963,12 +963,16 @@ p.copyright {
 
 .product .dev-img {
     background: none;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 0;
 }
 
 .product-development {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 220px;
+    margin-right: 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1516,7 +1520,7 @@ p.copyright {
         padding-right: 0;
     }
     .support img {
-        margin-top: -25px;
+        margin-top: -35px;
         margin-left: 0;
         width: auto;
     }
@@ -1560,6 +1564,14 @@ p.copyright {
     float: left;
     background-color: white;
     width: 100%;
+}
+
+.content.experience {
+    background-color: #2591bf;
+}
+
+.content.experience h1, .content.experience .description {
+    color: white;
 }
 
 @media only screen and (max-width: 480px) {
