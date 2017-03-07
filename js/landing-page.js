@@ -66,12 +66,18 @@ $(window).scroll(function() {
     }
 });
 
-
 $(document).ready(function(){ 
     var j = jQuery.noConflict(); 
     $('.bxslider').bxSlider({
         pager: false
     }); 
 }); 
+
+ $('#back-to-top').on('click', function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: 0
+    }, 700);
+});
 
 
