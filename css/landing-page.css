@@ -1724,6 +1724,18 @@ p.copyright {
     width: 7%;
 }
 
+@media (max-width: 768px) {
+    #back-to-top {
+        width: 12%;
+    }
+}
+
+@media (max-width: 768px) {
+    #back-to-top {
+        width: 15%;
+    }
+}
+
 #back-to-top:hover {
     cursor: pointer;
 }
