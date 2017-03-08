@@ -2,6 +2,10 @@
 layout: internal
 title: Work
 ---
+
+<!-- Classes 'only-mobile' and 'only-desktop' are only to change the order of elements 
+	when seeing the mobile version. -->
+
 <div style="padding:0;" class="content">
 	<ul class="bxslider">
 	  <li>
@@ -9,7 +13,7 @@ title: Work
 	  	<div class="content main-div">
 	  		<div class="content-div first">
 		 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		 			<h2 style="margin-top:100px;">Project</h2>
+		 			<h2>Project</h2>
 		 			<h3>FlightLink Connected System <br> iOS Universal App </h3>
 					<h2>Client</h2>
 					<h3>Lightspeed Navigation</h3>
@@ -64,18 +68,30 @@ title: Work
 		 				External Accessory Framework. The app has been implemented as a universal app for 
 		 				iPad, iPhone & iPod. The system is certified under Apple’s Made For iPod (MFi) program. 
 		 			</p>
-		 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+		 			<div class="only-desktop col-lg-6 col-md-6 col-sm-6 col-xs-6">
 		 				<img class="small-image img-responsive" src="http://placehold.it/210x270"/>
 		 				<span class="img-description">Recording Library </span>
 		 			</div>
-		 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+		 			<div class="only-desktop col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
 		 				<img class="small-image img-responsive" src="http://placehold.it/210x270"/>
 		 				<span class="img-description">Night Mode </span>
 		 			</div>
+		 			<div class="only-mobile col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			 			<img class=" img-responsive" src="http://placehold.it/440x566"/>
+			 			<span class="img-description ">Playback Mode </span>
+		 			</div>
 		 		</div>
-		 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		 		<div class="only-desktop col-lg-6 col-md-6 col-sm-6 col-xs-12">
 		 			<img class=" img-responsive" src="http://placehold.it/440x566"/>
 		 			<span class="img-description ">Playback Mode </span>
+		 		</div>
+		 		<div class="only-mobile col-lg-6 col-md-6 col-sm-6 col-xs-6">
+	 				<img class="small-image img-responsive" src="http://placehold.it/210x270"/>
+	 				<span class="img-description">Recording Library </span>
+	 			</div>
+	 			<div class="only-mobile col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+	 				<img class="small-image img-responsive" src="http://placehold.it/210x270"/>
+	 				<span class="img-description">Night Mode </span>
 		 		</div>
 		 	</div>
 
@@ -110,7 +126,7 @@ title: Work
 	 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	 			<img class="img-responsive app-logo" src="http://placehold.it/167x167"/>
 	 			<span class="img-description ">App Icon </span>
-	 			<button id="back-to-top" class="button-top">TOP</button>
+	 			<img src="../img/top.png" id="back-to-top" class="button-top"/>
 	 		</div>
 	  	</div>
 	  </li>
