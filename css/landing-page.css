@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
 
 body,
 html {
@@ -1596,6 +1596,12 @@ p.copyright {
     border: 0;
 }
 
+@media (max-width: 480px) {
+    .content .bx-wrapper h1 {
+        padding: 10px 75px;
+    }
+}
+
 .content .bx-wrapper .bx-controls-direction a {
     top: 25px;
     z-index: 999;
@@ -1609,6 +1615,13 @@ p.copyright {
     color: #4e4b4a;
     text-transform: uppercase;
     font-weight: 500;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .content .bx-wrapper h2 {
+        margin-top: 10px;
+    }
 }
 
 .content .bx-wrapper h3 {
@@ -1620,8 +1633,29 @@ p.copyright {
     font-weight: 300;
 }
 
-.content.main-div div {
+.content.main-div .content-div {
+    float: left;
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .content.main-div .content-div {
+        padding-bottom: 30px;
+    }
+}
+
+.content.main-div .content-div.first { 
     margin-bottom: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #d8d8d8;
+}
+
+@media (max-width: 768px) {
+    .content.main-div .content-div.first { 
+        margin-bottom: 10px;
+    }
 }
 
 .content .small-image {
@@ -1667,6 +1701,66 @@ p.copyright {
     line-height: 1.67;
     letter-spacing: 0.5px;
     color: #4e4b4a;
+    margin-bottom: 30px;
+}
+
+.content .img-description {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    display: block;
+    color: #4e4b4a;
+    margin-bottom: 20px;
+}
+
+.content .bx-wrapper img {
+    margin: 0 auto;
+}
+
+#back-to-top {
+    width: 7%;
+}
+
+@media (max-width: 768px) {
+    #back-to-top {
+        width: 12%;
+    }
+}
+
+@media (max-width: 768px) {
+    #back-to-top {
+        width: 15%;
+    }
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .content .bx-wrapper .only-mobile img {
+        width: 100%;
+    }
+}
+
+.only-mobile {
+    display: none;
+}
+
+.only-desktop {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .only-mobile {
+        display: block;
+    }
+    .only-desktop {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 480px) {
