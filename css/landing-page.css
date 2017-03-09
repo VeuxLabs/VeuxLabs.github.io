@@ -1658,21 +1658,21 @@ p.copyright {
     }
 }
 
-.content .small-image {
+.content.work .small-image {
     display: inline-block;
     float: left;
 }
 
-.content .app-logo {
+.content.work .app-logo {
     margin: 0 auto;
 }
 
-.content .button-top {
+.content.work .button-top {
     margin: 35px auto;
     display: block;
 }
 
-.content h1.title {
+.content.work h1.title {
     background-color: transparent;
     text-transform: none;
     font-size: 40px;
@@ -1684,7 +1684,7 @@ p.copyright {
     padding-left: 0;
 }
 
-.content p span {
+.content.work p span {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
@@ -1694,7 +1694,7 @@ p.copyright {
     text-transform: uppercase;
 }
 
-.content p {
+.content.work p {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
@@ -1704,7 +1704,7 @@ p.copyright {
     margin-bottom: 30px;
 }
 
-.content .img-description {
+.content.work .img-description {
     font-family: 'Ubuntu';
     font-size: 14px;
     font-weight: 300;
