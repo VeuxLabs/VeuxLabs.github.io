@@ -294,9 +294,16 @@ h6 {
 }
 
 .research .section2 img{
-    margin-top: -130px;
+    margin-top: -190px;
     padding-bottom: 45px;
     float: right;
+}
+
+@media (max-width: 480px) {
+    .research .section2 img {
+        margin-top: -110px;
+        padding-bottom: 0;
+    }
 }
 
 .research h2 {
@@ -351,9 +358,15 @@ h6 {
     }
 }
 
-.design .design-img{
+.design .design-img {
     margin-top: -105px;
     padding-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+    .design .design-img { 
+        padding-bottom: 0;
+    }
 }
 
 .design h2{
@@ -1441,7 +1454,7 @@ p.copyright {
        padding-right: 15px;
     }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
     .support .fixed-div {
        padding-left: 30px;
        padding-right: 30px;
