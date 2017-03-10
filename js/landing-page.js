@@ -74,7 +74,7 @@ $(document).ready(function(){
     }); 
 }); 
 
- $('#back-to-top').on('click', function (e) {
+ $('#back-to-top, #back-to-top2').on('click', function (e) {
     e.preventDefault();
     $('html,body').animate({
         scrollTop: 0
