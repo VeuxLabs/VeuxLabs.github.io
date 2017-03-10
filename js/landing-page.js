@@ -69,7 +69,8 @@ $(window).scroll(function() {
 $(document).ready(function(){ 
     var j = jQuery.noConflict(); 
     $('.bxslider').bxSlider({
-        pager: false
+        pager: false,
+        adaptiveHeight: true
     }); 
 }); 
 
