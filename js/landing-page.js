@@ -69,11 +69,12 @@ $(window).scroll(function() {
 $(document).ready(function(){ 
     var j = jQuery.noConflict(); 
     $('.bxslider').bxSlider({
-        pager: false
+        pager: false,
+        adaptiveHeight: true
     }); 
 }); 
 
- $('#back-to-top').on('click', function (e) {
+ $('#back-to-top, #back-to-top2').on('click', function (e) {
     e.preventDefault();
     $('html,body').animate({
         scrollTop: 0
