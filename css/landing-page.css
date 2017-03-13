@@ -1733,23 +1733,23 @@ p.copyright {
     margin: 0 auto;
 }
 
-#back-to-top {
+#back-to-top, #back-to-top2  {
     width: 7%;
 }
 
 @media (max-width: 768px) {
-    #back-to-top {
+    #back-to-top, #back-to-top2  {
         width: 12%;
     }
 }
 
 @media (max-width: 768px) {
-    #back-to-top {
+    #back-to-top, #back-to-top2   {
         width: 15%;
     }
 }
 
-#back-to-top:hover {
+#back-to-top:hover, #back-to-top2:hover {
     cursor: pointer;
 }
 
