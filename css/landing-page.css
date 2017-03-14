@@ -66,8 +66,13 @@ h6 {
     display: table-cell;
     width: 100%;
 }
-.container>.navbar-header {
-    position: absolute;
+@media (max-width: 768px) {
+    .container>.navbar-header {
+        padding: 0 5%;
+        margin-left: 0;
+        margin-right: 0;
+        position: absolute;
+    }
 }
 .navbar.navbar-default.navbar-fixed-top .container {
     display: table;
@@ -86,7 +91,6 @@ h6 {
     border-width: 0 0 0;
     max-width: 1120px;
     margin: 0 auto;
-    /*height: 100%;*/
 }
 
 @media (min-width: 768px) {
@@ -100,14 +104,20 @@ h6 {
         margin-left: 15px;
     }
 }
+
+.navbar-default .navbar-toggle {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 @media (max-width: 767px) {
     .navbar-default .navbar-collapse {
         background-color: rgba(0,0,0,0.6);
     }
-}
-.navbar-default .navbar-toggle {
-    margin-left: 15px;
-    margin-right: 15px;
+    .navbar-default .navbar-toggle {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -213,6 +223,13 @@ h6 {
     padding-right: 0;
 }
 
+@media (max-width: 480px) {
+    .intro-header .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
 .intro-header .container h2 {
     font-family: 'Ubuntu';
     font-size: 18px;
@@ -249,6 +266,16 @@ h6 {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 110px;
+}
+
+@media (max-width: 480px) {
+   .services > div {
+        padding-left: 0;
+        padding-right: 0;
+    } 
+    .services > div img {
+        width: 600px;
+    }
 }
 
 .services .fit{
@@ -308,8 +335,9 @@ h6 {
 
 @media (max-width: 480px) {
     .research .section2 img {
-        margin-top: -110px;
+        margin-top: -55px;
         padding-bottom: 0;
+        float: none;
     }
 }
 
@@ -406,8 +434,6 @@ h6 {
 
 .app-dev {
     color: #ffffff;
-    padding-left: -30px;
-    padding-right: -30px;
 }
 
 .app-dev .dev-img {
@@ -833,14 +859,19 @@ footer {
 }
 
 footer .first-row {
-    height: 248px;
+    min-height: 248px;
     background-color: #2591bf;
 }
 footer .first-row .col-md-12 {
-    float: left;
     margin: 0 auto;
     padding: 65px 20px;
     background-color: #2591bf;
+}
+
+@media (max-width: 768px) {
+    footer .first-row .col-md-12 {
+        padding: 65px 30px;
+    }
 }
 
 footer .first-row .text {
@@ -898,11 +929,6 @@ footer .separator {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-    footer .separator { 
-    }
-}
-
 footer .second-row .row {
     margin-left: 0;
     margin-right: 0;
@@ -911,6 +937,13 @@ footer .second-row .row {
 @media only screen and (min-width: 767px) {
     footer .second-row .row {
         margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer .second-row .row {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -958,6 +991,9 @@ footer .row.logos ul {
     footer .row.logos li {
         width: 20%;
     }
+    p.copyright {
+        margin-left: 10px;
+    }
 }
 
 @media only screen and (max-width: 1200px) { 
@@ -976,7 +1012,7 @@ footer .row.logos ul {
 }
 
 p.copyright {
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -1474,10 +1510,10 @@ p.copyright {
         padding-bottom: 200px;
     }
     .project-management img {
-        margin-top: -75px;
-        margin-left: 80px;
+        margin-top: -110px;
+        margin-left: auto;
         margin-bottom: 0;
-        width: 60%;
+        width: 85%;
     }
     .project-management h2 {
         margin-top: 60px;
@@ -1616,8 +1652,8 @@ p.copyright {
     }
     .support img {
         margin-top: -35px;
-        margin-left: 0;
-        width: auto;
+        margin-left: 15px;
+        width: 85%;
     }
     .support h2 {
         font-family: 'Ubuntu';
