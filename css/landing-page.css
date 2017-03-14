@@ -877,13 +877,31 @@ footer .first-row .button button {
 }
 
 footer .second-row {
-    height: 277px;
+    min-height: 277px;
     background-color: #4e4b49;
     float: left;
     width: 100%;
     position: relative;
 }
 
+footer .separator {
+    float: left;
+    background-color: white;
+    width: 1px;
+    height: 80px;
+    margin-top: 25px;
+}
+
+@media (max-width: 992px) {
+    footer .separator { 
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    footer .separator { 
+    }
+}
 
 footer .second-row .row {
     margin-left: 0;
@@ -898,10 +916,6 @@ footer .second-row .row {
 
 footer .second-row .row a {
     color: white;
-}
-
-footer .second-row p {
-   margin: 10px 15px;
 }
 
 footer .second-row ul {
@@ -925,6 +939,12 @@ footer .row.logos li {
 
 footer .row.logos ul {
     margin: 10px 0;
+}
+
+@media only screen and (max-width: 1013px) {
+    footer .row.logos .col-md-3 {
+        width: initial;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1307,6 +1327,7 @@ p.copyright {
     margin-bottom: 30px;
     float: left;
     width: 100%;
+    padding-left: 0;
 }
 
 .our-team.contact .office i {
@@ -1333,6 +1354,45 @@ p.copyright {
 
 .our-team.contact .office div {
     padding-left: 0;
+}
+
+.office {
+    color: white;
+    margin-bottom: 30px;
+    float: left;
+    padding-left: 30px;
+}
+
+.office i {
+    margin-right: 15px;
+}
+
+.office span {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.office h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.office div {
+    padding-left: 0;
+}
+
+@media (max-width: 992px) {
+    .office {
+        display: none;
+    }
 }
 
 #mc_embed_signup {
