@@ -412,8 +412,8 @@ h6 {
 
 .app-dev .dev-img {
     background: url(../img/residentialTreeBackground2.svg) repeat-x 0 100% #ffffff;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: -15px;
     margin-right: -15px;
     min-height: 199px;
@@ -421,12 +421,26 @@ h6 {
 
 .app-dev .dev-img img{
     display: inline-block;
-    margin-top: -60px;
+    
 }
 
 @media only screen and (max-width: 650px) {
+    .app-dev .dev-img { 
+        background-position-y: 15px; 
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .app-dev .dev-img {
+        background-position-y: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
     .app-dev .dev-img img {
-        margin-top: -90px;
+        margin-top: 20px;
+        margin-bottom: -120px;
     }
 }
 
@@ -575,10 +589,8 @@ h6 {
     }
     .app-dev .dev-img img {
         width: 80%;
-        max-width: 500px;
         padding-left: 60px;
         padding-right: 60px;
-        display: block;
     }
 }
 
@@ -662,6 +674,7 @@ h6 {
     .design .section3-text {
         width: 469px;
         float: right;
+        margin-right: 45px;
     }
     .design h2 {
         font-size: 18px;
@@ -691,6 +704,7 @@ h6 {
         z-index: 1;
         width: 531px;
         margin-left: 65px;
+        margin-top: 110px;
     }
     .app-dev h2 {
         font-size: 18px;
@@ -983,6 +997,9 @@ p.copyright {
     .product-development .col-lg-9 {
         width: 60%;
     }
+    .product .dev-img {
+        margin-left: 130px;
+    }
 }
 
 .product .dev-img {
@@ -1030,8 +1047,8 @@ p.copyright {
 }
 
 .product img.music {
-    width: 75%;
-    margin: -145px auto 10px auto;
+    width: 83%;
+    margin: -175px auto 10px auto;
     z-index: 100;
     position: relative;
 }
