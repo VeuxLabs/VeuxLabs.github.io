@@ -71,10 +71,17 @@ h6 {
 }
 .navbar.navbar-default.navbar-fixed-top .container {
     display: table;
-    width: 100%;
+    width: 89%;
     padding-left: 0;
     padding-right: 0;
 }
+
+@media (max-width: 768px) {
+    .navbar.navbar-default.navbar-fixed-top .container {
+        width: 100%;
+    }
+}
+
 .navbar-fixed-top {
     border-width: 0 0 0;
     max-width: 1120px;
@@ -143,7 +150,7 @@ h6 {
     background-size: cover;*/
     background-color: #2691bf;
     position: relative;
-    height: 532px;
+    height: 572px;
     padding-bottom: 30px;
 }
 
@@ -287,14 +294,14 @@ h6 {
     line-height: 1.56;
     letter-spacing: normal;
     color: #ffffff;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 65px;
+    padding-right: 65px;
     position: relative;
     background: url(../img/logisticsBackgroundCorner.svg) no-repeat 0 0 #2691bf;
 }
 
 .research .section2 img{
-    margin-top: -190px;
+    margin-top: -110px;
     padding-bottom: 45px;
     float: right;
 }
@@ -342,7 +349,7 @@ h6 {
 .research .squares-wrapper .blue-square {
     width: 90%;
     height: 124px;
-    background-color: #7bc4e3;
+    background-color: #56b2d9;
     display: inline-block;
 }
 
@@ -405,9 +412,10 @@ h6 {
 
 .app-dev .dev-img {
     background: url(../img/residentialTreeBackground2.svg) repeat-x 0 100% #ffffff;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-left: -15px;
     margin-right: -15px;
-    text-align: center;
     min-height: 199px;
 }
 
@@ -556,7 +564,7 @@ h6 {
     }
     .research .section2-text {
         width: 500px;
-        margin-top: -100px;
+        margin-top: 0;
     }
     .design .design-img img {
         width: 80%;
@@ -568,8 +576,8 @@ h6 {
     .app-dev .dev-img img {
         width: 80%;
         max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+        padding-left: 60px;
+        padding-right: 60px;
         display: block;
     }
 }
@@ -578,6 +586,9 @@ h6 {
     .navbar-fixed-top {
         left: 50%;
         margin-left: -560px;
+    }
+    .services .col-lg-6 {
+        padding-left: 0;
     }
     .services {
         padding-bottom: 200px;
@@ -612,7 +623,7 @@ h6 {
     .section2-text {
         width: 531px;
         padding-bottom: 360px;
-        margin-top: -150px;
+        margin-top: 0;
     }
     .research {
         position: relative;
@@ -673,13 +684,13 @@ h6 {
         width: 600px;
     }
     .app-dev .dev-img {
-        margin-left: -15px;
-        margin-right: -15px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
     .app-dev .section4-text {
         z-index: 1;
         width: 531px;
-        margin-left: 50px;
+        margin-left: 65px;
     }
     .app-dev h2 {
         font-size: 18px;
@@ -808,13 +819,13 @@ footer {
 }
 
 footer .first-row {
-    height: 393px;
+    height: 248px;
     background-color: #2591bf;
 }
 footer .first-row .col-md-12 {
     float: left;
     margin: 0 auto;
-    padding: 90px 20px;
+    padding: 65px 20px;
     background-color: #2591bf;
 }
 
@@ -832,13 +843,13 @@ footer .first-row .text {
 
 footer .first-row .button {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 footer .first-row .button button {
-    max-width:  320px;
+    max-width:  250px;
     width: 70%;
-    height: 60px;
+    height: 45px;
     border-radius: 7px;
     background-color: #ffffff;
     font-family: 'Ubuntu';
@@ -852,7 +863,7 @@ footer .first-row .button button {
 }
 
 footer .second-row {
-    height: 393px;
+    height: 277px;
     background-color: #4e4b49;
     float: left;
     width: 100%;
@@ -867,7 +878,7 @@ footer .second-row .row {
 
 @media only screen and (min-width: 767px) {
     footer .second-row .row {
-        margin-left: 30px;
+        margin-left: 60px;
     }
 }
 
@@ -977,8 +988,9 @@ p.copyright {
 .product .dev-img {
     background: none;
     margin-left: 0;
-    margin-right: 0;
     min-height: 0;
+    text-align: right;
+    margin-right: 32px;
 }
 
 .product-development {
@@ -995,7 +1007,6 @@ p.copyright {
         padding-right: 30px;
     }
 }
-
 
 .product-development-items {
     padding-left: 10px;
@@ -1019,15 +1030,15 @@ p.copyright {
 }
 
 .product img.music {
-    width: 55%;
-    margin: -100px auto 70px auto;
+    width: 75%;
+    margin: -145px auto 10px auto;
     z-index: 100;
     position: relative;
 }
 
 @media only screen and (max-width: 992px) and (min-width: 480px)  {
     .product img.music {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -1045,8 +1056,8 @@ p.copyright {
         line-height: 28px;
     }
     .product img.music {
-        width: 90%;
-        margin: -130px auto 70px auto;
+        width: 100%;
+        margin: -95px auto 10px auto;
     }
 }
 
@@ -1192,8 +1203,8 @@ p.copyright {
 }
 
 .project-management img {
-    width: 50%;
-    margin: -190px auto 70px auto;
+    width: 60%;
+    margin: -223px auto 70px auto;
 }
 
 .project-management {
@@ -1202,7 +1213,7 @@ p.copyright {
     font-weight: 300;
     color: white;
     line-height: 50px;
-    padding-bottom: 645px;
+    padding-bottom: 545px;
 }
 
 .project-management h2 {
@@ -1443,8 +1454,7 @@ p.copyright {
 
 @media only screen and (min-width: 1200px) {
     .support .fixed-div {
-        margin-bottom: 100px;
-        padding-left: 50px;
+        padding-left: 65px;
     }
 }
 
@@ -1470,7 +1480,7 @@ p.copyright {
 }
 .support img {
     margin-top: 60px;
-    margin-left: 10%;
+    margin-left: 65px;
     width: 55%;
 }
 .support h2 {
@@ -1496,11 +1506,6 @@ p.copyright {
     margin-bottom: 100px;
 }
 
- @media only screen and (min-width: 1200px) { 
-    .support-top { 
-        margin-bottom: -100px;
-    }
- }
 
  @media only screen and (min-width: 900px) { 
     .support-top {
