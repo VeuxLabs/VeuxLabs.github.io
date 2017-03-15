@@ -1862,6 +1862,14 @@ p.copyright {
     margin: 0 auto;
 }
 
+.content .bx-wrapper a img {
+    margin: 0;
+}
+
+.content.work .content {
+    padding: 40px 60px;
+}
+
 #back-to-top, #back-to-top2  {
     width: 7%;
 }
