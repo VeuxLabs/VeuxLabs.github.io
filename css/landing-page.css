@@ -449,16 +449,19 @@ h6 {
     min-height: 199px;
 }
 
-.app-dev .dev-img img{
+.app-dev .dev-img img {
     display: inline-block;
     
 }
 
 @media only screen and (max-width: 650px) {
     .app-dev .dev-img { 
-        background-position-y: 15px; 
-        padding-left: 30px;
-        padding-right: 30px;
+        background-position-y: 110px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .app-dev .dev-img img {
+        margin-bottom: -65px;
     }
 }
 
@@ -523,8 +526,8 @@ h6 {
 
 @media(max-width:1199px) {
     .services, .research, .design{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .services .col-lg-6:nth-child(2) {
         padding-left: 0;
@@ -770,8 +773,9 @@ h6 {
         padding-right: 0;
     } 
     .app-dev .section4-text {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 80px;
     }
 }
 
@@ -944,19 +948,19 @@ footer .second-row .row {
     }
 }
 
-@media only screen and (max-width: 480px) {
-    footer .second-row .row {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
 footer .second-row .row a {
     color: white;
 }
 
 footer .second-row ul {
     margin: 30px 0;
+}
+
+@media only screen and (max-width: 480px) {
+    footer .col-md-8 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 footer .second-row li {
@@ -981,6 +985,8 @@ footer .row.logos ul {
 @media only screen and (max-width: 1013px) {
     footer .row.logos .col-md-3 {
         width: initial;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -1080,8 +1086,8 @@ p.copyright {
 @media only screen and (max-width: 992px) {
     .product-development {
         padding-bottom: 0;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -1320,6 +1326,15 @@ p.copyright {
 
 .project-management .container {
     width: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .project-management .container .col-xs-12 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }   
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1509,7 +1524,7 @@ p.copyright {
  
  @media only screen and (max-width: 480px) {
     .project-management { 
-        margin-top: 140px;
+        margin-top: 185px;
         padding-bottom: 200px;
     }
     .project-management img {
@@ -1576,12 +1591,7 @@ p.copyright {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .support .fixed-div {
-       padding-left: 15px;
-       padding-right: 15px;
-    }
-}
+
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
     .support .fixed-div {
        padding-left: 30px;
@@ -1656,8 +1666,8 @@ p.copyright {
         padding-right: 0;
     }
     .support img {
-        margin-top: -35px;
-        margin-left: 15px;
+        margin-top: 3px;
+        margin-left: 10px;
         width: 85%;
     }
     .support h2 {
