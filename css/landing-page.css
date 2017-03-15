@@ -1694,10 +1694,16 @@ p.copyright {
 }
 
 .content, .our-team {
-    padding: 40px;
+    padding: 40px 80px;
     float: left;
     background-color: white;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .content, .our-team {
+        padding: 40px;
+    }
 }
 
 .content.experience {
@@ -1981,6 +1987,9 @@ p.copyright {
      .our-team .show-more button {
         display: none;
     }
+    .graphic img  {
+        width: 730px;
+    }
 }
 
 .graphic img {
@@ -2044,11 +2053,16 @@ footer .logos img {
 
 @media only screen and (min-width: 1200px) {
     .veux-team .col-lg-2, .content .logos .col-lg-2 {
-        width: 18.6%;
-        margin: 20px 5px;
+        width: 20%;
+        margin: 20px 0;
+        padding: 0;
+        min-height: 285px;
     }
 }
 
+.content .logos .col-lg-2 {
+    min-height: auto;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .content .logos .col-md-2 {
@@ -2069,41 +2083,63 @@ footer .logos img {
     }
 }
 
-.veux-team .circle {
-    width: 114px;
-    height: 114px;
-    background-color: #7bcaec;
-    -moz-border-radius: 60px;
-    -webkit-border-radius: 60px;
-    border-radius: 60px;
+.veux-team .circle img {
+    width: 150px;
     margin: 0 auto;
 }
 
 .veux-team .details {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 140px;
+    margin: 20px auto;
 }
 
 .veux-team .details span {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.67;
+    line-height: 30px;
     letter-spacing: 0.5px;
     text-align: center;
     color: #ffffff;
     display: block;
 }
 
+.veux-team .details span.name {
+    font-weight: 500;
+}
+.content.partners {
+    padding-bottom: 90px;
+}
+
+.v-team {
+    padding-top: 0;
+}
+
+.v-team > img {
+    width: 96%;
+    margin-top: -80px;
+}
+
+@media (max-width: 1130px) {
+    .v-team > img {
+        margin-top: -8.3%;
+    }
+}
+
 .oval {
-    width: 225px;
-    height: 225px;
+    width: 100%;
+    height: 279px;
     background-color: #7bcaec;
     -moz-border-radius: 120px;
     -webkit-border-radius: 120px;
     border-radius: 120px;
     display: inline-block;
-    margin: 0px 70px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+.oval img {
+    height: 279px;
 }
 
 .oval .name {
@@ -2112,38 +2148,34 @@ footer .logos img {
 }
 
 @media only screen and (max-width: 630px) {
-    .oval {
-        margin: 0px 5px;
-        width: 220px;
-        height: 220px;
-    }
     .oval .name {
         top: 180px;
     }
 }
 
 @media only screen and (max-width: 430px) {
-    .oval {
-        width: 220px;
-        height: 220px;
-    }
     .oval .name {
         top: 130px;
     }
 }
 
+@media only screen and (max-width: 850px) {
+    .oval img {
+        margin: 0 auto;
+    }
+}
+
 .circles {
-    text-align: center;
     margin: 70px 0 105px;
 }
 
-/*
-.circles.open > div {
-    width: 100%;
-    /*transition-duration: 0.5s;*/
-    /*transition-timing-function: linear;
-    transition-property: width;*/
-/* } */
+.circles .left {
+    float: left;
+}
+
+.circles .right {
+    float: right;
+}
 
 .circles.open > div .desc{
     display: block;
@@ -2183,10 +2215,9 @@ footer .logos img {
 
 @media only screen and (min-width: 845px) {
     .circles > div {
-        width: 45%;
+        width: 47%;
         display: inline-table;
-        margin-right: 30px;
-        float: none;
+        margin-right: 0px;
     }
 }
 
