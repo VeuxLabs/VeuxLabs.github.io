@@ -74,6 +74,11 @@ h6 {
         position: absolute;
     }
 }
+@media (max-width: 480px) {
+    .container>.navbar-header {
+        padding: 0;
+    }
+}
 .navbar.navbar-default.navbar-fixed-top .container {
     display: table;
     width: 89%;
@@ -95,7 +100,6 @@ h6 {
 
 @media (min-width: 768px) {
     .navbar-nav.navbar-right:last-child {
-        margin-right: 15px;
     }
     .navbar-header .logo {
         margin-left: 15px;
@@ -1335,6 +1339,7 @@ p.copyright {
 
 .content .map {
     margin: 20px auto;
+    width: 100%;
 }
 
 .contact h1 {
@@ -1365,6 +1370,7 @@ p.copyright {
     float: left;
     width: 100%;
     padding-left: 0;
+    display: block;
 }
 
 .our-team.contact .office i {
