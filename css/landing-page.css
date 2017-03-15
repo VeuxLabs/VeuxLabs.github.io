@@ -66,8 +66,18 @@ h6 {
     display: table-cell;
     width: 100%;
 }
-.container>.navbar-header {
-    position: absolute;
+@media (max-width: 768px) {
+    .container>.navbar-header {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        position: absolute;
+    }
+}
+@media (max-width: 480px) {
+    .container>.navbar-header {
+        padding: 0;
+    }
 }
 .navbar.navbar-default.navbar-fixed-top .container {
     display: table;
@@ -86,12 +96,10 @@ h6 {
     border-width: 0 0 0;
     max-width: 1120px;
     margin: 0 auto;
-    /*height: 100%;*/
 }
 
 @media (min-width: 768px) {
     .navbar-nav.navbar-right:last-child {
-        margin-right: 15px;
     }
     .navbar-header .logo {
         margin-left: 15px;
@@ -100,14 +108,20 @@ h6 {
         margin-left: 15px;
     }
 }
+
+.navbar-default .navbar-toggle {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 @media (max-width: 767px) {
     .navbar-default .navbar-collapse {
         background-color: rgba(0,0,0,0.6);
     }
-}
-.navbar-default .navbar-toggle {
-    margin-left: 15px;
-    margin-right: 15px;
+    .navbar-default .navbar-toggle {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -213,6 +227,13 @@ h6 {
     padding-right: 0;
 }
 
+@media (max-width: 480px) {
+    .intro-header .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
 .intro-header .container h2 {
     font-family: 'Ubuntu';
     font-size: 18px;
@@ -249,6 +270,16 @@ h6 {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 110px;
+}
+
+@media (max-width: 480px) {
+   .services > div {
+        padding-left: 0;
+        padding-right: 0;
+    } 
+    .services > div img {
+        width: 600px;
+    }
 }
 
 .services .fit{
@@ -308,8 +339,9 @@ h6 {
 
 @media (max-width: 480px) {
     .research .section2 img {
-        margin-top: -110px;
+        margin-top: -55px;
         padding-bottom: 0;
+        float: none;
     }
 }
 
@@ -406,8 +438,6 @@ h6 {
 
 .app-dev {
     color: #ffffff;
-    padding-left: -30px;
-    padding-right: -30px;
 }
 
 .app-dev .dev-img {
@@ -419,16 +449,19 @@ h6 {
     min-height: 199px;
 }
 
-.app-dev .dev-img img{
+.app-dev .dev-img img {
     display: inline-block;
     
 }
 
 @media only screen and (max-width: 650px) {
     .app-dev .dev-img { 
-        background-position-y: 15px; 
-        padding-left: 30px;
-        padding-right: 30px;
+        background-position-y: 110px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .app-dev .dev-img img {
+        margin-bottom: -65px;
     }
 }
 
@@ -439,8 +472,8 @@ h6 {
         padding-right: 60px;
     }
     .app-dev .dev-img img {
-        margin-top: 20px;
-        margin-bottom: -120px;
+        margin-top: -25px;
+        margin-bottom: -290px;
     }
 }
 
@@ -493,8 +526,8 @@ h6 {
 
 @media(max-width:1199px) {
     .services, .research, .design{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .services .col-lg-6:nth-child(2) {
         padding-left: 0;
@@ -704,7 +737,7 @@ h6 {
         z-index: 1;
         width: 531px;
         margin-left: 65px;
-        margin-top: 110px;
+        margin-top: 260px;
     }
     .app-dev h2 {
         font-size: 18px;
@@ -740,8 +773,9 @@ h6 {
         padding-right: 0;
     } 
     .app-dev .section4-text {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 80px;
     }
 }
 
@@ -833,14 +867,19 @@ footer {
 }
 
 footer .first-row {
-    height: 248px;
+    min-height: 248px;
     background-color: #2591bf;
 }
 footer .first-row .col-md-12 {
-    float: left;
     margin: 0 auto;
     padding: 65px 20px;
     background-color: #2591bf;
+}
+
+@media (max-width: 768px) {
+    footer .first-row .col-md-12 {
+        padding: 65px 30px;
+    }
 }
 
 footer .first-row .text {
@@ -898,11 +937,6 @@ footer .separator {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-    footer .separator { 
-    }
-}
-
 footer .second-row .row {
     margin-left: 0;
     margin-right: 0;
@@ -920,6 +954,13 @@ footer .second-row .row a {
 
 footer .second-row ul {
     margin: 30px 0;
+}
+
+@media only screen and (max-width: 480px) {
+    footer .col-md-8 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 footer .second-row li {
@@ -944,6 +985,8 @@ footer .row.logos ul {
 @media only screen and (max-width: 1013px) {
     footer .row.logos .col-md-3 {
         width: initial;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -957,6 +1000,9 @@ footer .row.logos ul {
     }
     footer .row.logos li {
         width: 20%;
+    }
+    p.copyright {
+        margin-left: 10px;
     }
 }
 
@@ -976,7 +1022,7 @@ footer .row.logos ul {
 }
 
 p.copyright {
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -1040,8 +1086,8 @@ p.copyright {
 @media only screen and (max-width: 992px) {
     .product-development {
         padding-bottom: 0;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -1226,6 +1272,7 @@ p.copyright {
     background-color: white;
     padding-left: 0;
     padding-right: 0;
+    background-position-y: 45px;
 }
 
 
@@ -1241,7 +1288,7 @@ p.copyright {
 
 .project-management img {
     width: 60%;
-    margin: -223px auto 70px auto;
+    margin: -200px auto 70px auto;
 }
 
 .project-management {
@@ -1279,6 +1326,15 @@ p.copyright {
 
 .project-management .container {
     width: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .project-management .container .col-xs-12 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }   
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1298,6 +1354,7 @@ p.copyright {
 
 .content .map {
     margin: 20px auto;
+    width: 100%;
 }
 
 .contact h1 {
@@ -1328,6 +1385,7 @@ p.copyright {
     float: left;
     width: 100%;
     padding-left: 0;
+    display: block;
 }
 
 .our-team.contact .office i {
@@ -1395,17 +1453,13 @@ p.copyright {
     }
 }
 
-#mc_embed_signup {
-    padding: 20px;
-}
-
 #mc_embed_signup form {
     padding-left: 0 !important;
 }
 
 #mc_embed_signup h1 {
    color: #4e4b4a;
-   font-size: 30px;
+   font-size: 40px;
    margin: 30px 0 60px;
 }
 
@@ -1451,7 +1505,7 @@ p.copyright {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
 }
 
     
@@ -1470,14 +1524,14 @@ p.copyright {
  
  @media only screen and (max-width: 480px) {
     .project-management { 
-        margin-top: 140px;
+        margin-top: 185px;
         padding-bottom: 200px;
     }
     .project-management img {
-        margin-top: -75px;
-        margin-left: 80px;
+        margin-top: -110px;
+        margin-left: auto;
         margin-bottom: 0;
-        width: 60%;
+        width: 85%;
     }
     .project-management h2 {
         margin-top: 60px;
@@ -1496,7 +1550,7 @@ p.copyright {
 
  @media only screen and (min-width: 480px) and (max-width: 991px) {
     .project-management {
-        margin-top: 135px;
+        margin-top: 185px;
         padding-bottom: 450px;
     }
     .project-management img {
@@ -1527,6 +1581,8 @@ p.copyright {
     background-color: white;
     float: left;
     width: 100%;
+    margin-top: -110px;
+    padding-top: 90px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1535,12 +1591,7 @@ p.copyright {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .support .fixed-div {
-       padding-left: 15px;
-       padding-right: 15px;
-    }
-}
+
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
     .support .fixed-div {
        padding-left: 30px;
@@ -1556,10 +1607,17 @@ p.copyright {
     padding-bottom: 0;
 }
 .support img {
-    margin-top: 60px;
+    margin-top: 45px;
     margin-left: 65px;
     width: 55%;
 }
+    
+@media (min-width: 480px) and (max-width: 768px) {
+    .support img {
+        margin-top: 72px;
+    }
+}
+
 .support h2 {
     font-family: 'Ubuntu';
     font-size: 18px;
@@ -1615,9 +1673,9 @@ p.copyright {
         padding-right: 0;
     }
     .support img {
-        margin-top: -35px;
-        margin-left: 0;
-        width: auto;
+        margin-top: -3px;
+        margin-left: 10px;
+        width: 85%;
     }
     .support h2 {
         font-family: 'Ubuntu';
@@ -1645,6 +1703,12 @@ p.copyright {
     }
 }
 
+ @media only screen and (max-width: 405px) { 
+     .support img { 
+        margin-top: 15px;
+    }
+}
+
 /* Internal pages */
 
 .internal .app-dev {
@@ -1655,10 +1719,16 @@ p.copyright {
 }
 
 .content, .our-team {
-    padding: 40px;
+    padding: 40px 80px;
     float: left;
     background-color: white;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .content, .our-team {
+        padding: 40px;
+    }
 }
 
 .content.experience {
@@ -1815,6 +1885,14 @@ p.copyright {
     margin: 0 auto;
 }
 
+.content .bx-wrapper a img {
+    margin: 0;
+}
+
+.content.work .content {
+    padding: 40px 60px;
+}
+
 #back-to-top, #back-to-top2  {
     width: 7%;
 }
@@ -1942,6 +2020,9 @@ p.copyright {
      .our-team .show-more button {
         display: none;
     }
+    .graphic img  {
+        width: 730px;
+    }
 }
 
 .graphic img {
@@ -2005,11 +2086,16 @@ footer .logos img {
 
 @media only screen and (min-width: 1200px) {
     .veux-team .col-lg-2, .content .logos .col-lg-2 {
-        width: 18.6%;
-        margin: 20px 5px;
+        width: 20%;
+        margin: 20px 0;
+        padding: 0;
+        min-height: 285px;
     }
 }
 
+.content .logos .col-lg-2 {
+    min-height: auto;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .content .logos .col-md-2 {
@@ -2030,41 +2116,63 @@ footer .logos img {
     }
 }
 
-.veux-team .circle {
-    width: 114px;
-    height: 114px;
-    background-color: #7bcaec;
-    -moz-border-radius: 60px;
-    -webkit-border-radius: 60px;
-    border-radius: 60px;
+.veux-team .circle img {
+    width: 150px;
     margin: 0 auto;
 }
 
 .veux-team .details {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 140px;
+    margin: 20px auto;
 }
 
 .veux-team .details span {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.67;
+    line-height: 30px;
     letter-spacing: 0.5px;
     text-align: center;
     color: #ffffff;
     display: block;
 }
 
+.veux-team .details span.name {
+    font-weight: 500;
+}
+.content.partners {
+    padding-bottom: 90px;
+}
+
+.v-team {
+    padding-top: 0;
+}
+
+.v-team > img {
+    width: 96%;
+    margin-top: -80px;
+}
+
+@media (max-width: 1130px) {
+    .v-team > img {
+        margin-top: -8.3%;
+    }
+}
+
 .oval {
-    width: 225px;
-    height: 225px;
+    width: 100%;
+    height: 279px;
     background-color: #7bcaec;
     -moz-border-radius: 120px;
     -webkit-border-radius: 120px;
     border-radius: 120px;
     display: inline-block;
-    margin: 0px 70px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+.oval img {
+    height: 279px;
 }
 
 .oval .name {
@@ -2073,38 +2181,34 @@ footer .logos img {
 }
 
 @media only screen and (max-width: 630px) {
-    .oval {
-        margin: 0px 5px;
-        width: 220px;
-        height: 220px;
-    }
     .oval .name {
         top: 180px;
     }
 }
 
 @media only screen and (max-width: 430px) {
-    .oval {
-        width: 220px;
-        height: 220px;
-    }
     .oval .name {
         top: 130px;
     }
 }
 
+@media only screen and (max-width: 850px) {
+    .oval img {
+        margin: 0 auto;
+    }
+}
+
 .circles {
-    text-align: center;
     margin: 70px 0 105px;
 }
 
-/*
-.circles.open > div {
-    width: 100%;
-    /*transition-duration: 0.5s;*/
-    /*transition-timing-function: linear;
-    transition-property: width;*/
-/* } */
+.circles .left {
+    float: left;
+}
+
+.circles .right {
+    float: right;
+}
 
 .circles.open > div .desc{
     display: block;
@@ -2144,10 +2248,9 @@ footer .logos img {
 
 @media only screen and (min-width: 845px) {
     .circles > div {
-        width: 45%;
+        width: 47%;
         display: inline-table;
-        margin-right: 30px;
-        float: none;
+        margin-right: 0px;
     }
 }
 
