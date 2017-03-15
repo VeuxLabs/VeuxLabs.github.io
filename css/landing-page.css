@@ -68,7 +68,7 @@ h6 {
 }
 @media (max-width: 768px) {
     .container>.navbar-header {
-        padding: 0 5%;
+        padding: 0;
         margin-left: 0;
         margin-right: 0;
         position: absolute;
@@ -1550,7 +1550,7 @@ p.copyright {
 
  @media only screen and (min-width: 480px) and (max-width: 991px) {
     .project-management {
-        margin-top: 135px;
+        margin-top: 185px;
         padding-bottom: 450px;
     }
     .project-management img {
@@ -1581,7 +1581,7 @@ p.copyright {
     background-color: white;
     float: left;
     width: 100%;
-    margin-top: -95px;
+    margin-top: -110px;
     padding-top: 90px;
 }
 
@@ -1611,6 +1611,13 @@ p.copyright {
     margin-left: 65px;
     width: 55%;
 }
+    
+@media (min-width: 480px) and (max-width: 768px) {
+    .support img {
+        margin-top: 72px;
+    }
+}
+
 .support h2 {
     font-family: 'Ubuntu';
     font-size: 18px;
@@ -1666,7 +1673,7 @@ p.copyright {
         padding-right: 0;
     }
     .support img {
-        margin-top: 3px;
+        margin-top: -3px;
         margin-left: 10px;
         width: 85%;
     }
@@ -1693,6 +1700,12 @@ p.copyright {
         line-height: 36px;
         letter-spacing: normal;
         color: #171616;
+    }
+}
+
+ @media only screen and (max-width: 405px) { 
+     .support img { 
+        margin-top: 15px;
     }
 }
 
