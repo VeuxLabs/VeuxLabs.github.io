@@ -321,10 +321,19 @@ h6 {
     background: url(../img/logisticsBackgroundCorner.svg) no-repeat 0 0 #2691bf;
 }
 
-.research .section2 img{
+.research .section2 img {
     margin-top: -110px;
     padding-bottom: 45px;
     float: right;
+}
+
+@media (max-width: 768px) {
+    .research .section2 img {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0;
+        float: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -381,7 +390,7 @@ h6 {
     }
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 992px) {
     .design {
         padding-bottom: 250px;
     }
@@ -405,8 +414,16 @@ h6 {
     line-height: 36px;
     margin-bottom: 0;
 }
+
 .design .design-img img{
     display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .design .design-img img {
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 .design h3{
@@ -440,18 +457,19 @@ h6 {
 }
 
 .app-dev .dev-img img {
-    display: inline-block;
-    
+    display: inline-block; 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 768px) and (min-width: 480px) {
     .app-dev .dev-img { 
         background-position-y: 110px;
         padding-left: 10px;
         padding-right: 10px;
+        text-align: center;
     }
     .app-dev .dev-img img {
         margin-bottom: -65px;
+        padding-left: 0;
     }
 }
 
@@ -459,11 +477,19 @@ h6 {
     .app-dev .dev-img {
         background-position-y: 100px;
         padding-left: 60px;
-        padding-right: 60px;
+        padding-right: 80px;
     }
     .app-dev .dev-img img {
         margin-top: -25px;
         margin-bottom: -290px;
+    }
+}
+
+@media only screen and (max-width: 480px)  {
+    .app-dev .dev-img img {
+        padding-left: 10px;
+        position: relative;
+        top: 55px;
     }
 }
 
@@ -516,7 +542,23 @@ h6 {
     }
 }
 
+
+@media(max-width:1199px) {
+    .research, .design {
+        padding-left: 55px;
+        padding-right: 70px;
+    }
+    .services .col-lg-6:nth-child(2) {
+        padding-left: 0;
+    }
+}
+
+
 @media(max-width:768px) {
+    .services, .research, .design {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .navbar-default .navbar-brand {
         display: none;
     }
@@ -524,16 +566,6 @@ h6 {
         float: none;
         position: absolute;
         top: 10px;
-    }
-}
-
-@media(max-width:1199px) {
-    .research, .design{
-        padding-left: 55px;
-        padding-right: 70px;
-    }
-    .services .col-lg-6:nth-child(2) {
-        padding-left: 0;
     }
 }
 
@@ -612,7 +644,7 @@ h6 {
     }
 }
 
-@media (min-width:600px) and (max-width:1200px) {
+@media (min-width:768px) and (max-width:1200px) {
     .research .section2 img {
         margin: -130px auto 0 auto;
         float: none;
@@ -741,10 +773,6 @@ h6 {
     .app-dev .dev-img img {
         width: 600px;
     }
-    .app-dev .dev-img {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
     .app-dev .section4-text {
         z-index: 1;
         width: 531px;
@@ -801,12 +829,12 @@ h6 {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1120px) {
     .app-dev .section4-text {
-        padding-left: 70px;
         padding-right: 70px;
         margin-top: 110px;
-        width: 531px;
+        width: 552px;
+        padding-left: 60px;
     }
 }
 
@@ -1111,6 +1139,12 @@ footer .copyright {
     margin-right: 0;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .product .dev-img {
+        text-align: center;
+    }
+}
+
 .product-development {
     padding-left: 20px;
     padding-right: 20px;
@@ -1164,7 +1198,7 @@ footer .copyright {
 
 @media only screen and (max-width: 768px) and (min-width: 480px)  {
     .product img.music {
-        width: 100%;
+        width: 75%;
         margin-top: -110px;
     }
 }
@@ -1184,7 +1218,9 @@ footer .copyright {
     }
     .product img.music {
         width: 100%;
-        margin: -95px auto 10px auto;
+        margin: -110px auto 60px auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -1381,18 +1417,15 @@ footer .copyright {
     }   
 }
 
-@media only screen and (min-width: 768px) {
-    .project-management .col-lg-6 {
-        width: 55%;
-        float: right;
-        padding-right: 20px;
-    }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .project-management .container {
         padding-left: 55px;
         padding-right: 55px;
+    }
+    .project-management .col-lg-6 {
+        width: 55%;
+        float: right;
+        padding-right: 20px;
     }
 }
 
@@ -1648,7 +1681,14 @@ footer .copyright {
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .support .fixed-div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
     .support .fixed-div {
         padding-left: 55px;
         padding-right: 60px;
@@ -1678,6 +1718,7 @@ footer .copyright {
 @media (min-width: 480px) and (max-width: 768px) {
     .support img {
         margin-top: 72px;
+        margin-left: 10px;
     }
 }
 
@@ -2117,6 +2158,12 @@ footer .copyright {
 
 footer .logos img {
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    footer .col-md-8 {
+        padding-left: 10px;
+    }
 }
 
 .veux-team { 
