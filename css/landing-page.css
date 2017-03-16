@@ -81,7 +81,7 @@ h6 {
 }
 .navbar.navbar-default.navbar-fixed-top .container {
     display: table;
-    width: 89%;
+    width: 86%;
     padding-left: 0;
     padding-right: 0;
 }
@@ -96,17 +96,6 @@ h6 {
     border-width: 0 0 0;
     max-width: 1120px;
     margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .navbar-nav.navbar-right:last-child {
-    }
-    .navbar-header .logo {
-        margin-left: 15px;
-    }
-    .navbar-header .logo-home {
-        margin-left: 15px;
-    }
 }
 
 .navbar-default .navbar-toggle {
@@ -268,7 +257,7 @@ h6 {
 .services {
     padding-top: 110px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 80px;
     padding-bottom: 110px;
 }
 
@@ -298,6 +287,7 @@ h6 {
     line-height: 26px;
     font-weight: 300;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .services h3 {
@@ -513,6 +503,19 @@ h6 {
     margin: 0 auto;
 }
 
+@media (max-width:1199px) {
+    .services {
+        padding-bottom: 200px;
+    }
+}
+
+@media (max-width:480px) {
+    .services {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 @media(max-width:768px) {
     .navbar-default .navbar-brand {
         display: none;
@@ -525,12 +528,19 @@ h6 {
 }
 
 @media(max-width:1199px) {
-    .services, .research, .design{
-        padding-left: 10px;
-        padding-right: 10px;
+    .research, .design{
+        padding-left: 55px;
+        padding-right: 70px;
     }
     .services .col-lg-6:nth-child(2) {
         padding-left: 0;
+    }
+}
+
+@media (max-width:480px) {
+    .research, .design{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -597,7 +607,7 @@ h6 {
 
 @media (min-width:482px) and (max-width:1200px) {
     .services .fit {
-        width: 80%;
+        width: 100%;
         max-width: 500px;
     }
 }
@@ -621,9 +631,10 @@ h6 {
         display: block;
     }
     .app-dev .dev-img img {
-        width: 80%;
-        padding-left: 60px;
+        width: 70%;
+        padding-left: 70px;
         padding-right: 60px;
+        margin-bottom: -110px;
     }
 }
 
@@ -654,7 +665,8 @@ h6 {
         color: #4e4b4a;
     }
     .services .section1-text {
-        width: 485px;
+        width: 490px;
+        padding-right: 0;
     }
     .research .section2 {
         text-align: center;
@@ -763,7 +775,17 @@ h6 {
     }
 }
 
+ .design .section3-text {
+    width: 45%;
+    float: right;
+}
+
 @media (max-width: 767px) {
+     .design .section3-text {
+        float: left;
+        width: 100%;
+     }
+
     .research .col-xs-12 {
         padding-left: 0;
         padding-right: 0;
@@ -781,8 +803,10 @@ h6 {
 
 @media (min-width: 768px) and (max-width: 1200px) {
     .app-dev .section4-text {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-top: 110px;
+        width: 531px;
     }
 }
 
@@ -1032,6 +1056,10 @@ p.copyright {
     text-align: left;
     color: #ffffff;
 }
+
+footer .copyright {
+    margin-left: 3px;
+}
  
 /* Home page Styling Sections */
 
@@ -1068,12 +1096,19 @@ p.copyright {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .product-development .col-lg-9 {
+        width: 75%;
+        float: right;
+    }
+}
+
 .product .dev-img {
     background: none;
     margin-left: 0;
     min-height: 0;
     text-align: right;
-    margin-right: 32px;
+    margin-right: 0;
 }
 
 .product-development {
@@ -1113,15 +1148,24 @@ p.copyright {
 }
 
 .product img.music {
-    width: 83%;
+    width: 75%;
     margin: -175px auto 10px auto;
     z-index: 100;
     position: relative;
 }
 
-@media only screen and (max-width: 992px) and (min-width: 480px)  {
+@media only screen and (max-width: 1200px) and (min-width: 768px)  {
+    .product img.music {
+        margin-top: -130px;
+        width: 80%;
+        padding-right: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px)  {
     .product img.music {
         width: 100%;
+        margin-top: -110px;
     }
 }
 
@@ -1337,13 +1381,18 @@ p.copyright {
     }   
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
     .project-management .col-lg-6 {
-        width: 51%;
+        width: 55%;
+        float: right;
+        padding-right: 20px;
     }
+}
 
-    .project-management .col-lg-5 {
-        width: 41%;
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .project-management .container {
+        padding-left: 55px;
+        padding-right: 55px;
     }
 }
 
@@ -1558,6 +1607,13 @@ p.copyright {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+    .product-development {
+        padding-left: 55px;
+        padding-right: 70px;
+    }
+}
+
 .support .bg-white {
     float: left;
     margin-left: 15px;
@@ -1594,8 +1650,15 @@ p.copyright {
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
     .support .fixed-div {
-       padding-left: 30px;
-       padding-right: 30px;
+        padding-left: 55px;
+        padding-right: 60px;
+    }
+}
+
+@media only screen (max-width: 480px) {
+    .support .fixed-div .col-xs-12 {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -1641,6 +1704,11 @@ p.copyright {
     margin-bottom: 100px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) { 
+    .support img {
+        margin-top: 60px;
+    }
+}
 
  @media only screen and (min-width: 900px) { 
     .support-top {
