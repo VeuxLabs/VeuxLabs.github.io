@@ -92,6 +92,12 @@ h6 {
     }
 }
 
+@media (max-width: 768px) {
+    .nav .underline {
+        text-decoration: underline;
+    }
+}
+
 .navbar-fixed-top {
     border-width: 0 0 0;
     max-width: 1120px;
@@ -119,6 +125,30 @@ h6 {
 
 .navbar-default .navbar-nav>li>a {
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .navbar-default .navbar-nav>li>a { 
+        color: #ffffff;
+        font-size: 28px;
+        font-family: 'Ubuntu';
+        padding: 7%;
+    }
+    .closeButton {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: url(../../img/closeButton.svg) no-repeat;
+        border: none;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .closeButton {
+        display: none;
+    }
 }
 
 .navbar-header .logo {
@@ -243,9 +273,19 @@ h6 {
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: transparent;
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-   color: #171616;
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+        color: #171616;
+    }
 }
+
+@media (max-width: 768px) {
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+        color: white;
+    }
+}
+
 
 .navbar-nav.navbar-right {
     text-transform: uppercase;
@@ -581,7 +621,7 @@ h6 {
         margin-right: 0;
     }
     .navbar-default .navbar-collapse {
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.8);
     }
 }
 
