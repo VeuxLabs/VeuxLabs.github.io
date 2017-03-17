@@ -1634,7 +1634,7 @@ footer .copyright {
     display: none;
 }
 
-.content.thankyou h1 {
+.content.thankyou h1, .content.notfound h1 {
     font-family: 'Ubuntu';
     font-size: 64px;
     font-weight: 300;
@@ -1646,7 +1646,11 @@ footer .copyright {
     color: #2691bf;
 }
 
-.content.thankyou h2 {
+.content.notfound h1 {
+    font-size: 48px;
+}
+
+.content.thankyou h2, .content.notfound h2 {
     font-family: 'Ubuntu';
     font-size: 40px;
     font-weight: 300;
@@ -1658,7 +1662,7 @@ footer .copyright {
     color: #777675;
 }
 
-.content.thankyou img {
+.content.thankyou img, .content.notfound img {
     margin: 0 auto;
 }
     
