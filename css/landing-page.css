@@ -1585,8 +1585,8 @@ footer .copyright {
 }
 
 .content.contact form input[type=checkbox] {
-    display: inline-block;
-    width: initial;
+    position: absolute;
+    left: -9999px;
     margin-right: 10px;
     margin-bottom: 20px;
     font-family: 'Ubuntu';
@@ -1595,6 +1595,15 @@ footer .copyright {
     line-height: 1.67;
     letter-spacing: 0.5px;
     color: #4e4b4a;
+}
+
+.content.contact form input[type="checkbox"] + label {
+    background: url(../../img/uncheckedBox.svg) 0px 3px no-repeat;
+    padding-left: 35px;
+    padding-top: 0;
+}
+.content.contact form input[type="checkbox"]:checked + label {
+    background: url('../../img/checkedBox.svg') 0px 3px no-repeat;
 }
 
 .content.contact .form {
@@ -1609,6 +1618,12 @@ footer .copyright {
     border-radius: 2px;
     background-color: #ffffff;
     border: solid 1px #b4b4b4;
+}
+
+.content.contact form button[disabled] {
+    background-color: #b4b4b4;
+    color: #dad9db;
+    border: none;
 }
     
 #mc_embed_signup .buttons, .content.contact form .buttons {

@@ -39,7 +39,7 @@ title: Contact
 <div class="content contact">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form">
 		<h1>Contact us about a project or a question </h1>
-		<form onsubmit="validate()" id="contactForm" accept-charset="UTF-8" action="https://formkeep.com/f/5ee5aaa4bf41" method="POST">
+		<form id="contactForm" accept-charset="UTF-8" action="https://formkeep.com/f/5ee5aaa4bf41" method="POST">
 		    
 		    <div>
 			    <label for="c-emailaddress">Email Address  <span class="asterisk">*</span> </label>
@@ -64,19 +64,28 @@ title: Contact
 
 	    	<div>
 		  	    <label for="reasonforcontact">What is this about?</label><br>
-		    	<input type="checkbox" name="ReasonForContact[]" value="User Experience Design">User Experience Design<br>
-				<input type="checkbox" name="ReasonForContact[]" value="User Research">User Research <br>
-				<input type="checkbox" name="ReasonForContact[]" value="App Development">App Development <br>
-				<input type="checkbox" name="ReasonForContact[]" value="General Question">General Question <br>
+
+		    	<input type="checkbox" id="userExperienceDesign" name="ReasonForContact[]" value="User Experience Design">
+		    	<label for="userExperienceDesign">User Experience Design</label> <br>
+
+				<input type="checkbox" id="userResearch" name="ReasonForContact[]" value="User Research"> 
+				<label for="userResearch">User Research</label> <br>
+
+				<input type="checkbox" id="appDevelopment" name="ReasonForContact[]" value="App Development">
+				<label for="appDevelopment">App Development </label> <br>
+
+				<input type="checkbox" id="generalQuestion" name="ReasonForContact[]" value="General Question">
+				<label for="generalQuestion">General Question  </label> <br>
 	    	</div>
 
 	    	<div>
 		  	    <label for="howcanwehelp">How can we help?</label><br>
 		  	    <textarea id="howcanwehelp" name="How Can We Help"></textarea>
-		  	 </div>
+		  	</div>
 					
-		  	<input type="hidden" name="utf8" value="✓">
-		  	<button class="buttons" type="submit">Submit</button>
+			  	<input type="hidden" name="utf8" value="✓">
+			  	<button id="contactButton" disabled="disabled" class="buttons" type="submit">Submit</button>
+
 		</form>
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form">
