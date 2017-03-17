@@ -92,6 +92,12 @@ h6 {
     }
 }
 
+@media (max-width: 768px) {
+    .nav .underline {
+        text-decoration: underline;
+    }
+}
+
 .navbar-fixed-top {
     border-width: 0 0 0;
     max-width: 1120px;
@@ -119,6 +125,30 @@ h6 {
 
 .navbar-default .navbar-nav>li>a {
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .navbar-default .navbar-nav>li>a { 
+        color: #ffffff;
+        font-size: 28px;
+        font-family: 'Ubuntu';
+        padding: 7%;
+    }
+    .closeButton {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: url(../../img/closeButton.svg) no-repeat;
+        border: none;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .closeButton {
+        display: none;
+    }
 }
 
 .navbar-header .logo {
@@ -243,9 +273,19 @@ h6 {
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: transparent;
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-   color: #171616;
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+        color: #171616;
+    }
 }
+
+@media (max-width: 768px) {
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+        color: white;
+    }
+}
+
 
 .navbar-nav.navbar-right {
     text-transform: uppercase;
@@ -581,7 +621,7 @@ h6 {
         margin-right: 0;
     }
     .navbar-default .navbar-collapse {
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.8);
     }
 }
 
@@ -1585,8 +1625,8 @@ footer .copyright {
 }
 
 .content.contact form input[type=checkbox] {
-    display: inline-block;
-    width: initial;
+    position: absolute;
+    left: -9999px;
     margin-right: 10px;
     margin-bottom: 20px;
     font-family: 'Ubuntu';
@@ -1595,6 +1635,15 @@ footer .copyright {
     line-height: 1.67;
     letter-spacing: 0.5px;
     color: #4e4b4a;
+}
+
+.content.contact form input[type="checkbox"] + label {
+    background: url(../../img/uncheckedBox.svg) 0px 3px no-repeat;
+    padding-left: 35px;
+    padding-top: 0;
+}
+.content.contact form input[type="checkbox"]:checked + label {
+    background: url('../../img/checkedBox.svg') 0px 3px no-repeat;
 }
 
 .content.contact .form {
@@ -1609,6 +1658,12 @@ footer .copyright {
     border-radius: 2px;
     background-color: #ffffff;
     border: solid 1px #b4b4b4;
+}
+
+.content.contact form button[disabled] {
+    background-color: #b4b4b4;
+    color: #dad9db;
+    border: none;
 }
     
 #mc_embed_signup .buttons, .content.contact form .buttons {

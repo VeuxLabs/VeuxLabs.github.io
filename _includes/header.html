@@ -21,18 +21,41 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">  
                 <li>
-                    <a class="page-scroll" href="/">Home</a>
+                    {% if page.title == 'veux labs' %}
+                        <a class="page-scroll underline" href="/">Home</a>
+                    {% endif %}
+                    {% if page.title != 'veux labs' %}
+                        <a class="page-scroll" href="/">Home</a>
+                    {% endif %}
                 </li>
                 <li>
-                    <a class="page-scroll" href="/work/">Work</a>
+                    {% if page.title == 'Work' %}
+                        <a class="page-scroll underline" href="/work/">Work</a>
+                    {% endif %}
+                    {% if page.title != 'Work' %}
+                        <a class="page-scroll" href="/work/">Work</a>
+                    {% endif %}
                 </li>
                 <li>
-                    <a class="page-scroll" href="/about">About</a>
+                    {% if page.title == 'About' %}
+                        <a class="page-scroll underline" href="/about/">About</a>
+                    {% endif %}
+                    {% if page.title != 'About' %}
+                        <a class="page-scroll" href="/about/">About</a>
+                    {% endif %}
                 </li>            
                 <li>
-                    <a class="page-scroll" href="/contact">Contact</a>
+                    {% if page.title == 'Contact' %}
+                        <a class="page-scroll underline" href="/contact/">Contact</a>
+                    {% endif %}
+                    {% if page.title != 'Contact' %}
+                        <a class="page-scroll" href="/contact/">Contact</a>
+                    {% endif %}
                 </li>
             </ul>
+            <button type="button" class="closeButton" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                
+            </button>
         </div>
         <!-- /.navbar-collapse -->
     </div>

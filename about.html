@@ -98,99 +98,8 @@ h_title: Veux Partners
 		Our partners have been leading product teams and product consulting firms, 
 		creating and innovating in consumer and business technology since 1998.
 	</div>
-	<div class="veux-team">
-		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-			<div class="circle">
-				<img class="img-responsive" src="../img/cesar.svg" />
-			</div>
-			<div class="details">
-				<span class="name" >Cesar </span>
-				<span > Lead iOS Developer </span>
-			</div>
-		</div>
-		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-			<div class="circle">
-				<img class="img-responsive" src="../img/daniel.svg" />
-			</div>
-			<div class="details">
-				<span class="name" >Daniel </span>
-				<span > Lead Android Developer </span>
-			</div>
-		</div>
-		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-			<div class="circle">
-				<img class="img-responsive" src="../img/miguel.svg" />
-			</div>
-			<div class="details">
-				<span class="name" >Miguel </span>
-				<span > iOS Developer</span>
-			</div>
-		</div>
-		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-			<div class="circle">
-				<img class="img-responsive" src="../img/josue.svg" />
-			</div>
-			<div class="details">
-				<span class="name" >Josue </span>
-				<span> Android Developer </span>
-			</div>
-		</div>
-		<span class="mobile">
-			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-				<div class="circle">
-					<img class="img-responsive" src="../img/esther.svg" />
-				</div>
-				<div class="details">
-					<span class="name" >Esther </span>
-					<span > UX Designer </span> 
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-				<div class="circle">
-					<img class="img-responsive" src="../img/jenn.svg" />
-				</div>
-				<div class="details">
-					<span class="name" >Jenn </span>
-					<span > UX Designer </span>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-				<div class="circle">
-					<img class="img-responsive" src="../img/chad.svg" />
-				</div>
-				<div class="details">
-					<span class="name" >Chad </span>
-					<span > UX Strategist </span> 
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-				<div class="circle">
-					<img class="img-responsive" src="../img/andre.svg" />
-				</div>
-				<div class="details">
-					<span class="name" >Andre </span>
-					<span > QA </span> 
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-				<div class="circle">
-					<img class="img-responsive" src="../img/danilo.svg" />
-				</div>
-				<div class="details">
-					<span class="name" >Danilo </span>
-					<span > Lead QA </span> 
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-				<div class="circle">
-					<img class="img-responsive" src="../img/eduardo.svg" />
-				</div>
-				<div class="details">
-					<span class="name" >Eduardo </span>
-					<span > Program Coordinator </span>
-				</div>
-			</div>
-		</span>
+	<div id="team" class="veux-team">
+		<!-- Filled with JS. -->
 	</div>
 	<div class="show-more">
 		<button onclick="showButton('team', this)"> Show More </button>
@@ -327,3 +236,63 @@ h_title: Veux Partners
         </div>
     </div>
 </div>
+
+
+<script type="text/javascript">
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+var avatars = [ 
+	{img: 'cesar.svg', job: 'Lead iOS Developer', name: 'Cesar' },
+	{img: 'daniel.svg', job: 'Lead Android Developer', name: 'Daniel' },
+	{img: 'miguel.svg', job: 'iOS Developer', name: 'Miguel' },
+	{img: 'josue.svg', job: 'Android Developer', name: 'Josue' },
+	{img: 'esther.svg', job: 'UX Designer', name: 'Esther' },
+	{img: 'jenn.svg', job: 'UX Designer', name: 'Jenn' },
+	{img: 'chad.svg', job: 'UX Strategist', name: 'Chad' },
+	{img: 'andre.svg', job: 'QA', name: 'Andre' },
+	{img: 'danilo.svg', job: 'Lead QA', name: 'Danilo' },
+	{img: 'eduardo.svg', job: 'Program Coordinator', name: 'Eduardo' },
+];
+
+avatars = shuffle(avatars);
+var output= "";
+
+for (var i = 0; i < avatars.length; i++) {
+	if (i == 4) {
+		output+='<span class="mobile">';
+	} else {
+		if (i == avatars.length) {
+			output+='</span>';
+		}
+	}
+	output += 
+	'<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">' +
+		'<div class="circle">' +
+			'<img class="img-responsive" src="../img/' + avatars[i].img + '" />' +
+		'</div>' +
+		'<div class="details">' +
+			'<span class="name" >' + avatars[i].name + ' </span> '+
+			'<span> ' + avatars[i].job + '</span>' +
+		'</div> </div>';
+}
+
+document.getElementById('team').innerHTML = output;
+</script>

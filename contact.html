@@ -39,44 +39,53 @@ title: Contact
 <div class="content contact">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form">
 		<h1>Contact us about a project or a question </h1>
-		<form onsubmit="validate()" id="contactForm" accept-charset="UTF-8" action="https://formkeep.com/f/5ee5aaa4bf41" method="POST">
+		<form id="contactForm" accept-charset="UTF-8" action="https://formkeep.com/f/5ee5aaa4bf41" method="POST">
 		    
 		    <div>
 			    <label for="c-emailaddress">Email Address  <span class="asterisk">*</span> </label>
-			    <input type="email" value="" name="c-emailaddress" class="required email" id="c-emailaddress">
+			    <input type="email" value="" name="Email Address" class="required email" id="c-emailaddress">
 				<label id="result"></label>
 		    </div>
 			
 			<div>
-		   		<label for="c-fname">First Name </label>
-		      	<input type="text" value="" name="c-fname" class="" id="c-fname">
+		   		<label for="firstname">First Name </label>
+		      	<input type="text" value="" name="First Name" class="" id="firstname">
 	      	</div>
 		
 			<div>
-		  	    <label for="c-lname">Last Name </label>
-		    	<input type="text" value="" name="c-lname" class="" id="c-lname">
+		  	    <label for="lastname">Last Name </label>
+		    	<input type="text" value="" name="Last Name" class="" id="lastname">
 	    	</div>
 
 	    	<div>
-		  	    <label for="c-organization">Organization </label>
-		    	<input type="text" value="" name="c-organization" class="" id="c-organization">
+		  	    <label for="organization">Organization </label>
+		    	<input type="text" value="" name="Organization" class="" id="organization">
 	    	</div>
 
 	    	<div>
-		  	    <label for="c-reason">What is this about?</label><br>
-		    	<input type="checkbox" name="c-reason" value="ued">User Experience Design<br>
-				<input type="checkbox" name="c-reason" value="ur">User Research <br>
-				<input type="checkbox" name="c-reason" value="ad">App Development <br>
-				<input type="checkbox" name="c-reason" value="gq">General Question <br>
+		  	    <label for="reasonforcontact">What is this about?</label><br>
+
+		    	<input type="checkbox" id="userExperienceDesign" name="ReasonForContact[]" value="User Experience Design">
+		    	<label for="userExperienceDesign">User Experience Design</label> <br>
+
+				<input type="checkbox" id="userResearch" name="ReasonForContact[]" value="User Research"> 
+				<label for="userResearch">User Research</label> <br>
+
+				<input type="checkbox" id="appDevelopment" name="ReasonForContact[]" value="App Development">
+				<label for="appDevelopment">App Development </label> <br>
+
+				<input type="checkbox" id="generalQuestion" name="ReasonForContact[]" value="General Question">
+				<label for="generalQuestion">General Question  </label> <br>
 	    	</div>
 
 	    	<div>
-		  	    <label for="c-help">How can we help?</label><br>
-		  	    <textarea id="c-help"></textarea>
-		  	 </div>
+		  	    <label for="howcanwehelp">How can we help?</label><br>
+		  	    <textarea id="howcanwehelp" name="How Can We Help"></textarea>
+		  	</div>
 					
-		  	<input type="hidden" name="utf8" value="✓">
-		  	<button class="buttons" type="submit">Submit</button>
+			  	<input type="hidden" name="utf8" value="✓">
+			  	<button id="contactButton" class="buttons" type="submit">Submit</button>
+
 		</form>
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form">

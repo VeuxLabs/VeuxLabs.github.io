@@ -82,3 +82,17 @@ $(document).ready(function(){
 });
 
 
+$('#contactForm > input').keyup(function() {
+    var empty = false;
+    $('#contactForm > input[required]').each(function() {
+        if ($(this).val() == '') {
+            empty = true;
+        }
+    });
+
+    if (empty) {
+        $('#contactButton').attr('disabled', 'disabled');
+    } else {
+        $('#contactButton').removeAttr('disabled');
+    }
+});
