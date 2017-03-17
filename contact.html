@@ -17,16 +17,18 @@ title: Contact
 <div style="float:left;" class="our-team contact">
 	<h1> Contact Us </h1>
 	<div class="description">
-		Give us a call or shoot us an email. We'd love to hear from you and become partners in your next success.
+		Give us a call or shoot us an email anytime. Use our forms below to inquire about 
+		doing a project with us or to recieve our infrequent newsletters. We'd love to hear 
+		from you and become partners in your next success.
 	</div>
 	<div class="clearfix"></div>
 	<div class="office">
-		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 			<h2>Portland</h2>
 			<i class="fa fa-envelope" aria-hidden="true"></i> <span>  portland@veuxlabs.com </span> <br>
 			<i class="fa fa-phone" aria-hidden="true"></i> <span> +1 (503) 928-7731  </span> <br>
 		</div>
-		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 			<h2>Boston</h2>
 			<i class="fa fa-envelope" aria-hidden="true"></i> <span>  boston@veuxlabs.com </span> <br>
 			<i class="fa fa-phone" aria-hidden="true"></i> <span>  +1 (617) 863-0245 </span> <br>
@@ -35,13 +37,14 @@ title: Contact
 </div>
 <div class="clearfix"></div>
 <div class="content contact">
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form">
 		<h1>Contact us about a project or a question </h1>
-		<form accept-charset="UTF-8" action="https://formkeep.com/f/5ee5aaa4bf41" method="POST">
+		<form onsubmit="validate()" id="contactForm" accept-charset="UTF-8" action="https://formkeep.com/f/5ee5aaa4bf41" method="POST">
 		    
 		    <div>
 			    <label for="c-emailaddress">Email Address  <span class="asterisk">*</span> </label>
 			    <input type="email" value="" name="c-emailaddress" class="required email" id="c-emailaddress">
+				<label id="result"></label>
 		    </div>
 			
 			<div>
@@ -55,7 +58,7 @@ title: Contact
 	    	</div>
 
 	    	<div>
-		  	    <label for="c-lname">Organization </label>
+		  	    <label for="c-organization">Organization </label>
 		    	<input type="text" value="" name="c-organization" class="" id="c-organization">
 	    	</div>
 
@@ -76,14 +79,14 @@ title: Contact
 		  	<button class="buttons" type="submit">Submit</button>
 		</form>
 	</div>
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form">
 		<div id="mc_embed_signup">
 			<form action="//veuxlabs.us14.list-manage.com/subscribe/post?u=eac503a0b5948f79dc78c26ba&amp;id=7c6f6137b8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			    <div id="mc_embed_signup_scroll">
 				    <h1>Join our mailing list</h1>
 					<div class="mc-field-group">
 					    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>
-					    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+					    <input type="email" onblur="" value="" name="EMAIL" class="required email" id="mce-EMAIL"> 
 					</div>
 					<div class="mc-field-group">
 				   		<label for="mce-FNAME">First Name </label>

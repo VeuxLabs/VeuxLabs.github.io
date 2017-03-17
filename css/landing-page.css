@@ -1589,14 +1589,37 @@ footer .copyright {
     width: initial;
     margin-right: 10px;
     margin-bottom: 20px;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: #4e4b4a;
 }
 
+.content.contact .form {
+    padding-left: 0;
+    padding-right: 45px;
+}
+
+.content.contact .form textarea {
+    width: 100%;
+    max-width: 448px;
+    height: 226px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #b4b4b4;
+}
+    
 #mc_embed_signup .buttons, .content.contact form .buttons {
     border: solid 0.9px #2591bf;
-    min-width: 250px;
+    min-width: 120px;
+    max-width: 120px;
+    display: block;
+    width: 100%;
     height: 46px;
     border-radius: 4.7px;
-    background-color:  #2591bf;;
+    background-color: #2591bf;
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
@@ -1607,6 +1630,37 @@ footer .copyright {
     margin: 30px auto 0 auto;
 }
 
+#result {
+    display: none;
+}
+
+.content.thankyou h1 {
+    font-family: 'Ubuntu';
+    font-size: 64px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.84;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2691bf;
+}
+
+.content.thankyou h2 {
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: center;
+    color: #777675;
+}
+
+.content.thankyou img {
+    margin: 0 auto;
+}
     
 @media only screen and (min-width: 991px) {
     .project-management .container.internal, .support .container.internal {
