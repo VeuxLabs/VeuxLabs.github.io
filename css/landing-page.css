@@ -81,7 +81,7 @@ h6 {
 }
 .navbar.navbar-default.navbar-fixed-top .container {
     display: table;
-    width: 89%;
+    width: 86%;
     padding-left: 0;
     padding-right: 0;
 }
@@ -96,17 +96,6 @@ h6 {
     border-width: 0 0 0;
     max-width: 1120px;
     margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .navbar-nav.navbar-right:last-child {
-    }
-    .navbar-header .logo {
-        margin-left: 15px;
-    }
-    .navbar-header .logo-home {
-        margin-left: 15px;
-    }
 }
 
 .navbar-default .navbar-toggle {
@@ -268,7 +257,7 @@ h6 {
 .services {
     padding-top: 110px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 80px;
     padding-bottom: 110px;
 }
 
@@ -298,6 +287,7 @@ h6 {
     line-height: 26px;
     font-weight: 300;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .services h3 {
@@ -331,10 +321,19 @@ h6 {
     background: url(../img/logisticsBackgroundCorner.svg) no-repeat 0 0 #2691bf;
 }
 
-.research .section2 img{
+.research .section2 img {
     margin-top: -110px;
     padding-bottom: 45px;
     float: right;
+}
+
+@media (max-width: 768px) {
+    .research .section2 img {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0;
+        float: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -391,7 +390,7 @@ h6 {
     }
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 992px) {
     .design {
         padding-bottom: 250px;
     }
@@ -415,8 +414,16 @@ h6 {
     line-height: 36px;
     margin-bottom: 0;
 }
+
 .design .design-img img{
     display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .design .design-img img {
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 .design h3{
@@ -450,18 +457,19 @@ h6 {
 }
 
 .app-dev .dev-img img {
-    display: inline-block;
-    
+    display: inline-block; 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 768px) and (min-width: 480px) {
     .app-dev .dev-img { 
         background-position-y: 110px;
         padding-left: 10px;
         padding-right: 10px;
+        text-align: center;
     }
     .app-dev .dev-img img {
         margin-bottom: -65px;
+        padding-left: 0;
     }
 }
 
@@ -469,11 +477,19 @@ h6 {
     .app-dev .dev-img {
         background-position-y: 100px;
         padding-left: 60px;
-        padding-right: 60px;
+        padding-right: 80px;
     }
     .app-dev .dev-img img {
         margin-top: -25px;
         margin-bottom: -290px;
+    }
+}
+
+@media only screen and (max-width: 480px)  {
+    .app-dev .dev-img img {
+        padding-left: 10px;
+        position: relative;
+        top: 55px;
     }
 }
 
@@ -513,7 +529,36 @@ h6 {
     margin: 0 auto;
 }
 
+@media (max-width:1199px) {
+    .services {
+        padding-bottom: 200px;
+    }
+}
+
+@media (max-width:480px) {
+    .services {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+@media(max-width:1199px) {
+    .research, .design {
+        padding-left: 55px;
+        padding-right: 70px;
+    }
+    .services .col-lg-6:nth-child(2) {
+        padding-left: 0;
+    }
+}
+
+
 @media(max-width:768px) {
+    .services, .research, .design {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .navbar-default .navbar-brand {
         display: none;
     }
@@ -524,13 +569,10 @@ h6 {
     }
 }
 
-@media(max-width:1199px) {
-    .services, .research, .design{
+@media (max-width:480px) {
+    .research, .design{
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .services .col-lg-6:nth-child(2) {
-        padding-left: 0;
     }
 }
 
@@ -597,12 +639,12 @@ h6 {
 
 @media (min-width:482px) and (max-width:1200px) {
     .services .fit {
-        width: 80%;
+        width: 100%;
         max-width: 500px;
     }
 }
 
-@media (min-width:600px) and (max-width:1200px) {
+@media (min-width:768px) and (max-width:1200px) {
     .research .section2 img {
         margin: -130px auto 0 auto;
         float: none;
@@ -621,9 +663,10 @@ h6 {
         display: block;
     }
     .app-dev .dev-img img {
-        width: 80%;
-        padding-left: 60px;
+        width: 70%;
+        padding-left: 70px;
         padding-right: 60px;
+        margin-bottom: -110px;
     }
 }
 
@@ -654,7 +697,8 @@ h6 {
         color: #4e4b4a;
     }
     .services .section1-text {
-        width: 485px;
+        width: 490px;
+        padding-right: 0;
     }
     .research .section2 {
         text-align: center;
@@ -708,6 +752,7 @@ h6 {
         width: 469px;
         float: right;
         margin-right: 45px;
+        padding-right: 30px;
     }
     .design h2 {
         font-size: 18px;
@@ -728,10 +773,6 @@ h6 {
     }
     .app-dev .dev-img img {
         width: 600px;
-    }
-    .app-dev .dev-img {
-        padding-left: 80px;
-        padding-right: 80px;
     }
     .app-dev .section4-text {
         z-index: 1;
@@ -763,7 +804,17 @@ h6 {
     }
 }
 
+ .design .section3-text {
+    width: 45%;
+    float: right;
+}
+
 @media (max-width: 767px) {
+     .design .section3-text {
+        float: left;
+        width: 100%;
+     }
+
     .research .col-xs-12 {
         padding-left: 0;
         padding-right: 0;
@@ -779,10 +830,12 @@ h6 {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1120px) {
     .app-dev .section4-text {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-right: 70px;
+        margin-top: 110px;
+        width: 552px;
+        padding-left: 60px;
     }
 }
 
@@ -1032,6 +1085,10 @@ p.copyright {
     text-align: left;
     color: #ffffff;
 }
+
+footer .copyright {
+    margin-left: 3px;
+}
  
 /* Home page Styling Sections */
 
@@ -1068,12 +1125,25 @@ p.copyright {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .product-development .col-lg-9 {
+        width: 75%;
+        float: right;
+    }
+}
+
 .product .dev-img {
     background: none;
     margin-left: 0;
     min-height: 0;
     text-align: right;
-    margin-right: 32px;
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .product .dev-img {
+        text-align: center;
+    }
 }
 
 .product-development {
@@ -1113,15 +1183,24 @@ p.copyright {
 }
 
 .product img.music {
-    width: 83%;
+    width: 75%;
     margin: -175px auto 10px auto;
     z-index: 100;
     position: relative;
 }
 
-@media only screen and (max-width: 992px) and (min-width: 480px)  {
+@media only screen and (max-width: 1200px) and (min-width: 768px)  {
     .product img.music {
-        width: 100%;
+        margin-top: -130px;
+        width: 80%;
+        padding-right: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px)  {
+    .product img.music {
+        width: 75%;
+        margin-top: -110px;
     }
 }
 
@@ -1140,7 +1219,9 @@ p.copyright {
     }
     .product img.music {
         width: 100%;
-        margin: -95px auto 10px auto;
+        margin: -110px auto 60px auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -1337,13 +1418,15 @@ p.copyright {
     }   
 }
 
-@media only screen and (min-width: 1200px) {
-    .project-management .col-lg-6 {
-        width: 51%;
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .project-management .container {
+        padding-left: 55px;
+        padding-right: 55px;
     }
-
-    .project-management .col-lg-5 {
-        width: 41%;
+    .project-management .col-lg-6 {
+        width: 55%;
+        float: right;
+        padding-right: 20px;
     }
 }
 
@@ -1357,8 +1440,10 @@ p.copyright {
     width: 100%;
 }
 
-.contact h1 {
+.content.contact h1 {
+    min-height: 80px;
     margin: 30px 0px;
+    color: #4e4b4a;
 }
 
 .content.contact .description {
@@ -1453,17 +1538,24 @@ p.copyright {
     }
 }
 
-#mc_embed_signup form {
-    padding-left: 0 !important;
+.content.contact form div {
+    clear: left;
+    position: relative;
+    width: 96%;
+    padding-bottom: 3%;
+    min-height: 50px;
 }
 
-#mc_embed_signup h1 {
-   color: #4e4b4a;
-   font-size: 40px;
-   margin: 30px 0 60px;
+#mc_embed_signup form {
+    padding-left: 0 !important;
+    padding-top: 0 !important;
 }
 
 #mc_embed_signup .mc-field-group label {
+    margin-bottom: 5px !important;
+}
+
+#mc_embed_signup .mc-field-group label, .content.contact form label {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
@@ -1472,7 +1564,7 @@ p.copyright {
     color: #4e4b4a;
 }
 
-#mc_embed_signup .mc-field-group label .asterisk {
+#mc_embed_signup .mc-field-group label .asterisk, .content.contact form label .asterisk {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
@@ -1482,7 +1574,7 @@ p.copyright {
     top: 0;
 }
 
-#mc_embed_signup .mc-field-group input {
+#mc_embed_signup .mc-field-group input, .content.contact form input {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -1492,12 +1584,42 @@ p.copyright {
     border: solid 1px #b4b4b4;
 }
 
-#mc_embed_signup .buttons {
+.content.contact form input[type=checkbox] {
+    display: inline-block;
+    width: initial;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: #4e4b4a;
+}
+
+.content.contact .form {
+    padding-left: 0;
+    padding-right: 45px;
+}
+
+.content.contact .form textarea {
+    width: 100%;
+    max-width: 448px;
+    height: 226px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #b4b4b4;
+}
+    
+#mc_embed_signup .buttons, .content.contact form .buttons {
     border: solid 0.9px #2591bf;
-    min-width: 250px;
+    min-width: 120px;
+    max-width: 120px;
+    display: block;
+    width: 100%;
     height: 46px;
     border-radius: 4.7px;
-    background-color:  #2591bf;;
+    background-color: #2591bf;
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
@@ -1508,6 +1630,41 @@ p.copyright {
     margin: 30px auto 0 auto;
 }
 
+#result {
+    display: none;
+}
+
+.content.thankyou h1, .content.notfound h1 {
+    font-family: 'Ubuntu';
+    font-size: 64px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.84;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2691bf;
+}
+
+.content.notfound h1 {
+    font-size: 48px;
+}
+
+.content.thankyou h2, .content.notfound h2 {
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: center;
+    color: #777675;
+}
+
+.content.thankyou img, .content.notfound img {
+    margin: 0 auto;
+}
     
 @media only screen and (min-width: 991px) {
     .project-management .container.internal, .support .container.internal {
@@ -1558,6 +1715,13 @@ p.copyright {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+    .product-development {
+        padding-left: 55px;
+        padding-right: 70px;
+    }
+}
+
 .support .bg-white {
     float: left;
     margin-left: 15px;
@@ -1592,10 +1756,24 @@ p.copyright {
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     .support .fixed-div {
-       padding-left: 30px;
-       padding-right: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .support .fixed-div {
+        padding-left: 55px;
+        padding-right: 60px;
+    }
+}
+
+@media only screen (max-width: 480px) {
+    .support .fixed-div .col-xs-12 {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -1615,6 +1793,7 @@ p.copyright {
 @media (min-width: 480px) and (max-width: 768px) {
     .support img {
         margin-top: 72px;
+        margin-left: 10px;
     }
 }
 
@@ -1641,6 +1820,11 @@ p.copyright {
     margin-bottom: 100px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) { 
+    .support img {
+        margin-top: 60px;
+    }
+}
 
  @media only screen and (min-width: 900px) { 
     .support-top {
@@ -1744,6 +1928,22 @@ p.copyright {
     border: 0;
     box-shadow: none;
     -webkit-box-shadow: none;
+}
+
+.bx-wrapper .bx-prev {
+    background: url(../img/arrowLeft.svg) no-repeat 0;
+}
+
+.bx-wrapper .bx-next {
+    background: url(../img/arrowRight.svg) no-repeat 0;
+}
+
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
+    background-position: 0;
+}
+
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+    background-position: 0;
 }
 
 .content .bx-wrapper h1 {
@@ -2049,6 +2249,12 @@ p.copyright {
 
 footer .logos img {
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    footer .col-md-8 {
+        padding-left: 10px;
+    }
 }
 
 .veux-team { 
