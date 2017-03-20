@@ -2085,6 +2085,7 @@ footer .copyright {
 
 .content.work .app-logo {
     margin: 0 auto;
+    max-width: 167px;
 }
 
 .content.work .button-top {
