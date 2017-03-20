@@ -2149,6 +2149,12 @@ footer .copyright {
     padding: 40px 60px;
 }
 
+@media screen and (max-width: 480px) {
+    .content.work .content {
+        padding: 25px 0;
+    }
+}
+
 #back-to-top, #back-to-top2  {
     width: 7%;
 }
