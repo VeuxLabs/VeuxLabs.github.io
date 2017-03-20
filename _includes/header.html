@@ -10,10 +10,10 @@
                 <span class="icon-bar"></span>
             </button>
             {% if page.layout == 'default' %}
-                <img src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo-home" />
+                <img data-no-retina src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo-home" />
             {% endif %}
             {% if page.layout == 'internal' %}
-                <img src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo" />
+                <img data-no-retina src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo" />
              {% endif %}
             <!-- <a class="navbar-brand page-scroll" href="#home">{{ site.title }}</a> -->
         </div>
@@ -30,26 +30,26 @@
                 </li>
                 <li>
                     {% if page.title == 'Work' %}
-                        <a class="page-scroll underline" href="/work/">Work</a>
+                        <a class="page-scroll underline" href="/work">Work</a>
                     {% endif %}
                     {% if page.title != 'Work' %}
-                        <a class="page-scroll" href="/work/">Work</a>
+                        <a class="page-scroll" href="/work">Work</a>
                     {% endif %}
                 </li>
                 <li>
                     {% if page.title == 'About' %}
-                        <a class="page-scroll underline" href="/about/">About</a>
+                        <a class="page-scroll underline" href="/about">About</a>
                     {% endif %}
                     {% if page.title != 'About' %}
-                        <a class="page-scroll" href="/about/">About</a>
+                        <a class="page-scroll" href="/about">About</a>
                     {% endif %}
                 </li>            
                 <li>
                     {% if page.title == 'Contact' %}
-                        <a class="page-scroll underline" href="/contact/">Contact</a>
+                        <a class="page-scroll underline" href="/contact">Contact</a>
                     {% endif %}
                     {% if page.title != 'Contact' %}
-                        <a class="page-scroll" href="/contact/">Contact</a>
+                        <a class="page-scroll" href="/contact">Contact</a>
                     {% endif %}
                 </li>
             </ul>
