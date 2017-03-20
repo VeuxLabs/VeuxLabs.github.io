@@ -2085,6 +2085,7 @@ footer .copyright {
 
 .content.work .app-logo {
     margin: 0 auto;
+    max-width: 167px;
 }
 
 .content.work .button-top {
@@ -2146,6 +2147,12 @@ footer .copyright {
 
 .content.work .content {
     padding: 40px 60px;
+}
+
+@media screen and (max-width: 480px) {
+    .content.work .content {
+        padding: 25px 0;
+    }
 }
 
 #back-to-top, #back-to-top2  {
