@@ -81,18 +81,38 @@ $(document).ready(function(){
     }, 700);
 });
 
-
-$('#contactForm > input').keyup(function() {
+function validate() {
     var empty = false;
-    $('#contactForm > input[required]').each(function() {
-        if ($(this).val() == '') {
-            empty = true;
-        }
-    });
+    var emptyArea = false;
+    var emptyCheckboxes = false;
+    var inputs = document.getElementById('contactForm').getElementsByTagName('input');
+    var textArea = document.getElementById('howcanwehelp').value;
 
-    if (empty) {
-        $('#contactButton').attr('disabled', 'disabled');
+    // Validate if text area is null.
+    if (textArea === '' || textArea === undefined) {
+        emptyArea = true;
+    }
+
+   // Validate if all input text are null.
+    for (var i = 0; i < inputs.length; i += 1) {
+        if (inputs[i].value === '') {
+            empty = true;
+        } 
+    }
+
+    // validate that there is at least on checkbox selected.
+    if ($("#contactForm input:checkbox:checked").length > 0) {
+        emptyCheckboxes = false;
+    }
+    else {
+        emptyCheckboxes = true;
+    }
+
+    if (empty || emptyArea || emptyCheckboxes) {
+        $('#contactButton').attr('disabled', 'true');
     } else {
         $('#contactButton').removeAttr('disabled');
     }
-});
+}
+
+

@@ -43,48 +43,47 @@ title: Contact
 		    
 		    <div>
 			    <label for="c-emailaddress">Email Address  <span class="asterisk">*</span> </label>
-			    <input type="email" value="" name="Email Address" class="required email" id="c-emailaddress">
+			    <input onblur="validate()" onkeyup="validate()" type="email" value="" name="Email Address" class="required email" id="c-emailaddress">
 				<label id="result"></label>
 		    </div>
 			
 			<div>
-		   		<label for="firstname">First Name </label>
-		      	<input type="text" value="" name="First Name" class="" id="firstname">
+		   		<label for="firstname">First Name <span class="asterisk">*</span> </label>
+		      	<input onblur="validate()" onkeyup="validate()" type="text" value="" name="First Name" class="" id="firstname">
 	      	</div>
 		
 			<div>
-		  	    <label for="lastname">Last Name </label>
-		    	<input type="text" value="" name="Last Name" class="" id="lastname">
+		  	    <label for="lastname">Last Name <span class="asterisk">*</span> </label>
+		    	<input  onblur="validate()" onkeyup="validate()" type="text" value="" name="Last Name" class="" id="lastname">
 	    	</div>
 
 	    	<div>
-		  	    <label for="organization">Organization </label>
-		    	<input type="text" value="" name="Organization" class="" id="organization">
+		  	    <label for="organization">Organization <span class="asterisk">*</span> </label>
+		    	<input onblur="validate()" onkeyup="validate()" type="text" value="" name="Organization" class="" id="organization">
 	    	</div>
 
 	    	<div>
-		  	    <label for="reasonforcontact">What is this about?</label><br>
+		  	    <label for="reasonforcontact">What is this about? <span class="asterisk">*</span></label><br>
 
-		    	<input type="checkbox" id="userExperienceDesign" name="ReasonForContact[]" value="User Experience Design">
+		    	<input onclick="validate()" onfocusout="validate()" type="checkbox" id="userExperienceDesign" name="ReasonForContact[]" value="User Experience Design">
 		    	<label for="userExperienceDesign">User Experience Design</label> <br>
 
-				<input type="checkbox" id="userResearch" name="ReasonForContact[]" value="User Research"> 
+				<input onclick="validate()" onfocusout="validate()" type="checkbox" id="userResearch" name="ReasonForContact[]" value="User Research"> 
 				<label for="userResearch">User Research</label> <br>
 
-				<input type="checkbox" id="appDevelopment" name="ReasonForContact[]" value="App Development">
+				<input onclick="validate()"  onfocusout="validate()" type="checkbox" id="appDevelopment" name="ReasonForContact[]" value="App Development">
 				<label for="appDevelopment">App Development </label> <br>
 
-				<input type="checkbox" id="generalQuestion" name="ReasonForContact[]" value="General Question">
+				<input onclick="validate()" onfocusout="validate()" type="checkbox" id="generalQuestion" name="ReasonForContact[]" value="General Question">
 				<label for="generalQuestion">General Question  </label> <br>
 	    	</div>
 
 	    	<div>
-		  	    <label for="howcanwehelp">How can we help?</label><br>
-		  	    <textarea id="howcanwehelp" name="How Can We Help"></textarea>
+		  	    <label for="howcanwehelp">How can we help? <span class="asterisk">*</span></label><br>
+		  	    <textarea onblur="validate()" onkeyup="validate()" id="howcanwehelp" name="How Can We Help"></textarea>
 		  	</div>
-					
-			  	<input type="hidden" name="utf8" value="✓">
-			  	<button id="contactButton" class="buttons" type="submit">Submit</button>
+			 <label><span class="asterisk">*</span> Required </label>
+			 <button id="contactButton" disabled="true" class="buttons" type="submit">Submit</button>
 
 		</form>
 	</div>
@@ -120,3 +119,4 @@ title: Contact
 		</div>
 	</div>
 </div>
+
