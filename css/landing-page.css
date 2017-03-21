@@ -92,10 +92,13 @@ h6 {
     }
 }
 
-@media (max-width: 768px) {
-    .nav .underline {
-        text-decoration: underline;
-    }
+
+.nav .underline {
+    text-decoration: underline;
+}
+
+.nav .underline:hover {
+    text-decoration: underline;
 }
 
 .navbar-fixed-top {
