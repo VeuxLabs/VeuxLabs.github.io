@@ -10,10 +10,14 @@
                 <span class="icon-bar"></span>
             </button>
             {% if page.layout == 'default' %}
-                <img data-no-retina src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo-home" />
+                <a href="/">
+                    <img data-no-retina src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo-home" />
+                </a>
             {% endif %}
             {% if page.layout == 'internal' %}
-                <img data-no-retina src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo" />
+                <a href="/">
+                    <img data-no-retina src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo" />
+                </a>
              {% endif %}
             <!-- <a class="navbar-brand page-scroll" href="#home">{{ site.title }}</a> -->
         </div>

@@ -6,7 +6,7 @@
             <img data-no-retina src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo" />
 			
 			<div class="pros">
-                <h2> Apps and Objects That Work Together </h2>
+                <h2> Apps and Objects That Work ... <b id="textUpdate"> </b> </h2>
                 {{ page.pros }}
             </div>
             <ul>
@@ -24,3 +24,35 @@
 	</div>
 	<!-- /.intro-header -->
 </section>
+
+<script type="text/javascript">
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+      while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+      return array;
+    }
+
+    var features = ['Harmoniously', 'Seamlessly ', 'Brilliantly', 'Intuitively'];
+    features = shuffle(features);
+    var output = '';
+    var counter = 0;
+    document.getElementById('textUpdate').innerHTML = features[0];
+
+    window.setInterval(function() {
+        if (counter < features.length - 1) {
+            output = features[counter];
+            counter++;
+        } else {   
+            output = features[counter];
+            counter = 0;
+        }
+        document.getElementById('textUpdate').innerHTML = output;
+    }, 2000);
+
+</script>
