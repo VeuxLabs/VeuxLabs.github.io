@@ -237,7 +237,7 @@ h6 {
 .intro-header .pros ul li {
     font-weight: 300;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 }
 
@@ -254,7 +254,7 @@ h6 {
 }
 
 .intro-header .container {
-    padding-top: 155px;
+    padding-top: 150px;
     width: auto;
     padding-left: 0;
     padding-right: 0;
@@ -269,11 +269,12 @@ h6 {
 
 .intro-header .container h2 {
     font-family: 'Ubuntu';
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.67;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
     letter-spacing: 0.5px;
     color: #ffffff;
+    margin-top: 45px;
 }
 
 .intro-header .container h2 b {
@@ -440,18 +441,6 @@ h6 {
     height: 124px;
     background-color: #56b2d9;
     display: inline-block;
-}
-
-@media only screen and (max-width: 650px) {
-    .design {
-        padding-bottom: 100px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .design {
-        padding-bottom: 250px;
-    }
 }
 
 .design .design-img {
@@ -1427,7 +1416,7 @@ footer .copyright {
 
 .project-management img {
     width: 60%;
-    margin: -200px auto 70px auto;
+    margin: -145px auto 70px auto;
 }
 
 .project-management {
@@ -1755,7 +1744,7 @@ footer .copyright {
         padding: 20px;
     }    
     .product-development {
-        padding-bottom: 270px;
+        padding-bottom: 115px;
     }
 }
  
