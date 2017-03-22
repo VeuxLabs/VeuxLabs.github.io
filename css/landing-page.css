@@ -2064,7 +2064,7 @@ footer .copyright {
     color: #4e4b4a;
     text-transform: uppercase;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 45px;
 }
 
 @media (max-width: 768px) {
@@ -2171,7 +2171,13 @@ footer .copyright {
 }
 
 .content .bx-wrapper a img {
-    margin: 10px auto;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .content .bx-wrapper a img {
+        margin: 10px auto;
+    }
 }
 
 .content.work .content {
