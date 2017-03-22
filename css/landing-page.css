@@ -2370,8 +2370,8 @@ footer .logos img {
         visibility: visible;
         height: auto;
         opacity: 1;
-        margin: 40px 0 30px;
-        padding-bottom: 80px;
+        margin: 40px 0 -10px;
+        padding-bottom: 0;
     }
 }
 
@@ -2438,7 +2438,7 @@ footer .logos img {
     font-weight: 500;
 }
 .content.partners {
-    padding-bottom: 90px;
+    padding-bottom: 110px;
 }
 
 .v-team {
