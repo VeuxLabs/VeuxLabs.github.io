@@ -237,7 +237,7 @@ h6 {
 .intro-header .pros ul li {
     font-weight: 300;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 }
 
@@ -254,7 +254,7 @@ h6 {
 }
 
 .intro-header .container {
-    padding-top: 155px;
+    padding-top: 150px;
     width: auto;
     padding-left: 0;
     padding-right: 0;
@@ -269,11 +269,12 @@ h6 {
 
 .intro-header .container h2 {
     font-family: 'Ubuntu';
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.67;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
     letter-spacing: 0.5px;
     color: #ffffff;
+    margin-top: 45px;
 }
 
 .intro-header .container h2 b {
@@ -440,18 +441,6 @@ h6 {
     height: 124px;
     background-color: #56b2d9;
     display: inline-block;
-}
-
-@media only screen and (max-width: 650px) {
-    .design {
-        padding-bottom: 100px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .design {
-        padding-bottom: 250px;
-    }
 }
 
 .design .design-img {
@@ -983,7 +972,7 @@ footer .first-row {
 }
 footer .first-row .col-md-12 {
     margin: 0 auto;
-    padding: 65px 20px;
+    padding: 40px 20px;
     background-color: #2591bf;
 }
 
@@ -994,20 +983,19 @@ footer .first-row .col-md-12 {
 }
 
 footer .first-row .text {
-    font-family: 'Ubuntu';
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 30px;
-    letter-spacing: 0.5px;
     text-align: center;
     color: #ffffff;
-    max-width: 615px;
+    max-width: 500px;
     margin: 0 auto;
+    font-family: 'Ubuntu';
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
 }
 
 footer .first-row .button {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 footer .first-row .button button {
@@ -1427,7 +1415,7 @@ footer .copyright {
 
 .project-management img {
     width: 60%;
-    margin: -200px auto 70px auto;
+    margin: -145px auto 70px auto;
 }
 
 .project-management {
@@ -1755,7 +1743,7 @@ footer .copyright {
         padding: 20px;
     }    
     .product-development {
-        padding-bottom: 270px;
+        padding-bottom: 115px;
     }
 }
  
@@ -2064,7 +2052,7 @@ footer .copyright {
     color: #4e4b4a;
     text-transform: uppercase;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 45px;
 }
 
 @media (max-width: 768px) {
@@ -2171,7 +2159,13 @@ footer .copyright {
 }
 
 .content .bx-wrapper a img {
-    margin: 10px auto;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .content .bx-wrapper a img {
+        margin: 10px auto;
+    }
 }
 
 .content.work .content {
@@ -2376,8 +2370,8 @@ footer .logos img {
         visibility: visible;
         height: auto;
         opacity: 1;
-        margin: 40px 0 30px;
-        padding-bottom: 80px;
+        margin: 40px 0 -10px;
+        padding-bottom: 0;
     }
 }
 
@@ -2444,7 +2438,7 @@ footer .logos img {
     font-weight: 500;
 }
 .content.partners {
-    padding-bottom: 90px;
+    padding-bottom: 110px;
 }
 
 .v-team {
