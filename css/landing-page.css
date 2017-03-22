@@ -972,7 +972,7 @@ footer .first-row {
 }
 footer .first-row .col-md-12 {
     margin: 0 auto;
-    padding: 65px 20px;
+    padding: 40px 20px;
     background-color: #2591bf;
 }
 
@@ -983,20 +983,19 @@ footer .first-row .col-md-12 {
 }
 
 footer .first-row .text {
-    font-family: 'Ubuntu';
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 30px;
-    letter-spacing: 0.5px;
     text-align: center;
     color: #ffffff;
-    max-width: 615px;
+    max-width: 500px;
     margin: 0 auto;
+    font-family: 'Ubuntu';
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
 }
 
 footer .first-row .button {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 footer .first-row .button button {
