@@ -2090,6 +2090,12 @@ footer .copyright {
     border-bottom: 2px solid #d8d8d8;
 }
 
+.content.main-div .content-div.first a { 
+    max-width: 135px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
 @media (max-width: 768px) {
     .content.main-div .content-div.first { 
         margin-bottom: 10px;
