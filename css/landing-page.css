@@ -524,7 +524,7 @@ h6 {
 @media only screen and (min-width: 1200px) {
     .app-dev .dev-img {
         background-position-y: 100px;
-        padding-left: 60px;
+        padding-left: 80px;
         padding-right: 80px;
     }
     .app-dev .dev-img img {
