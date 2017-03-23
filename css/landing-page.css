@@ -139,6 +139,7 @@ h6 {
 
 .navbar-default .navbar-nav>li>a {
     color: #ffffff;
+    padding-right: 0;
 }
 
 @media (max-width: 768px) {
@@ -523,7 +524,7 @@ h6 {
 @media only screen and (min-width: 1200px) {
     .app-dev .dev-img {
         background-position-y: 100px;
-        padding-left: 60px;
+        padding-left: 80px;
         padding-right: 80px;
     }
     .app-dev .dev-img img {
@@ -1975,7 +1976,7 @@ footer .copyright {
 }
 
 .content, .our-team {
-    padding: 40px 60px;
+    padding: 40px 80px;
     float: left;
     background-color: white;
     width: 100%;
