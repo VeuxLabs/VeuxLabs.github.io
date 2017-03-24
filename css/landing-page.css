@@ -280,6 +280,8 @@ h6 {
 
 .intro-header .container h2 b {
     font-weight: 500;
+    min-width: 145px;
+    display: inline-block;
 }
 
 .intro-header .container > svg {
