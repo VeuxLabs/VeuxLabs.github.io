@@ -278,6 +278,13 @@ h6 {
     padding-right: 0;
 }
 
+@media (max-width: 768px) {
+    .intro-header .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 @media (max-width: 480px) {
     .intro-header .container {
         padding-left: 50px;
@@ -2224,19 +2231,34 @@ footer .copyright {
 }
 
 .content.work .content {
-    padding: 40px 80px;
+    padding: 40px 65px;
+}
+
+@media (min-width: 992px) and (max-width: 1120px) {
+    .content.work .content {
+        padding: 40px 55px;
+    }
 }
 
 @media (min-width: 1200px) {
     .content.work .content .col-lg-6 {
         padding-left: 0;
     }
+    .content.work .content {
+        padding: 40px 80px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .content.work .content {
-        padding: 20px 0;
+        padding: 0 25px;
         overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content.work .content {
+        padding: 0 15px;
     }
 }
 
@@ -2253,6 +2275,9 @@ footer .copyright {
     }
     .content.work .content .content-div div {
         padding-left: 0;
+    }
+    .content.work .content {
+        padding: 0 60px;
     }
 }
 
