@@ -731,6 +731,12 @@ h6 {
     }
 }
 
+@media (min-width: 1200px) {
+    .design {
+        padding: 0 80px;
+    }
+}
+
 @media (min-width: 1120px) {
     .navbar-fixed-top {
         left: 50%;
