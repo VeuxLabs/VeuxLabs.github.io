@@ -103,10 +103,6 @@ h6 {
     }
 }
 
-@media (max-width:480px) {
-   
-}
-
 @media (max-width: 767px) {
     .nav .underline {
         text-decoration: underline;
@@ -729,7 +725,7 @@ h6 {
     }
     .app-dev .dev-img img {
         width: 70%;
-        padding-left: 70px;
+        padding-left: 80px;
         padding-right: 60px;
         margin-bottom: -110px;
     }
@@ -816,7 +812,6 @@ h6 {
     .design .section3-text {
         width: 469px;
         float: right;
-        padding-right: 80px;
     }
     .design h2 {
         font-size: 18px;
@@ -1264,7 +1259,7 @@ footer .copyright {
     .product img.music {
         margin-top: -130px;
         width: 80%;
-        padding-right: 70px;
+        padding-right: 80px;
     }
 }
 
@@ -2151,6 +2146,7 @@ footer .copyright {
 .content.work .small-image {
     display: inline-block;
     float: left;
+    width: 90%;
 }
 
 .content.work .app-logo {
@@ -2222,7 +2218,13 @@ footer .copyright {
 }
 
 .content.work .content {
-    padding: 40px 60px;
+    padding: 40px 80px;
+}
+
+@media (min-width: 1200px) {
+    .content.work .content .col-lg-6 {
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -2233,9 +2235,18 @@ footer .copyright {
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .content.work .content .content-div .col-sm-6 {
+    .content.work .content .content-div .col-sm-6,  .content.work .content .content-div .col-sm-3 {
         padding-left: 0;
         padding-right: 0;
+    }
+    content.work .content .content-div .col-sm-6 img,  .content.work .content .content-div .col-sm-3 img {
+        width: 90%;
+    }   
+    .content.work .content .content-div .col-sm-6 p {
+        padding-right: 30px;
+    }
+    .content.work .content .content-div div {
+        padding-left: 0;
     }
 }
 
