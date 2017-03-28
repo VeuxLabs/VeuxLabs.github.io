@@ -60,7 +60,8 @@ $(document).ready(function(){
     var j = jQuery.noConflict(); 
     $('.bxslider').bxSlider({
         pager: false,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        touchEnabled: false
     }); 
 }); 
 

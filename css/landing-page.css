@@ -25,6 +25,14 @@ h6 {
     font-family: 'Ubuntu', sans-serif;
 }
 
+@media all and (max-width: 480px) {
+    html,body { -webkit-text-size-adjust:none; }
+}
+/* iPad, portrait & landscape. */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    html,body { -webkit-text-size-adjust:none; }
+}
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -66,9 +74,10 @@ h6 {
     display: table-cell;
     width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .container>.navbar-header {
-        padding: 0;
+        padding-left: 35px;
+        padding-right: 40px;
         margin-left: 0;
         margin-right: 0;
         position: absolute;
@@ -77,8 +86,10 @@ h6 {
 @media (max-width: 480px) {
     .container>.navbar-header {
         padding: 0;
+        padding-left: 20px;
     }
 }
+
 .navbar.navbar-default.navbar-fixed-top .container {
     display: table;
     width: 86%;
@@ -86,13 +97,13 @@ h6 {
     padding-right: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar.navbar-default.navbar-fixed-top .container {
         width: 100%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .nav .underline {
         text-decoration: underline;
     }
@@ -142,12 +153,12 @@ h6 {
     padding-right: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-default .navbar-nav>li>a { 
         color: #ffffff;
         font-size: 28px;
         font-family: 'Ubuntu';
-        padding: 7%;
+        padding: 5%;
     }
     .closeButton {
         position: absolute;
@@ -157,6 +168,12 @@ h6 {
         border: none;
         width: 20px;
         height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .closeButton {
+        right: 30px;
     }
 }
 
@@ -265,6 +282,7 @@ h6 {
     .intro-header .container {
         padding-left: 50px;
         padding-right: 50px;
+        padding-top: 120px;
     }
 }
 
@@ -318,7 +336,7 @@ h6 {
 
 .services {
     padding-top: 110px;
-    padding-left: 50px;
+    padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 110px;
 }
@@ -377,8 +395,8 @@ h6 {
     line-height: 1.56;
     letter-spacing: normal;
     color: #ffffff;
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 80px;
+    padding-right: 80px;
     position: relative;
     background: url(../img/logisticsBackgroundCorner.svg) no-repeat 0 0 #2691bf;
 }
@@ -513,7 +531,7 @@ h6 {
 @media only screen and (max-width: 768px) and (min-width: 480px) {
     .app-dev .dev-img { 
         background-position-y: 110px;
-        padding-left: 10px;
+        padding-left: 40px;
         padding-right: 10px;
         text-align: center;
     }
@@ -540,6 +558,10 @@ h6 {
         padding-left: 10px;
         position: relative;
         top: 55px;
+    }
+    .app-dev .dev-img {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -583,31 +605,19 @@ h6 {
     .services {
         padding-bottom: 200px;
     }
-}
-
-@media (max-width:480px) {
-    .services {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-
-@media(max-width:1199px) {
     .research, .design {
-        padding-left: 55px;
-        padding-right: 70px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
-    .services .col-lg-6:nth-child(2) {
+      .services .col-lg-6:nth-child(2) {
         padding-left: 0;
     }
 }
 
-
-@media(max-width:768px) {
+@media(max-width:767px) {
     .services, .research, .design {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .navbar-default .navbar-brand {
         display: none;
@@ -620,9 +630,9 @@ h6 {
 }
 
 @media (max-width:480px) {
-    .research, .design{
-        padding-left: 10px;
-        padding-right: 10px;
+    .services, .research, .design, .product { 
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -704,6 +714,7 @@ h6 {
     .research .section2-text {
         width: 500px;
         margin-top: 0;
+        padding-left: 0;
     }
     .design .design-img img {
         width: 80%;
@@ -714,7 +725,7 @@ h6 {
     }
     .app-dev .dev-img img {
         width: 70%;
-        padding-left: 70px;
+        padding-left: 80px;
         padding-right: 60px;
         margin-bottom: -110px;
     }
@@ -747,7 +758,6 @@ h6 {
         color: #4e4b4a;
     }
     .services .section1-text {
-        width: 490px;
         padding-right: 0;
     }
     .research .section2 {
@@ -763,6 +773,7 @@ h6 {
         width: 531px;
         padding-bottom: 360px;
         margin-top: 0;
+        padding-left: 0;
     }
     .research {
         position: relative;
@@ -801,8 +812,6 @@ h6 {
     .design .section3-text {
         width: 469px;
         float: right;
-        margin-right: 45px;
-        padding-right: 30px;
     }
     .design h2 {
         font-size: 18px;
@@ -827,7 +836,9 @@ h6 {
     .app-dev .section4-text {
         z-index: 1;
         width: 531px;
-        margin-left: 65px;
+        margin-left: 0;
+        padding-left: 80px;
+        padding-right: 0;
         margin-top: 260px;
     }
     .app-dev h2 {
@@ -874,18 +885,25 @@ h6 {
         padding-right: 0;
     } 
     .app-dev .section4-text {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
         margin-top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-dev .section4-text {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1120px) {
     .app-dev .section4-text {
-        padding-right: 70px;
+        padding-right: 80px;
         margin-top: 110px;
         width: 552px;
-        padding-left: 60px;
+        padding-left: 80px;
     }
 }
 
@@ -1044,7 +1062,7 @@ footer .second-row .row {
     margin-right: 0;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 769px) {
     footer .second-row .row {
         margin-left: 60px;
     }
@@ -1060,8 +1078,8 @@ footer .second-row ul {
 
 @media only screen and (max-width: 480px) {
     footer .col-md-8 {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -1084,14 +1102,6 @@ footer .row.logos ul {
     margin: 10px 0;
 }
 
-@media only screen and (max-width: 1013px) {
-    footer .row.logos .col-md-3 {
-        width: initial;
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
 @media only screen and (max-width: 480px) {
     footer .second-row li {
          width: 85%;
@@ -1104,7 +1114,7 @@ footer .row.logos ul {
         width: 20%;
     }
     p.copyright {
-        margin-left: 10px;
+        margin-left: 15px;
     }
 }
 
@@ -1210,6 +1220,13 @@ footer .copyright {
     }
 }
 
+@media (max-width: 768px) and (min-width: 480px) {
+    .product-development {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 .product-development-items {
     padding-left: 10px;
     padding-right: 10px;
@@ -1242,7 +1259,7 @@ footer .copyright {
     .product img.music {
         margin-top: -130px;
         width: 80%;
-        padding-right: 70px;
+        padding-right: 80px;
     }
 }
 
@@ -1460,6 +1477,21 @@ footer .copyright {
     padding-right: 0;
 }
 
+@media only screen and  (min-width: 480px) and (max-width: 768px) {
+    .project-management .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .project-management .container .col-lg-6 {
+        float: right;
+        padding-right: 80px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .project-management .container .col-xs-12 {
         padding-left: 10px;
@@ -1469,13 +1501,13 @@ footer .copyright {
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .project-management .container {
-        padding-left: 55px;
-        padding-right: 55px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
     .project-management .col-lg-6 {
         width: 55%;
         float: right;
-        padding-right: 20px;
+        padding-right: 0;
     }
 }
 
@@ -1493,6 +1525,7 @@ footer .copyright {
     min-height: 80px;
     margin: 30px 0px;
     color: #4e4b4a;
+    padding-right: 20px
 }
 
 .content.contact .description {
@@ -1657,7 +1690,7 @@ footer .copyright {
 
 .content.contact .form {
     padding-left: 0;
-    padding-right: 45px;
+    padding-right: 0;
 }
 
 @media (max-width: 480px) {
@@ -1754,6 +1787,8 @@ footer .copyright {
     .project-management { 
         margin-top: 185px;
         padding-bottom: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .project-management img {
         margin-top: -110px;
@@ -1800,7 +1835,7 @@ footer .copyright {
    
 }
 
-@media only screen and (min-width: 1100px)  {
+@media only screen and (min-width: 1120px)  {
     .app-development {
         height: 1000px;
     }
@@ -1829,22 +1864,26 @@ footer .copyright {
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
     .support .fixed-div {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .support .fixed-div {
-        padding-left: 55px;
-        padding-right: 60px;
+        padding-left: 65px;
+        padding-right: 80px;
     }
 }
 
-@media only screen (max-width: 480px) {
+@media (max-width: 480px) {
+    .support .fixed-div  {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .support .fixed-div .col-xs-12 {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -1864,7 +1903,7 @@ footer .copyright {
 @media (min-width: 480px) and (max-width: 768px) {
     .support img {
         margin-top: 72px;
-        margin-left: 10px;
+        margin-left: 30px;
     }
 }
 
@@ -1929,7 +1968,7 @@ footer .copyright {
     }
     .support img {
         margin-top: -3px;
-        margin-left: 10px;
+        margin-left: 20px;
         width: 85%;
     }
     .support h2 {
@@ -2107,6 +2146,7 @@ footer .copyright {
 .content.work .small-image {
     display: inline-block;
     float: left;
+    width: 90%;
 }
 
 .content.work .app-logo {
@@ -2178,7 +2218,13 @@ footer .copyright {
 }
 
 .content.work .content {
-    padding: 40px 60px;
+    padding: 40px 80px;
+}
+
+@media (min-width: 1200px) {
+    .content.work .content .col-lg-6 {
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -2187,6 +2233,23 @@ footer .copyright {
         overflow: hidden;
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .content.work .content .content-div .col-sm-6,  .content.work .content .content-div .col-sm-3 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    content.work .content .content-div .col-sm-6 img,  .content.work .content .content-div .col-sm-3 img {
+        width: 90%;
+    }   
+    .content.work .content .content-div .col-sm-6 p {
+        padding-right: 30px;
+    }
+    .content.work .content .content-div div {
+        padding-left: 0;
+    }
+}
+
 
 #back-to-top, #back-to-top2  {
     width: 7%;
@@ -2348,7 +2411,13 @@ footer .logos img {
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
     footer .col-md-8 {
-        padding-left: 10px;
+        padding-left: 40px;
+    }
+    footer .row.logos ul {
+        margin: 10px 20px;
+    }
+    footer .copyright {
+        margin-left: 13px;
     }
 }
 
