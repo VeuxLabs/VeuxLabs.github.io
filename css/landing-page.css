@@ -1790,6 +1790,29 @@ footer .copyright {
 .content.thankyou img, .content.notfound img {
     margin: 0 auto;
 }
+
+.content.thankyou .button {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #2691bf;
+    border: solid 2px #7bcaec;
+    border-radius: 4px;
+    padding: 10px 44px;
+}
+
+.content.thankyou .button:hover {
+    text-decoration: none;
+}
+
+.content.thankyou .buttons {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
     
 @media only screen and (min-width: 991px) {
     .project-management .container.internal, .support .container.internal {
