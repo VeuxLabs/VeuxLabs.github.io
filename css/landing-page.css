@@ -151,6 +151,7 @@ h6 {
 .navbar-default .navbar-nav>li>a {
     color: #ffffff;
     padding-right: 0;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 767px) {
@@ -304,9 +305,10 @@ h6 {
 }
 
 .intro-header .container h2 b {
-    font-weight: 500;
+    font-weight: 400;
     min-width: 145px;
     display: inline-block;
+    color: #0c0115;
 }
 
 .intro-header .container > svg {
@@ -1059,7 +1061,7 @@ footer .second-row {
 
 footer .separator {
     float: left;
-    background-color: white;
+    background-color:  #777675;
     width: 1px;
     height: 80px;
     margin-top: 25px;
@@ -1105,7 +1107,7 @@ footer .second-row li {
     letter-spacing: 0.8px;
     color: #ffffff;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 0 0 8px;
 }
 
 footer .row.logos li {
@@ -1113,7 +1115,7 @@ footer .row.logos li {
 }
 
 footer .row.logos ul {
-    margin: 10px 0;
+    margin: 25px 0 0 0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -1618,6 +1620,14 @@ footer .copyright {
     letter-spacing: 0.5px;
 }
 
+.office span a {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
 .office h2 {
     text-transform: uppercase;
     color: white;
@@ -1705,7 +1715,6 @@ footer .copyright {
 .content.contact form input[type="checkbox"]:checked + label {
     background: url('../../img/checkedBox.svg') 0px 3px no-repeat;
 }
-
 .content.contact .form {
     padding-left: 0;
     padding-right: 0;
