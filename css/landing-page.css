@@ -309,6 +309,7 @@ h6 {
     min-width: 145px;
     display: inline-block;
     color: #0c0115;
+    text-align: left;
 }
 
 .intro-header .container > svg {
