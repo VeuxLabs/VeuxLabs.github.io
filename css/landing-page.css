@@ -60,7 +60,7 @@ h6 {
 }
 
 .navbar-collapse {
-    height: 100vh;
+    height: 101vh;
     margin-top: -48px;
 }
 .navbar-fixed-top .navbar-collapse {
@@ -151,6 +151,7 @@ h6 {
 .navbar-default .navbar-nav>li>a {
     color: #ffffff;
     padding-right: 0;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 767px) {
@@ -304,9 +305,10 @@ h6 {
 }
 
 .intro-header .container h2 b {
-    font-weight: 500;
+    font-weight: 400;
     min-width: 145px;
     display: inline-block;
+    color: #0c0115;
 }
 
 .intro-header .container > svg {
@@ -649,6 +651,7 @@ h6 {
     }
     .navbar-default .navbar-collapse {
         background-color: rgba(0,0,0,0.8);
+        border-color: transparent;
     }
 }
 
@@ -1058,7 +1061,7 @@ footer .second-row {
 
 footer .separator {
     float: left;
-    background-color: white;
+    background-color:  #777675;
     width: 1px;
     height: 80px;
     margin-top: 25px;
@@ -1104,15 +1107,15 @@ footer .second-row li {
     letter-spacing: 0.8px;
     color: #ffffff;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 0 0 8px;
 }
 
 footer .row.logos li {
-    max-width: 90px;
+    max-width: 60px;
 }
 
 footer .row.logos ul {
-    margin: 10px 0;
+    margin: 25px 0 0 0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -1580,6 +1583,10 @@ footer .copyright {
     letter-spacing: 0.5px;
 }
 
+.our-team.contact .office span a {
+    color: white !important;
+}
+
 .our-team.contact .office h2 {
     text-transform: uppercase;
     color: white;
@@ -1606,6 +1613,14 @@ footer .copyright {
 }
 
 .office span {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.office span a {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
@@ -1700,7 +1715,6 @@ footer .copyright {
 .content.contact form input[type="checkbox"]:checked + label {
     background: url('../../img/checkedBox.svg') 0px 3px no-repeat;
 }
-
 .content.contact .form {
     padding-left: 0;
     padding-right: 0;
@@ -1709,7 +1723,10 @@ footer .copyright {
 @media (max-width: 480px) {
     .content.contact .form {
         padding-left: 0;
-        padding-right: 5px;
+        padding-right: 0;
+    }
+    .content.contact form div {
+        width: 100%;
     }
 }
 
@@ -1781,6 +1798,29 @@ footer .copyright {
 
 .content.thankyou img, .content.notfound img {
     margin: 0 auto;
+}
+
+.content.thankyou .button {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #2691bf;
+    border: solid 2px #7bcaec;
+    border-radius: 4px;
+    padding: 10px 44px;
+}
+
+.content.thankyou .button:hover {
+    text-decoration: none;
+}
+
+.content.thankyou .buttons {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
     
 @media only screen and (min-width: 991px) {
@@ -2036,9 +2076,27 @@ footer .copyright {
     width: 100%;
 }
 
+@media (min-width: 768px) and  (max-width: 1100px) {
+    .content, .our-team {
+        padding: 40px 65px;
+    }
+}
+
+@media (min-width: 768px) and  (max-width: 992px) {
+    .content.contact {
+        padding: 45px 60px;
+    }
+}
+
 @media (max-width: 768px) {
     .content, .our-team {
-        padding: 10px;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .internal .content {
+        padding: 25px;
     }
 }
 
@@ -2327,7 +2385,7 @@ footer .copyright {
 
 @media only screen and (max-width: 480px) {
     .content, .our-team {
-        padding: 15px;
+        padding: 25px;
     }
 }
 
@@ -2546,8 +2604,15 @@ footer .logos img {
 .veux-team .details span.name {
     font-weight: 500;
 }
+
 .content.partners {
     padding-bottom: 110px;
+}
+
+@media (max-width: 480px) {
+    .content.partners {
+        padding-bottom: 50px;
+    }
 }
 
 .v-team {
@@ -2562,6 +2627,22 @@ footer .logos img {
 @media (max-width: 1130px) {
     .v-team > img {
         margin-top: -8.3%;
+    }
+}
+
+@media (max-width: 480px) {
+    .v-team > img {
+        display: none;
+    }
+    .mobile-back {
+        max-width: 100%;
+        margin-bottom: -3px;
+        display: block;
+    }
+}
+@media (min-width: 480px) {
+    .mobile-back {
+        display: none;
     }
 }
 
@@ -2627,29 +2708,33 @@ footer .logos img {
 }
 
 .read-more-target-1 {
-    opacity: 0;
+    /*opacity: 0;
     max-height: 0;
     font-size: 0;
-    transition: .25s ease;
+    transition: .25s ease; */
+    display: none;
 } 
 
 .read-more-target-1.open {
-    opacity: 1;
+    /*opacity: 1;
     font-size: inherit;
-    max-height: 999em;
+    max-height: 999em; */
+    display: block;
 }
 
 .read-more-target-2 {
-    opacity: 0;
+    /*opacity: 0;
     max-height: 0;
     font-size: 0;
-    transition: .25s ease;
+    transition: .25s ease; */
+    display: none;
 } 
 
 .read-more-target-2.open {
-    opacity: 1;
+    /* opacity: 1;
     font-size: inherit;
-    max-height: 999em;
+    max-height: 999em; */
+    display: block;
 }
 
 @media only screen and (min-width: 845px) {
