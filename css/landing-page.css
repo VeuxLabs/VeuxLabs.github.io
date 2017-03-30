@@ -1602,6 +1602,8 @@ footer .copyright {
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0.5px;
+    position: relative;
+    top: 2px;
 }
 
 .our-team.contact .office span a {
@@ -1667,6 +1669,11 @@ footer .copyright {
     .office {
         display: none;
     }
+}
+
+.office .icon {
+    display: inline-block;
+    margin-right: 15px;
 }
 
 .content.contact form div {
@@ -2117,7 +2124,7 @@ footer .copyright {
 
 @media (max-width: 480px) {
     .internal .content {
-        padding: 25px;
+        padding: 20px;
     }
 }
 
@@ -2406,7 +2413,7 @@ footer .copyright {
 
 @media only screen and (max-width: 480px) {
     .content, .our-team {
-        padding: 25px;
+        padding: 20px;
     }
 }
 
