@@ -2337,7 +2337,7 @@ footer .copyright {
 
 @media screen and (max-width: 480px) {
     .content.work .content {
-        padding: 0 15px;
+        padding: 0 5px;
     }
 }
 
