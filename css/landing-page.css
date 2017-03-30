@@ -85,8 +85,7 @@ h6 {
 }
 @media (max-width: 480px) {
     .container>.navbar-header {
-        padding: 0;
-        padding-left: 20px;
+        padding-left: 5px;
     }
 }
 
@@ -293,6 +292,13 @@ h6 {
         padding-top: 120px;
     }
 }
+@media (max-width: 320px) {
+    .intro-header .container {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 120px;
+    }
+}
 
 .intro-header .container h2 {
     font-family: 'Ubuntu';
@@ -309,6 +315,7 @@ h6 {
     min-width: 145px;
     display: inline-block;
     color: #0c0115;
+    text-align: left;
 }
 
 .intro-header .container > svg {
@@ -635,6 +642,7 @@ h6 {
         float: none;
         position: absolute;
         top: 10px;
+        left: 20px;
     }
 }
 
@@ -642,6 +650,9 @@ h6 {
     .services, .research, .design, .product { 
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .navbar-default .navbar-toggle {
+        padding: 9px 10px 0 0;
     }
 }
 
@@ -1236,6 +1247,16 @@ footer .copyright {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .product-development {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .product-development .col-xs-12 {
+        padding-left: 0;
+    }
+}
+
 @media (max-width: 768px) and (min-width: 480px) {
     .product-development {
         padding-left: 40px;
@@ -1510,8 +1531,8 @@ footer .copyright {
 
 @media only screen and (max-width: 480px) {
     .project-management .container .col-xs-12 {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0;
+        padding-right: 0;
     }   
 }
 
@@ -1581,6 +1602,8 @@ footer .copyright {
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0.5px;
+    position: relative;
+    top: 2px;
 }
 
 .our-team.contact .office span a {
@@ -1646,6 +1669,11 @@ footer .copyright {
     .office {
         display: none;
     }
+}
+
+.office .icon {
+    display: inline-block;
+    margin-right: 15px;
 }
 
 .content.contact form div {
@@ -2096,7 +2124,7 @@ footer .copyright {
 
 @media (max-width: 480px) {
     .internal .content {
-        padding: 25px;
+        padding: 20px;
     }
 }
 
@@ -2316,7 +2344,7 @@ footer .copyright {
 
 @media screen and (max-width: 480px) {
     .content.work .content {
-        padding: 0 15px;
+        padding: 0 5px;
     }
 }
 
@@ -2385,7 +2413,7 @@ footer .copyright {
 
 @media only screen and (max-width: 480px) {
     .content, .our-team {
-        padding: 25px;
+        padding: 20px;
     }
 }
 
