@@ -636,6 +636,7 @@ h6 {
         float: none;
         position: absolute;
         top: 10px;
+        left: 20px;
     }
 }
 
@@ -643,6 +644,9 @@ h6 {
     .services, .research, .design, .product { 
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .navbar-default .navbar-toggle {
+        padding: 9px 10px 0 0;
     }
 }
 
@@ -1237,6 +1241,16 @@ footer .copyright {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .product-development {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .product-development .col-xs-12 {
+        padding-left: 0;
+    }
+}
+
 @media (max-width: 768px) and (min-width: 480px) {
     .product-development {
         padding-left: 40px;
@@ -1511,8 +1525,8 @@ footer .copyright {
 
 @media only screen and (max-width: 480px) {
     .project-management .container .col-xs-12 {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0;
+        padding-right: 0;
     }   
 }
 
