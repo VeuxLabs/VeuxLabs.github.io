@@ -1020,30 +1020,33 @@ footer .first-row {
 }
 footer .first-row .col-md-12 {
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px;
     background-color: #2591bf;
-}
-
-@media (max-width: 768px) {
-    footer .first-row .col-md-12 {
-        padding: 65px 30px;
-    }
 }
 
 footer .first-row .text {
     text-align: center;
     color: #ffffff;
-    max-width: 500px;
     margin: 0 auto;
     font-family: 'Ubuntu';
     font-size: 32px;
     font-weight: 300;
     text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    footer .first-row .col-md-12 {
+        padding: 30px;
+    }
+    footer .first-row .text { 
+        margin-top: 0;
+    }
 }
 
 footer .first-row .button {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 55px;
 }
 
 footer .first-row .button button {
@@ -2149,6 +2152,7 @@ footer .copyright {
 
 .bx-wrapper .bx-next {
     background: url(../img/arrowRight.svg) no-repeat 0;
+    background-position: right;
 }
 
 .bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
@@ -2156,7 +2160,7 @@ footer .copyright {
 }
 
 .bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
-    background-position: 0;
+    background-position: right;
 }
 
 .content .bx-wrapper h1 {
@@ -2238,7 +2242,7 @@ footer .copyright {
 
 @media (max-width: 768px) {
     .content.main-div .content-div.first { 
-        margin-bottom: 10px;
+        margin-bottom: 77px;
     }
 }
 
@@ -2254,7 +2258,7 @@ footer .copyright {
 }
 
 .content.work .button-top {
-    margin: 35px auto;
+    margin: 0 auto;
     display: block;
 }
 
@@ -2263,11 +2267,12 @@ footer .copyright {
     text-transform: none;
     font-size: 40px;
     font-weight: 300;
-    line-height: 1.35;
+    line-height: 38px;
     letter-spacing: normal;
     color: #777675;
     text-align: left;
     padding-left: 0;
+    padding-top: 0;
 }
 
 .content.work p span {
@@ -2329,6 +2334,14 @@ footer .copyright {
 @media (min-width: 1200px) {
     .content.work .content .col-lg-6 {
         padding-left: 0;
+    }
+    .content.work .content .mid-column1 { 
+        padding-right: 40px;
+        padding-left: 0;
+    }
+    .content.work .content .mid-column2 { 
+        padding-left: 40px;
+        padding-right: 0;
     }
     .content.work .content {
         padding: 40px 80px;
@@ -2402,12 +2415,23 @@ footer .copyright {
     display: block;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .only-mobile {
         display: block;
     }
     .only-desktop {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-and-top {
+        margin-top: 20px;
+        min-height: 325px;
+    }
+    .logo-and-top .button-top {
+        position: relative;
+        top: 22px;
     }
 }
 
