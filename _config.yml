@@ -2,13 +2,13 @@
 #      Main Configs       #
 # ----------------------- #
 exclude: [node_modules, gulpfile.js]
-url: http://yoursite.com
+url: http://veuxlabs.github.io
 title: Veux Labs
 email: your-email@domain.com
 author: Veux Labs
-description: > # "Write an awesome description for your new site here. 
+description: > 
   VEUX WORKS WITH COMPANIES TO CREATE PRODUCTS AND APPS THAT HELP THEIR CUSTOMERS COMMUNICATE, COLLABORATE AND CONNECT.
-copyright: 'Copyright © 2017 Veux Labs, Inc. All rights reserved.'
+copyright: 'Copyright © veux labs 2017'
 
 # ----------------------- #
 #    Jekyll & Plugins     #

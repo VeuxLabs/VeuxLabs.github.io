@@ -1,30 +1,78 @@
 <!-- Footer -->
-<footer>
-    <div class="container">
+<footer class="app-dev">
+    {% if page.layout == 'default' %}
+        {% include footer_top.html %}
+    {% endif %}
+    <div class="second-row">
         <div class="row">
             <div class="col-md-8">
                 <ul class="list-inline">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="/work">Work</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a href="/about">About</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="/subscribe/">Subscribe to Veux Labs newsletter.</a>
+                        <a href="/contact">Contact</a>
                     </li>
                 </ul>
-                <p class="copyright text-muted small">{{ site.copyright }}</p>
             </div>
-            <div class="col-md-4">
-                {{ site.credits }}
+        </div>  
+        <div class="row logos">
+            <div class="col-lg-3 col-md-3 col-sm-4 first-column">
+                <ul class="list-inline">
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/company/veux-labs">    
+                            <img data-no-retina src="{{ site.github.url }}/img/linkedInLink.svg" alt="Linked In" class="img-responsive app" /> 
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="mailto:info@veuxlabs.com">    
+                            <img data-no-retina src="{{ site.github.url }}/img/emailLink.svg" alt="Linked In" class="img-responsive app" /> 
+                        </a>
+                    </li>
+                     <li>
+                        <a target="_blank" href="https://medium.com/veux-labs">    
+                            <img data-no-retina src="{{ site.github.url }}/img/mediumLink.svg" alt="Linked In" class="img-responsive app" /> 
+                        </a>
+                    </li>
+                </ul>
+                 <div class="copyright">
+                    <p class="copyright text-muted small">{{ site.copyright }}</p>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="office col-lg-3 col-md-3 col-sm-4">
+                <h2>Portland</h2>
+                <img src="../img/contactEmailIcon.svg" data-no-retina class="img-responsive icon"/> 
+                <span> 
+                    <a href="mailto:portland@veuxlabs.com"> portland@veuxlabs.com </a> 
+                </span> 
+                <br>
+                <img src="../img/contactPhoneIcon.svg" data-no-retina class="img-responsive icon"/>
+                    <span> +1 (503) 928-7731  </span> 
+                <br>
+            </div> 
+            <div class="separator"></div>
+             <div class="office col-lg-3 col-md-3 col-sm-4">
+                <h2>Boston</h2>
+                <img src="../img/contactEmailIcon.svg" data-no-retina class="img-responsive icon"/> 
+                <span>  
+                    <a href="mailto:boston@veuxlabs.com">  boston@veuxlabs.com </a> 
+                </span> 
+                <br>
+                <img src="../img/contactPhoneIcon.svg" data-no-retina class="img-responsive icon"/>
+                    <span>  +1 (617) 863-0245 </span> 
+                <br>
             </div>
         </div>
+       
     </div>
 </footer>
