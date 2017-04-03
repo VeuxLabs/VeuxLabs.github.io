@@ -294,8 +294,8 @@ h6 {
 }
 @media (max-width: 320px) {
     .intro-header .container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 120px;
     }
 }
@@ -575,7 +575,7 @@ h6 {
         position: relative;
         top: 55px;
     }
-    .app-dev .dev-img {
+    .app-dev .dev-img.residential {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -642,7 +642,7 @@ h6 {
         float: none;
         position: absolute;
         top: 10px;
-        left: 20px;
+        left: 33px;
     }
 }
 
@@ -653,6 +653,7 @@ h6 {
     }
     .navbar-default .navbar-toggle {
         padding: 9px 10px 0 0;
+        left: 20px;
     }
 }
 
@@ -663,6 +664,13 @@ h6 {
     .navbar-default .navbar-collapse {
         background-color: rgba(0,0,0,0.8);
         border-color: transparent;
+    }
+}
+
+@media (max-width:320px) {
+    .navbar-default .navbar-toggle {
+        padding-top: 5px;
+        height: 25px;
     }
 }
 
@@ -1578,6 +1586,11 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 480px) {
+    .content.contact h1 { 
+        min-height: inherit;
+        padding-right: 0;
+        letter-spacing: 0.1px;
+    }
     .content .map {
         max-width: none;
         width: 195%;
@@ -1724,9 +1737,16 @@ footer .first-column {
     min-height: 50px;
 }
 
-#mc_embed_signup form {
+.content.contact #mc_embed_signup form {
     padding-left: 0 !important;
     padding-top: 0 !important;
+}
+
+@media (max-width: 480px) {
+    .content.contact #mc_embed_signup form {
+        padding: 0;
+        margin-top: 45px;
+    }
 }
 
 #mc_embed_signup .mc-field-group label {
@@ -1918,7 +1938,7 @@ footer .first-column {
         margin-top: -110px;
         margin-left: auto;
         margin-bottom: 0;
-        width: 85%;
+        width: 100%;
     }
     .project-management h2 {
         margin-top: 60px;
@@ -1975,7 +1995,7 @@ footer .first-column {
     background-color: white;
     float: left;
     width: 100%;
-    margin-top: -110px;
+    margin-top: -100px;
     padding-top: 90px;
 }
 
@@ -1990,6 +2010,7 @@ footer .first-column {
     .support .fixed-div {
         padding-left: 25px;
         padding-right: 25px;
+        margin-top: -110px;
     }
 }
 
@@ -2004,6 +2025,7 @@ footer .first-column {
     .support .fixed-div  {
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: -105px;
     }
     .support .fixed-div .col-xs-12 {
         padding-left: 0;
@@ -2024,10 +2046,16 @@ footer .first-column {
     width: 55%;
 }
     
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 615px) {
     .support img {
-        margin-top: 72px;
+        margin-top: 85px;
         margin-left: 30px;
+    }
+}
+
+@media (min-width: 615px) and (max-width: 768px) {
+    .support img {
+        margin-top: 75px;
     }
 }
 
@@ -2079,6 +2107,8 @@ footer .first-column {
         margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+        margin-right: -3px;
+        margin-left: -3px;
     }
 }
 
@@ -2086,14 +2116,16 @@ footer .first-column {
     .support-top {
         background: url(../img/spaceCurvedBackground2.svg) no-repeat;
         background-size: contain;
-        margin-top: -130px;
+        margin-top: -140px;
         padding-left: 0;
         padding-right: 0;
+        margin-left: -5px;
+        margin-right: -5px;
     }
     .support img {
-        margin-top: -3px;
+        margin-top: 0;
         margin-left: 20px;
-        width: 85%;
+        width: 83%;
     }
     .support h2 {
         font-family: 'Ubuntu';
@@ -2121,9 +2153,21 @@ footer .first-column {
     }
 }
 
- @media only screen and (max-width: 405px) { 
+ @media only screen and (max-width: 430px) { 
      .support img { 
-        margin-top: 15px;
+        margin-top: 10px;
+    }
+}
+
+ @media only screen and (max-width: 370px) { 
+     .support img { 
+        margin-top: 22px;
+    }
+}
+
+ @media only screen and (max-width: 320px) { 
+     .support img { 
+        margin-top: 30px;
     }
 }
 
@@ -2388,6 +2432,12 @@ footer .first-column {
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+    .content.work .img-description {
+        margin-top: 10px;
+    }
+}
+
 .content .bx-wrapper img {
     margin: 0 auto;
 }
@@ -2447,8 +2497,20 @@ footer .first-column {
 }
 
 @media screen and (max-width: 480px) {
+    .mid-column2 .header {
+        width: 110%;
+        max-width: none;
+        margin-left: -20px !important;
+    } 
     .content.work .content {
-        padding: 0 5px;
+        padding: 0 20px;
+    }
+    .content.work .content .content-div div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content.work .content .content-div div.col-xs-6 {
+        padding-right: 10px;
     }
 }
 
@@ -2691,7 +2753,7 @@ footer .logos img {
         visibility: visible;
         height: auto;
         opacity: 1;
-        margin: 40px 0 -10px;
+        margin: 40px -20px -10px -20px;
         padding-bottom: 0;
     }
 }
@@ -2742,7 +2804,7 @@ footer .logos img {
 }
 
 .veux-team .details {
-    width: 140px;
+    max-width: 140px;
     margin: 20px auto;
 }
 
@@ -2796,6 +2858,15 @@ footer .logos img {
         display: block;
     }
 }
+
+@media (max-width: 320px) {
+    .mobile-back {
+        width: 105%;
+        max-width: none;
+        margin-left: -10px;
+    }
+}
+
 @media (min-width: 480px) {
     .mobile-back {
         display: none;
@@ -2804,7 +2875,7 @@ footer .logos img {
 
 .oval {
     width: 100%;
-    height: 279px;
+    height: 250px;
     background-color: #7bcaec;
     -moz-border-radius: 120px;
     -webkit-border-radius: 120px;
@@ -2815,7 +2886,7 @@ footer .logos img {
 }
 
 .oval img {
-    height: 279px;
+    height: 250px;
 }
 
 .oval .name {
