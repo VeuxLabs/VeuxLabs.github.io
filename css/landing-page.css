@@ -294,8 +294,8 @@ h6 {
 }
 @media (max-width: 320px) {
     .intro-header .container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 120px;
     }
 }
@@ -664,6 +664,13 @@ h6 {
     .navbar-default .navbar-collapse {
         background-color: rgba(0,0,0,0.8);
         border-color: transparent;
+    }
+}
+
+@media (max-width:320px) {
+    .navbar-default .navbar-toggle {
+        padding-top: 5px;
+        height: 25px;
     }
 }
 
@@ -1579,6 +1586,11 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 480px) {
+    .content.contact h1 { 
+        min-height: inherit;
+        padding-right: 0;
+        letter-spacing: 0.1px;
+    }
     .content .map {
         max-width: none;
         width: 195%;
@@ -1725,9 +1737,16 @@ footer .first-column {
     min-height: 50px;
 }
 
-#mc_embed_signup form {
+.content.contact #mc_embed_signup form {
     padding-left: 0 !important;
     padding-top: 0 !important;
+}
+
+@media (max-width: 480px) {
+    .content.contact #mc_embed_signup form {
+        padding: 0;
+        margin-top: 45px;
+    }
 }
 
 #mc_embed_signup .mc-field-group label {
@@ -2284,6 +2303,12 @@ footer .first-column {
     z-index: 999;
 }
 
+@media (max-width: 400px) {
+    .content .bx-wrapper .bx-controls-direction a {
+        top: 40px;
+    }
+}
+
 .content .bx-wrapper h2 {
     font-family: 'Ubuntu';
     font-size: 26px;
@@ -2721,12 +2746,6 @@ footer .logos img {
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .veux-team {
-        margin: 0 -20px -10px -10px;
-    }
-}
-
 @media only screen and (min-width: 1200px) {
     .veux-team .col-lg-2, .content .logos .col-lg-2 {
         width: 20%;
@@ -2773,7 +2792,7 @@ footer .logos img {
 }
 
 .veux-team .details {
-    width: 140px;
+    max-width: 140px;
     margin: 20px auto;
 }
 
@@ -2827,6 +2846,15 @@ footer .logos img {
         display: block;
     }
 }
+
+@media (max-width: 320px) {
+    .mobile-back {
+        width: 105%;
+        max-width: none;
+        margin-left: -10px;
+    }
+}
+
 @media (min-width: 480px) {
     .mobile-back {
         display: none;
