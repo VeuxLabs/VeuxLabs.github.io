@@ -104,10 +104,10 @@ h6 {
 
 @media (max-width: 767px) {
     .nav .underline {
-        text-decoration: underline;
+        color: #00aad6 !important;
     }
     .nav .underline:hover {
-        text-decoration: underline;
+        color: #00aad6 !important;
     }
 }
 
@@ -1644,6 +1644,16 @@ footer .copyright {
 .our-team.contact .office div {
     padding-left: 0;
 }
+
+@media (min-width: 992px) {
+    .our-team.contact .office div.mid-column1 {
+        padding-right: 40px;
+    }
+    .our-team.contact .office div.mid-column2 {
+        padding-left: 40px;
+    }
+}
+
 
 .office {
     color: white;
