@@ -1645,6 +1645,16 @@ footer .copyright {
     padding-left: 0;
 }
 
+@media (min-width: 992px) {
+    .our-team.contact .office div.mid-column1 {
+        padding-right: 40px;
+    }
+    .our-team.contact .office div.mid-column2 {
+        padding-left: 40px;
+    }
+}
+
+
 .office {
     color: white;
     margin-bottom: 30px;
