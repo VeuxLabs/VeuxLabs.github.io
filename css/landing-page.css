@@ -104,10 +104,10 @@ h6 {
 
 @media (max-width: 767px) {
     .nav .underline {
-        text-decoration: underline;
+        color: #00aad6 !important;
     }
     .nav .underline:hover {
-        text-decoration: underline;
+        color: #00aad6 !important;
     }
 }
 
