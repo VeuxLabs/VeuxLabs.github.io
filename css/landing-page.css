@@ -1575,7 +1575,8 @@ footer .copyright {
 
 .content.contact h1 {
     color: #4e4b4a;
-    padding-right: 20px
+    padding-right: 20px;
+    margin-top: 0;
 }
 
 .content.contact .description {
