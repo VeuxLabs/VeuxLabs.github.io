@@ -2818,6 +2818,12 @@ footer .logos img {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .veux-team .col-lg-2 {
+        padding-left: 0;
+    }
+}
+
 .content .logos .col-lg-2 {
     min-height: auto;
 }
