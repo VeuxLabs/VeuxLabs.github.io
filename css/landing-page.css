@@ -1627,6 +1627,20 @@ footer .copyright {
     top: 2px;
 }
 
+.our-team.contact .office a {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: 2px;
+    color: white;
+}
+.our-team.contact .office a:hover {
+    cursor: pointer;
+}
+
 .our-team.contact .office span a {
     color: white !important;
 }
