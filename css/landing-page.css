@@ -1574,10 +1574,9 @@ footer .copyright {
 }
 
 .content.contact h1 {
-    min-height: 80px;
-    margin: 30px 0px;
     color: #4e4b4a;
-    padding-right: 20px
+    padding-right: 20px;
+    margin-top: 0;
 }
 
 .content.contact .description {
@@ -1625,6 +1624,20 @@ footer .copyright {
     letter-spacing: 0.5px;
     position: relative;
     top: 2px;
+}
+
+.our-team.contact .office a {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: 2px;
+    color: white;
+}
+.our-team.contact .office a:hover {
+    cursor: pointer;
 }
 
 .our-team.contact .office span a {
