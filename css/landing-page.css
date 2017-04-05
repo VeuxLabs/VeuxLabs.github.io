@@ -1576,7 +1576,13 @@ footer .copyright {
 .content.contact h1 {
     color: #4e4b4a;
     padding-right: 20px;
-    margin-top: 0;
+    margin-top: 0; 
+}
+
+.content.contact h1.subtitle {
+    margin-top: 25px;
+    min-height: 90px;
+    margin-bottom: 20px;
 }
 
 .content.contact .description {
@@ -1584,17 +1590,33 @@ footer .copyright {
     max-width: 960px;
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .content.contact h1 { 
         min-height: inherit;
         padding-right: 0;
         letter-spacing: 0.1px;
+        margin-top: 20px;
     }
     .content .map {
         max-width: none;
         width: 195%;
         margin: 20px 0;
         margin-left: -20px;
+    }
+    .content.contact h1.subtitle.sub2 {  
+        min-height: inherit;
+    }
+}
+@media  (max-width: 768px) {
+    .content.contact h1 {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .content.contact h1.subtitle.sub2 { 
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
 }
 
@@ -2876,9 +2898,10 @@ footer .logos img {
         display: none;
     }
     .mobile-back {
-        max-width: 100%;
+        max-width: 101%;
         margin-bottom: -3px;
         display: block;
+        margin-left: -3px;
     }
 }
 
