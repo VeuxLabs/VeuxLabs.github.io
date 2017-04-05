@@ -1,6 +1,7 @@
 # Veux Labs Site
 
 Veux Labs Site.
+Theme based on Landing theme from http://startbootstrap.com
 
 ## Development
 
