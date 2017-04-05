@@ -2417,8 +2417,6 @@ footer .first-column {
 }
 
 .content.work .small-image {
-    display: inline-block;
-    float: left;
     width: 90%;
 }
 
@@ -2477,10 +2475,8 @@ footer .first-column {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 480px) {
-    .content.work .img-description {
-        margin-top: 10px;
-    }
+.content.work .img-description {
+    margin-top: 10px;
 }
 
 .content .bx-wrapper img {
