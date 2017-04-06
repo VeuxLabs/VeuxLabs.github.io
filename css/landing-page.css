@@ -2410,6 +2410,11 @@ footer .first-column {
     margin-right: 20px;
 }
 
+.content.main-div .content-div .col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 @media (max-width: 768px) {
     .content.main-div .content-div.first { 
         margin-bottom: 77px;
