@@ -2456,6 +2456,8 @@ footer .first-column {
     letter-spacing: 0.5px;
     color: #207ba4;
     text-transform: uppercase;
+    position: relative;
+    bottom: 5px;
 }
 
 .content.work p {
