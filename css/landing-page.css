@@ -2410,6 +2410,11 @@ footer .first-column {
     margin-right: 20px;
 }
 
+.content.main-div .content-div .col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 @media (max-width: 768px) {
     .content.main-div .content-div.first { 
         margin-bottom: 77px;
@@ -2451,6 +2456,8 @@ footer .first-column {
     letter-spacing: 0.5px;
     color: #207ba4;
     text-transform: uppercase;
+    position: relative;
+    bottom: 5px;
 }
 
 .content.work p {
