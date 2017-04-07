@@ -715,14 +715,28 @@ h6 {
 }
 
 @media (min-width: 768px) {
-    .logo {
+    .container .logo {
         width: 408px;
     }
-    .logo-home {
+    .container .logo-home {
         width: 408px;
     }
     .services .fit {
         width: 500px;
+    }
+    .navbar-header .logo {
+        max-width: 120px;
+        position: relative;
+        top: 20px;
+        width: auto;
+        max-height: 30px;
+    }
+    .navbar-header .logo-home {
+        max-width: 120px;
+        position: relative;
+        top: 20px;
+        max-height: 30px;
+        width: auto;
     }
 }
 
@@ -1136,8 +1150,10 @@ footer .second-row li {
     margin: 0 0 8px;
 }
 
-footer .row.logos li {
-    max-width: 60px;
+@media (min-width: 992px) and (max-width: 1000px) {
+    footer .row.logos li {
+        max-width: 60px;
+    }
 }
 
 footer .row.logos ul {
@@ -1577,6 +1593,7 @@ footer .copyright {
     color: #4e4b4a;
     padding-right: 20px;
     margin-top: 0; 
+    line-height: 40px;
 }
 
 .content.contact h1.subtitle {
@@ -1883,8 +1900,7 @@ footer .first-column {
     
 #mc_embed_signup .buttons, .content.contact form .buttons {
     border: solid 0.9px #2591bf;
-    min-width: 120px;
-    max-width: 120px;
+    max-width: 150px;
     display: block;
     width: 100%;
     height: 46px;
@@ -1898,6 +1914,7 @@ footer .first-column {
     color: white;
     text-transform: uppercase;
     margin: 30px auto 0 auto;
+    text-indent: 0%;
 }
 
 #result {
