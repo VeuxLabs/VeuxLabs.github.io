@@ -177,6 +177,12 @@ h6 {
     }
 }
 
+@media (max-width: 330px) {
+    .closeButton {
+        right: 15px;
+    }
+}
+
 @media (min-width: 768px) {
     .closeButton {
         display: none;
@@ -667,10 +673,19 @@ h6 {
     }
 }
 
-@media (max-width:320px) {
+@media (max-width: 460px) {
     .navbar-default .navbar-toggle {
         padding-top: 5px;
-        height: 25px;
+        height: 30px;
+        padding: 0 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .intro-header .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
