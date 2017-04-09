@@ -177,6 +177,12 @@ h6 {
     }
 }
 
+@media (max-width: 330px) {
+    .closeButton {
+        right: 15px;
+    }
+}
+
 @media (min-width: 768px) {
     .closeButton {
         display: none;
@@ -667,10 +673,19 @@ h6 {
     }
 }
 
-@media (max-width:320px) {
+@media (max-width: 460px) {
     .navbar-default .navbar-toggle {
         padding-top: 5px;
-        height: 25px;
+        height: 30px;
+        padding: 0 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .intro-header .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -715,14 +730,28 @@ h6 {
 }
 
 @media (min-width: 768px) {
-    .logo {
+    .container .logo {
         width: 408px;
     }
-    .logo-home {
+    .container .logo-home {
         width: 408px;
     }
     .services .fit {
         width: 500px;
+    }
+    .navbar-header .logo {
+        max-width: 120px;
+        position: relative;
+        top: 20px;
+        width: auto;
+        max-height: 30px;
+    }
+    .navbar-header .logo-home {
+        max-width: 120px;
+        position: relative;
+        top: 20px;
+        max-height: 30px;
+        width: auto;
     }
 }
 
@@ -1136,8 +1165,10 @@ footer .second-row li {
     margin: 0 0 8px;
 }
 
-footer .row.logos li {
-    max-width: 60px;
+@media (min-width: 992px) and (max-width: 1000px) {
+    footer .row.logos li {
+        max-width: 60px;
+    }
 }
 
 footer .row.logos ul {
@@ -1574,10 +1605,16 @@ footer .copyright {
 }
 
 .content.contact h1 {
-    min-height: 80px;
-    margin: 30px 0px;
     color: #4e4b4a;
-    padding-right: 20px
+    padding-right: 20px;
+    margin-top: 0; 
+    line-height: 40px;
+}
+
+.content.contact h1.subtitle {
+    margin-top: 25px;
+    min-height: 90px;
+    margin-bottom: 20px;
 }
 
 .content.contact .description {
@@ -1585,17 +1622,33 @@ footer .copyright {
     max-width: 960px;
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .content.contact h1 { 
         min-height: inherit;
         padding-right: 0;
         letter-spacing: 0.1px;
+        margin-top: 20px;
     }
     .content .map {
         max-width: none;
         width: 195%;
         margin: 20px 0;
         margin-left: -20px;
+    }
+    .content.contact h1.subtitle.sub2 {  
+        min-height: inherit;
+    }
+}
+@media  (max-width: 768px) {
+    .content.contact h1 {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .content.contact h1.subtitle.sub2 { 
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
 }
 
@@ -1625,6 +1678,20 @@ footer .copyright {
     letter-spacing: 0.5px;
     position: relative;
     top: 2px;
+}
+
+.our-team.contact .office a {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: 2px;
+    color: white;
+}
+.our-team.contact .office a:hover {
+    cursor: pointer;
 }
 
 .our-team.contact .office span a {
@@ -1848,8 +1915,7 @@ footer .first-column {
     
 #mc_embed_signup .buttons, .content.contact form .buttons {
     border: solid 0.9px #2591bf;
-    min-width: 120px;
-    max-width: 120px;
+    max-width: 150px;
     display: block;
     width: 100%;
     height: 46px;
@@ -1863,6 +1929,7 @@ footer .first-column {
     color: white;
     text-transform: uppercase;
     margin: 30px auto 0 auto;
+    text-indent: 0%;
 }
 
 #result {
@@ -2375,6 +2442,11 @@ footer .first-column {
     margin-right: 20px;
 }
 
+.content.main-div .content-div .col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 @media (max-width: 768px) {
     .content.main-div .content-div.first { 
         margin-bottom: 77px;
@@ -2382,8 +2454,6 @@ footer .first-column {
 }
 
 .content.work .small-image {
-    display: inline-block;
-    float: left;
     width: 90%;
 }
 
@@ -2418,6 +2488,8 @@ footer .first-column {
     letter-spacing: 0.5px;
     color: #207ba4;
     text-transform: uppercase;
+    position: relative;
+    bottom: 5px;
 }
 
 .content.work p {
@@ -2442,10 +2514,8 @@ footer .first-column {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 480px) {
-    .content.work .img-description {
-        margin-top: 10px;
-    }
+.content.work .img-description {
+    margin-top: 10px;
 }
 
 .content .bx-wrapper img {
@@ -2783,6 +2853,12 @@ footer .logos img {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .veux-team .col-lg-2 {
+        padding-left: 0;
+    }
+}
+
 .content .logos .col-lg-2 {
     min-height: auto;
 }
@@ -2863,9 +2939,10 @@ footer .logos img {
         display: none;
     }
     .mobile-back {
-        max-width: 100%;
+        max-width: 101%;
         margin-bottom: -3px;
         display: block;
+        margin-left: -3px;
     }
 }
 

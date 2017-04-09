@@ -4,10 +4,9 @@
 exclude: [node_modules, gulpfile.js]
 url: http://veuxlabs.github.io
 title: Veux Labs
-email: your-email@domain.com
+email: boston@veuxlabs.com
 author: Veux Labs
-description: > 
-  VEUX WORKS WITH COMPANIES TO CREATE PRODUCTS AND APPS THAT HELP THEIR CUSTOMERS COMMUNICATE, COLLABORATE AND CONNECT.
+description: VEUX WORKS WITH COMPANIES TO CREATE PRODUCTS AND APPS THAT HELP THEIR CUSTOMERS COMMUNICATE, COLLABORATE AND CONNECT.
 copyright: 'Copyright © veux labs 2017'
 
 # ----------------------- #

@@ -1,6 +1,7 @@
 # Veux Labs Site
 
-Veux Labs Site, theme based on [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page/)
+Veux Labs Site.
+Theme based on Landing theme from http://startbootstrap.com
 
 ## Development
 
@@ -12,7 +13,7 @@ npm install
 ```
 ** This step is only needed the first time you run the app in your local environment.
 
-After installing the dependencies,type:
+After installing the dependencies, type:
 ```sh
 gulp
 ```
