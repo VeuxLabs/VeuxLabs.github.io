@@ -2434,6 +2434,7 @@ footer .first-column {
     margin-bottom: 80px;
     padding-bottom: 80px;
     border-bottom: 2px solid #d8d8d8;
+    margin-top: 20px;
 }
 
 .content.main-div .content-div.first a { 
@@ -2520,6 +2521,7 @@ footer .first-column {
 
 .content .bx-wrapper img {
     margin: 0 auto;
+    width: 100%;
 }
 
 .content .bx-wrapper a img {
@@ -2552,7 +2554,7 @@ footer .first-column {
         padding-left: 0;
     }
     .content.work .content .mid-column2 { 
-        padding-left: 40px;
+        padding-left: 0;
         padding-right: 0;
     }
     .content.work .content {
@@ -2597,7 +2599,7 @@ footer .first-column {
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .content.work .content .content-div .col-sm-6,  .content.work .content .content-div .col-sm-3 {
         padding-left: 0;
-        padding-right: 0;
+        padding-right: 10px;
     }
     content.work .content .content-div .col-sm-6 img,  .content.work .content .content-div .col-sm-3 img {
         width: 90%;
@@ -2833,7 +2835,7 @@ footer .logos img {
         visibility: visible;
         height: auto;
         opacity: 1;
-        margin: 40px -20px -10px -20px;
+        margin: 40px 0 -10px 0;
         padding-bottom: 0;
     }
 }
