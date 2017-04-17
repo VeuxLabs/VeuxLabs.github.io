@@ -2524,6 +2524,10 @@ footer .first-column {
     width: 100%;
 }
 
+.content .bx-wrapper  .special-layout img {
+    width: 75%;
+}
+
 .content .bx-wrapper a img {
     margin: 10px 0;
 }
