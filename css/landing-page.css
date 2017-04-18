@@ -1077,36 +1077,7 @@ footer .logos img {
         padding-left: 20px;
     }
 }
-@media (min-width:768px) and (max-width:1200px) {
-    .research .section2 img {
-        margin: -130px auto 0 auto;
-        float: none;
-        width: 80%;
-        max-width: 500px;
-    }
-    .research .section2-text {
-        width: 500px;
-        margin-top: 0;
-        padding-left: 0;
-    }
-    .design .design-img img {
-        width: 80%;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .app-dev .dev-img img {
-        width: 70%;
-        padding-left: 80px;
-        padding-right: 60px;
-        margin-bottom: -110px;
-    }
-    .product-development {
-        padding-left: 55px;
-        padding-right: 70px;
-    }
-}
+
 
 @media (min-width: 768px) and (max-width: 1120px) {
     .app-dev .section4-text {
@@ -1160,11 +1131,6 @@ footer .logos img {
         width: 75%;
         float: right;
     }
-    .product img.music {
-        margin-top: -130px;
-        width: 80%;
-        padding-right: 80px;
-    }
     .project-management .container {
         padding-left: 80px;
         padding-right: 80px;
@@ -1180,6 +1146,34 @@ footer .logos img {
     }
     .support img {
         margin-top: 60px;
+    }
+     .research .section2 img {
+        margin: -130px auto 0 auto;
+        float: none;
+        width: 80%;
+        max-width: 500px;
+    }
+    .research .section2-text {
+        width: 500px;
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .design .design-img img {
+        width: 80%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .app-dev .dev-img img {
+        width: 70%;
+        padding-left: 80px;
+        padding-right: 60px;
+        margin-bottom: -110px;
+    }
+    .product-development {
+        padding-left: 55px;
+        padding-right: 70px;
     }
 }
 
@@ -1215,18 +1209,11 @@ footer .logos img {
         margin-bottom: -65px;
         padding-left: 0;
     }
-     .product .dev-img {
-        text-align: center;
-    }
     .product-development {
         padding-left: 40px;
         padding-right: 40px;
     }
-     .product img.music {
-        width: 75%;
-        margin-top: -110px;
-    }
-     .project-management .container {
+    .project-management .container {
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -2665,12 +2652,28 @@ footer .logos img {
     position: relative;
 }
 
+@media  (min-width: 768px) and (max-width: 1200px) {
+    .product img.music {
+        margin-top: -130px;
+        width: 80%;
+        padding-right: 80px;
+    }
+}
 @media  (max-width: 768px) {
     .content.contact h1 {
         padding-right: 0;
     }
     .content, .our-team {
         padding: 40px;
+    }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+    .product img.music {
+        width: 75%;
+        margin-top: -110px;
+    }
+    .product .dev-img {
+        text-align: center;
     }
 }
 
