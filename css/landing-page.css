@@ -2440,9 +2440,7 @@ footer .logos img {
     margin: 0 auto;
     width: 100%;
 }
-.content .bx-wrapper  .special-layout img {
-    width: 75%;
-}
+
 .content .bx-wrapper a img {
     margin: 10px 0;
 }
@@ -2533,12 +2531,20 @@ footer .logos img {
         padding: 0 60px;
     }
 }
+@media (min-width: 768px) {
+    .content .bx-wrapper  .special-layout img {
+        max-width: 210px;
+    }
+}
 
 /* === WORK PAGES (Tablet) ===  */
 
 @media (max-width: 768px) {
     .content .bx-wrapper h2 {
         margin-top: 10px;
+    }
+    .content .bx-wrapper  .special-layout img {
+        max-width: 263px;
     }
     .content.main-div .content-div {
         padding-bottom: 30px;
