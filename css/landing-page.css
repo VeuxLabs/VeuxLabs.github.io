@@ -1700,25 +1700,6 @@ footer .logos img {
 
 /* === ABOUT PAGE (Mid desktop) ===  */
 
-@media (max-width: 1200px) {
-    .veux-team .col-lg-2 {
-        min-height: 285px;
-    }
-}
-
-@media (max-width: 1130px) {
-    .v-team > img {
-        margin-top: -8.3%;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    .content .logos .col-md-2 {
-        width: 18.6%;
-        margin: 20px 5px;
-    }
-}
-
 @media (min-width: 991px) {
     .product-development-items .false-ui {
         display: none;
@@ -2714,3 +2695,23 @@ footer .logos img {
     width: 96%;
     margin-top: -80px;
 }
+
+@media (max-width: 1130px) {
+    .v-team > img {
+        margin-top: -8.3%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .veux-team .col-lg-2 {
+        min-height: 285px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .content .logos .col-md-2 {
+        width: 18.6%;
+        margin: 20px 5px;
+    }
+}
+
