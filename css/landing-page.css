@@ -271,7 +271,14 @@ h6 {
     .navbar-default .navbar-collapse {
         background-color: rgba(0,0,0,0.6);
     }
+     .navbar-default .navbar-brand {
+        display: none;
+    }
     .navbar-default .navbar-toggle {
+        float: none;
+        position: absolute;
+        top: 10px;
+        left: 33px;
         margin-left: 0;
         margin-right: 0;
     }
@@ -306,6 +313,10 @@ h6 {
     }
      .closeButton {
         right: 30px;
+    }
+    .navbar-default .navbar-toggle {
+        padding: 9px 10px 0 0;
+        left: 20px;
     }
 }
 @media (max-width: 460px) {
@@ -1239,15 +1250,6 @@ footer .logos img {
         padding-left: 40px;
         padding-right: 40px;
     }
-    .navbar-default .navbar-brand {
-        display: none;
-    }
-    .navbar-default .navbar-toggle {
-        float: none;
-        position: absolute;
-        top: 10px;
-        left: 33px;
-    }
     .intro-message {
         padding-bottom: 15%;
     }
@@ -1327,10 +1329,6 @@ footer .logos img {
     .services, .research, .design, .product { 
         padding-left: 20px;
         padding-right: 20px;
-    }
-    .navbar-default .navbar-toggle {
-        padding: 9px 10px 0 0;
-        left: 20px;
     }
      .app-dev .section4-text {
         padding-left: 20px;
