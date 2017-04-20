@@ -2422,7 +2422,7 @@ footer .logos img {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.67;
+    line-height: 30px;
     letter-spacing: 0.5px;
     color: #4e4b4a;
     margin-bottom: 30px;
@@ -2609,6 +2609,9 @@ footer .logos img {
         font-size: 22px;
         line-height: 36px;
     }
+    .content .bx-wrapper a img.store-link {
+        margin: 10px auto 30px auto;
+    }
     .mid-column2 .header {
         width: 110%;
         max-width: none;
@@ -2623,6 +2626,12 @@ footer .logos img {
     }
     .content.work .content .content-div div.col-xs-6 {
         padding-right: 10px;
+    }
+    #back-to-top, #back-to-top2  {
+        width: 25%;
+    }
+    .content.work .img-description {
+        line-height: 18px;
     }
 }
 /*  General Adjustments (Keep at the bottom to avoid override other styles) */
