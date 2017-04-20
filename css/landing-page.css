@@ -508,7 +508,7 @@ footer .logos img {
 
 @media (max-width: 480px) {
     footer .col-md-8 {
-        padding-left: 20px;
+        padding-left: 18x;
         padding-right: 20px;
     }
     footer .second-row li {
@@ -520,9 +520,6 @@ footer .logos img {
     }
     footer .row.logos li {
         width: 20%;
-    }
-    p.copyright {
-        margin-left: 15px;
     }
 }
 
@@ -766,7 +763,7 @@ footer .logos img {
     font-size: 18px;
     font-weight: 300;
     line-height: 28px;
-    color: #171616;
+    color: #4e4b4a;
     padding-bottom: 30px;
 }
 
@@ -1314,6 +1311,9 @@ footer .logos img {
     .services > div img {
         width: 600px;
     }
+    .services h3 {
+        color: #171615;
+    }
     .design .design-img { 
         padding-bottom: 0;
     }
@@ -1413,8 +1413,7 @@ footer .logos img {
         font-family: 'Ubuntu';
         font-size: 18px;
         font-weight: 300;
-        line-height: 36px;
-        letter-spacing: normal;
+        line-height: 28px;
         color: #171616;
     }
 }
@@ -1599,7 +1598,7 @@ footer .logos img {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 25px;
     letter-spacing: 0.5px;
     text-align: center;
     color: #ffffff;
@@ -1866,10 +1865,10 @@ footer .logos img {
         display: none;
     }
     .mobile-back {
-        max-width: 101%;
+        max-width: 105%;
         margin-bottom: -3px;
         display: block;
-        margin-left: -3px;
+        margin-left: -15px;
     }
     .circles > div {
        width: 100%;
@@ -1880,6 +1879,9 @@ footer .logos img {
     } 
     .circles > div .desc h3 { 
         line-height: 30px;
+    }
+    .circles .right {
+        margin-top: 25px;
     }
 }
 
@@ -2188,6 +2190,9 @@ footer .logos img {
     .office {
         display: none;
     }
+    h1.contact-us {
+        margin-top: 30px;
+    }
 }
 
 /* === CONTACT PAGE (Mobile)  ===  */
@@ -2417,7 +2422,7 @@ footer .logos img {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.67;
+    line-height: 30px;
     letter-spacing: 0.5px;
     color: #4e4b4a;
     margin-bottom: 30px;
@@ -2604,6 +2609,9 @@ footer .logos img {
         font-size: 22px;
         line-height: 36px;
     }
+    .content .bx-wrapper a img.store-link {
+        margin: 10px auto 30px auto;
+    }
     .mid-column2 .header {
         width: 110%;
         max-width: none;
@@ -2618,6 +2626,12 @@ footer .logos img {
     }
     .content.work .content .content-div div.col-xs-6 {
         padding-right: 10px;
+    }
+    #back-to-top, #back-to-top2  {
+        width: 25%;
+    }
+    .content.work .img-description {
+        line-height: 18px;
     }
 }
 /*  General Adjustments (Keep at the bottom to avoid override other styles) */
@@ -2676,6 +2690,7 @@ footer .logos img {
     .product .product-development h3 {
         font-size: 28px;
         line-height: 36px;
+        color: #171615;
     }
     .product .product-development p { 
         font-size: 18px;
