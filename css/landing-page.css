@@ -138,6 +138,14 @@ h6 {
     }
 }
 
+/* === GLOBAL SETTINGS (mobile size) === */
+@media (max-width: 480px) {
+    .app-dev .dev-footer {
+        height: 130px;
+        background-size: 50%;
+    }
+}
+
 /* === END GLOBAL SETTINGS === */
 
 /* === NAVIGATION BAR (Desktop size) === */
@@ -471,6 +479,13 @@ footer .logos img {
 @media (min-width: 992px) and (max-width: 1000px) {
     footer .row.logos li {
         max-width: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    footer .office.portland {
+        position: relative;
+        left: 5px;
     }
 }
 
@@ -907,7 +922,7 @@ footer .logos img {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
-    color: #171616;
+    color: #4e4b4a;
     margin-bottom: 100px;
 }
 /* === HOMEPAGE STYLING, CONTENT SECTION (Large size screen) === */
@@ -936,7 +951,7 @@ footer .logos img {
 
 @media (min-width: 1120px) {
      .app-development {
-        height: 1000px;
+        height: 1100px;
     }
     .navbar-fixed-top {
         left: 50%;
@@ -1304,7 +1319,10 @@ footer .logos img {
         padding-bottom: 0;
         float: none;
     }
-     .services > div {
+    .services {
+        padding-bottom: 110px;
+    }
+    .services > div {
         padding-left: 0;
         padding-right: 0;
     } 
@@ -1608,9 +1626,8 @@ footer .logos img {
     font-weight: 500;
 }
 .content.partners {
-    padding-bottom: 110px;
+    padding-bottom: 140px;
 }
-
 .oval {
     width: 100%;
     height: 250px;
@@ -2367,7 +2384,7 @@ footer .logos img {
     float: left;
     width: 100%;
     border-bottom: none;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 .content.main-div .content-div.first { 
     margin-bottom: 80px;
@@ -2406,6 +2423,7 @@ footer .logos img {
     text-align: left;
     padding-left: 0;
     padding-top: 0;
+    margin: 0px 0px 25px 0px;
 }
 .content.work p span {
     font-family: 'Ubuntu';
@@ -2425,7 +2443,7 @@ footer .logos img {
     line-height: 30px;
     letter-spacing: 0.5px;
     color: #4e4b4a;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .content.work .img-description {
     font-family: 'Ubuntu';
@@ -2466,7 +2484,7 @@ footer .logos img {
 }
 .logo-and-top {
     margin-top: 20px;
-    min-height: 325px;
+    min-height: 300px;
 }
 .logo-and-top .button-top {
     position: relative;
@@ -2627,6 +2645,9 @@ footer .logos img {
     .content.work .content .content-div div.col-xs-6 {
         padding-right: 10px;
     }
+    .content.work .content .content-div div.col-xs-6.last {
+        padding-right: 0;
+    }
     #back-to-top, #back-to-top2  {
         width: 25%;
     }
@@ -2679,7 +2700,7 @@ footer .logos img {
 @media (max-width: 480px) {
     .product img.music {
         width: 100%;
-        margin: -110px auto 60px auto;
+        margin: -120px auto 60px auto;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -2712,7 +2733,7 @@ footer .logos img {
 }
 .v-team > img {
     width: 96%;
-    margin-top: -80px;
+    margin-top: -81.5px;
 }
 
 @media (max-width: 1130px) {
