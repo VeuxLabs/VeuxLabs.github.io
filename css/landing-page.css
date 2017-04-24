@@ -2630,11 +2630,6 @@ footer .logos img {
     .content .bx-wrapper a img.store-link {
         margin: 10px auto 30px auto;
     }
-    .mid-column2 .header {
-        width: 110%;
-        max-width: none;
-        margin-left: -20px !important;
-    } 
     .content.work .content {
         padding: 0 20px;
     }
@@ -2644,9 +2639,6 @@ footer .logos img {
     }
     .content.work .content .content-div div.col-xs-6 {
         padding-right: 10px;
-    }
-    .content.work .content .content-div div.col-xs-6.last {
-        padding-right: 0;
     }
     #back-to-top, #back-to-top2  {
         width: 25%;
