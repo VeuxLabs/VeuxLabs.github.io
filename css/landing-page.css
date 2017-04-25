@@ -1584,7 +1584,6 @@ footer .logos img {
 .graphic img {
     margin: 30px auto;
 }
-
 .our-team.approach {
     height: auto;
 }
@@ -1603,7 +1602,6 @@ footer .logos img {
 .content .logos .col-lg-2 {
     min-height: auto;
 }
-
 .veux-team .circle img {
     width: 150px;
     margin: 0 auto;
@@ -1709,6 +1707,10 @@ footer .logos img {
         margin: 20px 0;
         padding: 0;
         min-height: 285px;
+    }
+    .content .logos img {
+        margin: 0 auto;
+        width: 85%;
     }
 }
 
