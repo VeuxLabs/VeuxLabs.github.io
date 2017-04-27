@@ -1215,6 +1215,15 @@ footer .logos img {
     }
 }
 
+@media (max-width: 767px) {
+    .app-dev .dev-img { 
+        background-position-y: 110px;
+    }
+    .app-dev .dev-img img {
+        margin-bottom: -65px;
+    }
+}
+
 @media (min-width: 480px) {
     .support .container {
         width: 90%;
@@ -1223,13 +1232,12 @@ footer .logos img {
 
 @media (min-width: 480px) and (max-width: 768px)  {
     .app-dev .dev-img { 
-        background-position-y: 110px;
         padding-left: 40px;
         padding-right: 10px;
         text-align: center;
     }
     .app-dev .dev-img img {
-        margin-bottom: -65px;
+        margin-bottom: -130px;
         padding-left: 0;
     }
     .product-development {
