@@ -17,6 +17,8 @@ After installing the dependencies, type:
 ```sh
 gulp
 ```
+## Site Title and Meta Description
+These can be edited in the _config.yml file located in the root of the project.
 
 ## Version
 0.0.1
