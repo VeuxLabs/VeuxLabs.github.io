@@ -1966,9 +1966,13 @@ footer .logos img {
 }
 .content.contact h1.subtitle {
     margin-top: 25px;
-    min-height: 90px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
+.content.contact p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
 .content.contact .description {
     margin: 40px 0;
     max-width: 960px;
@@ -2149,7 +2153,7 @@ footer .logos img {
 }
 #mc_embed_signup .buttons, .content.contact form .buttons {
     border: solid 0.9px #2591bf;
-    max-width: 150px;
+    max-width: 250px;
     display: block;
     width: 100%;
     height: 46px;
