@@ -66,7 +66,7 @@ h6 {
     min-height: 199px;
 }
 .app-dev .dev-img img {
-    display: inline-block; 
+    display: inline-block;
 }
 .app-dev h2 {
     font-size: 18px;
@@ -290,7 +290,7 @@ h6 {
         margin-left: 0;
         margin-right: 0;
     }
-    .navbar-default .navbar-nav>li>a { 
+    .navbar-default .navbar-nav>li>a {
         color: #ffffff;
         font-size: 28px;
         font-family: 'Ubuntu';
@@ -449,7 +449,7 @@ footer .logos img {
 
 /* === FOOTER STYLING (Mid-desktop) === */
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
     footer.app-dev {
         padding-left: 0;
         padding-right: 0;
@@ -457,7 +457,7 @@ footer .logos img {
 }
 
 @media (max-width: 1120px) {
-    footer .separator { 
+    footer .separator {
         display: none;
     }
     footer .first-column {
@@ -495,7 +495,7 @@ footer .logos img {
     footer .first-row .col-md-12 {
         padding: 30px;
     }
-    footer .first-row .text { 
+    footer .first-row .text {
         margin-top: 0;
     }
 }
@@ -806,12 +806,12 @@ footer .logos img {
     color: #2691bf;
 }
 .product .product-development h3 {
-    font-family: :'Ubuntu';
+    font-family: 'Ubuntu';
     font-size: 40px;
     line-height: 54px;
     color: #777675;
     font-weight: 300;
-} 
+}
 .product .product-development p {
     font-family: 'Ubuntu';
     font-size: 18px;
@@ -1048,7 +1048,7 @@ footer .logos img {
         line-height: 30px;
         color: #4e4b4a;
     }
-    
+
 }
 
 /* === HOMEPAGE STYLING, CONTENT SECTION  (Mid-size screen) === */
@@ -1080,7 +1080,7 @@ footer .logos img {
     .services .fit {
         width: 500px;
     }
-  
+
 }
 @media (min-width:482px) and (max-width:1200px) {
     .services .fit {
@@ -1131,17 +1131,17 @@ footer .logos img {
 @media (min-width: 991px) {
     .project-management .container.internal, .support .container.internal {
         width: auto;
-    }  
+    }
     .product-development, .product-development-items {
         margin: 0;
         padding: 20px;
-    }    
+    }
     .product-development {
         padding-bottom: 115px;
     }
 }
 
-@media only screen and (min-width: 900px) { 
+@media only screen and (min-width: 900px) {
     .support-top {
         margin-top: -430px;
         padding-right: 0;
@@ -1216,7 +1216,7 @@ footer .logos img {
 }
 
 @media (max-width: 767px) {
-    .app-dev .dev-img { 
+    .app-dev .dev-img {
         background-position-y: 110px;
     }
     .app-dev .dev-img img {
@@ -1231,7 +1231,7 @@ footer .logos img {
 }
 
 @media (min-width: 480px) and (max-width: 768px)  {
-    .app-dev .dev-img { 
+    .app-dev .dev-img {
         padding-left: 40px;
         padding-right: 10px;
         text-align: center;
@@ -1298,7 +1298,7 @@ footer .logos img {
     .design .col-lg-12 {
         padding-left: 0;
         padding-right: 0;
-    } 
+    }
     .app-dev .section4-text {
         padding-left: 40px;
         padding-right: 40px;
@@ -1333,14 +1333,14 @@ footer .logos img {
     .services > div {
         padding-left: 0;
         padding-right: 0;
-    } 
+    }
     .services > div img {
         width: 600px;
     }
     .services h3 {
         color: #171615;
     }
-    .design .design-img { 
+    .design .design-img {
         padding-bottom: 0;
     }
     .app-dev .dev-img img {
@@ -1352,7 +1352,7 @@ footer .logos img {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .services, .research, .design, .product { 
+    .services, .research, .design, .product {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -1370,8 +1370,8 @@ footer .logos img {
     .project-management .container .col-xs-12 {
         padding-left: 0;
         padding-right: 0;
-    } 
-    .project-management { 
+    }
+    .project-management {
         margin-top: 185px;
         padding-bottom: 200px;
         padding-left: 20px;
@@ -1387,7 +1387,7 @@ footer .logos img {
         margin-top: 60px;
         line-height: 36px;
         font-size: 18px;
-    } 
+    }
     .project-management h3 {
         font-size: 28px;
         line-height: 36px;
@@ -1452,17 +1452,17 @@ footer .logos img {
         background-color: rgba(0,0,0,0.8);
         border-color: transparent;
     }
-     .support img { 
+     .support img {
         margin-top: 10px;
     }
 }
- @media (max-width: 370px) { 
-     .support img { 
+ @media (max-width: 370px) {
+     .support img {
         margin-top: 22px;
     }
 }
- @media (max-width: 320px) { 
-     .support img { 
+ @media (max-width: 320px) {
+     .support img {
         margin-top: 30px;
     }
 }
@@ -1603,7 +1603,7 @@ footer .logos img {
     margin: 0 auto;
     width: 100%;
 }
-.veux-team { 
+.veux-team {
     width: 100%;
     float: left;
 }
@@ -1672,13 +1672,13 @@ footer .logos img {
 }
 .read-more-target-1 {
     display: none;
-} 
+}
 .read-more-target-1.open {
     display: block;
 }
 .read-more-target-2 {
     display: none;
-} 
+}
 .read-more-target-2.open {
     display: block;
 }
@@ -1741,7 +1741,7 @@ footer .logos img {
     }
 }
 
-@media (max-width: 990px) { 
+@media (max-width: 990px) {
     .product-development-items .clearfix {
         display: none;
     }
@@ -1792,9 +1792,9 @@ footer .logos img {
     .veux-team .mobile.show {
         visibility: visible;
         height: auto;
-        opacity: 1; 
+        opacity: 1;
         float: left;
-    } 
+    }
     .circles.open > div .desc .about p {
         padding-right: 0;
     }
@@ -1862,7 +1862,7 @@ footer .logos img {
     }
 }
 
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
     .circles.open > div .desc .about p {
         width: 100%;
         display: block;
@@ -1903,8 +1903,8 @@ footer .logos img {
     .circles > div .desc h2 {
         font-size: 30px;
         line-height: 40px;
-    } 
-    .circles > div .desc h3 { 
+    }
+    .circles > div .desc h3 {
         line-height: 30px;
     }
     .circles .right {
@@ -1925,7 +1925,7 @@ footer .logos img {
     .product-development-items .circle span {
         font-size: 25px;
         top: 16px;
-    } 
+    }
 }
 
 @media (max-width: 320px) {
@@ -1961,7 +1961,7 @@ footer .logos img {
 .content.contact h1 {
     color: #4e4b4a;
     padding-right: 20px;
-    margin-top: 0; 
+    margin-top: 0;
     line-height: 40px;
 }
 .content.contact h1.subtitle {
@@ -2176,7 +2176,7 @@ footer .logos img {
 /* === CONTACT PAGE (Mid desktop)  ===  */
 
 @media (max-width: 992px) {
-    .content.contact h1.subtitle.sub2 { 
+    .content.contact h1.subtitle.sub2 {
         margin-top: 60px;
         margin-bottom: 20px;
     }
@@ -2199,7 +2199,7 @@ footer .logos img {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) { 
+@media (max-width: 992px) and (min-width: 768px) {
     .office {
         padding-left: 5px;
         padding-right: 5px;
@@ -2229,7 +2229,7 @@ footer .logos img {
 /* === CONTACT PAGE (Mobile)  ===  */
 
 @media (max-width: 480px) {
-    .content.contact h1 { 
+    .content.contact h1 {
         min-height: inherit;
         padding-right: 0;
         letter-spacing: 0.1px;
@@ -2241,7 +2241,7 @@ footer .logos img {
         margin: 20px 0;
         margin-left: -20px;
     }
-    .content.contact h1.subtitle.sub2 {  
+    .content.contact h1.subtitle.sub2 {
         min-height: inherit;
     }
     .content.contact #mc_embed_signup form {
@@ -2325,7 +2325,7 @@ footer .logos img {
     width: 100%;
 }
 
-/* === INTERNAL PAGES (Mobile) === */ 
+/* === INTERNAL PAGES (Mobile) === */
 
 @media (max-width: 480px) {
     .internal .content {
@@ -2400,13 +2400,13 @@ footer .logos img {
     border-bottom: none;
     padding-bottom: 20px;
 }
-.content.main-div .content-div.first { 
+.content.main-div .content-div.first {
     margin-bottom: 80px;
     padding-bottom: 80px;
     border-bottom: 2px solid #d8d8d8;
     margin-top: 20px;
 }
-.content.main-div .content-div.first a { 
+.content.main-div .content-div.first a {
     max-width: 135px;
     display: inline-block;
     margin-right: 20px;
@@ -2511,11 +2511,11 @@ footer .logos img {
     .content.work .content .col-lg-6 {
         padding-left: 0;
     }
-    .content.work .content .mid-column1 { 
+    .content.work .content .mid-column1 {
         padding-right: 40px;
         padding-left: 0;
     }
-    .content.work .content .mid-column2 { 
+    .content.work .content .mid-column2 {
         padding-left: 0;
         padding-right: 0;
     }
@@ -2536,10 +2536,10 @@ footer .logos img {
 }
 
 @media (min-width: 992px) {
-    .content.contact .mid-column1 { 
+    .content.contact .mid-column1 {
         padding-right: 30px;
     }
-    .content.contact .mid-column2 { 
+    .content.contact .mid-column2 {
         padding-left: 30px;
     }
 }
@@ -2557,7 +2557,7 @@ footer .logos img {
     }
     content.work .content .content-div .col-sm-6 img,  .content.work .content .content-div .col-sm-3 img {
         width: 90%;
-    }   
+    }
     .content.work .content .content-div .col-sm-6 p {
         padding-right: 30px;
     }
@@ -2586,7 +2586,7 @@ footer .logos img {
     .content.main-div .content-div {
         padding-bottom: 30px;
     }
-    .content.main-div .content-div.first { 
+    .content.main-div .content-div.first {
         margin-bottom: 77px;
     }
      .content .bx-wrapper a img {
@@ -2710,7 +2710,7 @@ footer .logos img {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .product .product-development h2 { 
+    .product .product-development h2 {
         font-size: 18px;
         line-height: 36px;
     }
@@ -2719,7 +2719,7 @@ footer .logos img {
         line-height: 36px;
         color: #171615;
     }
-    .product .product-development p { 
+    .product .product-development p {
         font-size: 18px;
         line-height: 28px;
     }
@@ -2761,3 +2761,108 @@ footer .logos img {
     }
 }
 
+/* === CALL TO ACTION ===  */
+.call-to-action {
+    position: relative;
+    float: left;
+    background-color: #258fbd;
+    margin-left: -80px;
+    margin-right: -80px;
+}
+.call-to-action .container-cta{
+    padding: 0 80px 35px 80px;
+    width: 100%;
+    color: #ffffff;
+}
+.call-to-action .container-cta h3, .call-to-action .container-cta p{
+    color: #ffffff;
+}
+.call-to-action .container-cta .row h3 {
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.call-to-action h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+.call-to-action .container-cta p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.cta-contact {
+    padding: 0;
+    list-style: none;
+}
+.cta-contact li {
+    margin-bottom: 5px;
+}
+.cta-contact .email{
+    background: url(../img/contactEmailIcon.svg) no-repeat 0 50% transparent;
+    padding-left: 30px;
+    line-height: 1.67;
+}
+.cta-contact .phone{
+    background: url(../img/contactPhoneIcon.svg) no-repeat 0 50% transparent;
+    padding-left: 30px;
+    line-height: 1.67;
+}
+.call-to-action .cta-btn{
+    background-color: #e95943;
+    color: #ffffff;
+    margin: 32px auto 0 auto;
+    display: inline-block;
+    float: none;
+    padding: 12px 0;
+    position: relative;
+    width: 250px;
+    height: 44.4px;
+    border-radius: 4px;
+    background-color: #e85740;
+    text-transform: uppercase;
+}
+
+.content.landing-work .content{
+    padding-bottom: 0;
+}
+.content.work.landing-work h1.landing{
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.67;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 0px 0 10px;
+    background-color: #145e7d;
+    padding: 10px;
+    border: 0;
+}
+
+.content.landing-work h2.landing{
+    font-family: 'Ubuntu';
+    font-size: 26px;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #4e4b4a;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 45px;
+}
+
+.content.landing-work  h3.landing{
+    font-family: 'Ubuntu';
+    font-size: 26px;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #4e4b4a;
+    font-weight: 300;
+}
