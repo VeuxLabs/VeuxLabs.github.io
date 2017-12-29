@@ -2761,3 +2761,108 @@ footer .logos img {
     }
 }
 
+/* === CALL TO ACTION ===  */
+.call-to-action {
+    position: relative;
+    float: left;
+    background-color: #258fbd;
+    margin-left: -80px;
+    margin-right: -80px;
+}
+.call-to-action .container-cta{
+    padding: 0 80px 35px 80px;
+    width: 100%;
+    color: #ffffff;
+}
+.call-to-action .container-cta h3, .call-to-action .container-cta p{
+    color: #ffffff;
+}
+.call-to-action .container-cta .row h3 {
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.call-to-action h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+.call-to-action .container-cta p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.cta-contact {
+    padding: 0;
+    list-style: none;
+}
+.cta-contact li {
+    margin-bottom: 5px;
+}
+.cta-contact .email{
+    background: url(../img/contactEmailIcon.svg) no-repeat 0 50% transparent;
+    padding-left: 30px;
+    line-height: 1.67;
+}
+.cta-contact .phone{
+    background: url(../img/contactPhoneIcon.svg) no-repeat 0 50% transparent;
+    padding-left: 30px;
+    line-height: 1.67;
+}
+.call-to-action .cta-btn{
+    background-color: #e95943;
+    color: #ffffff;
+    margin: 32px auto 0 auto;
+    display: inline-block;
+    float: none;
+    padding: 12px 0;
+    position: relative;
+    width: 250px;
+    height: 44.4px;
+    border-radius: 4px;
+    background-color: #e85740;
+    text-transform: uppercase;
+}
+
+.content.landing-work .content{
+    padding-bottom: 0;
+}
+.content.work.landing-work h1.landing{
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.67;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 0px 0 10px;
+    background-color: #145e7d;
+    padding: 10px;
+    border: 0;
+}
+
+.content.landing-work h2.landing{
+    font-family: 'Ubuntu';
+    font-size: 26px;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #4e4b4a;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 45px;
+}
+
+.content.landing-work  h3.landing{
+    font-family: 'Ubuntu';
+    font-size: 26px;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #4e4b4a;
+    font-weight: 300;
+}
