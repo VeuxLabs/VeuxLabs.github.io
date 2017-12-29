@@ -95,5 +95,7 @@
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 			<img data-no-retina src="../img/top.svg" id="back-to-top2" class="button-top"/>
 		</div>
-		{% include call_to_action.html %}
+		{% if page.cta %}
+			{% include call_to_action.html %}
+		{% endif %}
 	</div>

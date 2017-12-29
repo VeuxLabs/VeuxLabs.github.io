@@ -115,6 +115,8 @@
 			<span class="img-description ">App Icon </span>
 			<img data-no-retina src="../img/top.svg" id="back-to-top" class="button-top"/>
 		</div>
-		{% include call_to_action.html %}
+		{% if page.cta %}
+			{% include call_to_action.html %}
+		{% endif %}
 	</div>
 

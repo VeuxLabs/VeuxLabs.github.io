@@ -114,4 +114,6 @@
 		<img data-no-retina src="../img/top.svg" id="back-to-top2" class="button-top"/>
 	</div>
 
-	{% include call_to_action.html %}
+	{% if page.cta %}
+		{% include call_to_action.html %}
+	{% endif %}
