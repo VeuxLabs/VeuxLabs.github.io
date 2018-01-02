@@ -2809,6 +2809,13 @@ footer .logos img {
     padding-left: 30px;
     line-height: 1.67;
 }
+.cta-contact .email a, .cta-contact .phone a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    line-height: 1.67;
+    color: #ffffff;
+    font-size: 14px;
+}
 .cta-contact .phone{
     background: url(../img/contactPhoneIcon.svg) no-repeat 0 50% transparent;
     padding-left: 30px;
