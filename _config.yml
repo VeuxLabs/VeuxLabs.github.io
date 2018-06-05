@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 exclude: [node_modules, gulpfile.js]
-url: https://veuxlabs.github.io
+url: https://veuxlabs.com
 title: Veux Labs
 email: boston@veuxlabs.com
 author: Veux Labs
