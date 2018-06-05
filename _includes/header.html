@@ -10,18 +10,18 @@
             </button>
             {% if page.layout == 'default' %}
                 <a href="/">
-                    <img data-no-retina src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo-home" />
+                    <img data-no-retina src="{{ site.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo-home" />
                 </a>
             {% endif %}
             {% if page.layout == 'internal' %}
                 <a href="/">
-                    <img data-no-retina src="{{ site.github.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo" />
+                    <img data-no-retina src="{{ site.url }}/img/veuxLabsLogo.svg" alt="veux labs logo" class="logo" />
                 </a>
              {% endif %}
             <!-- <a class="navbar-brand page-scroll" href="#home">{{ site.title }}</a> -->
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">  
+            <ul class="nav navbar-nav navbar-right">
                 <li>
                     {% if page.title == 'veux labs' %}
                         <a class="page-scroll underline" href="/">Home</a>
@@ -45,7 +45,7 @@
                     {% if page.title != 'About' %}
                         <a class="page-scroll" href="/about">About</a>
                     {% endif %}
-                </li>            
+                </li>
                 <li>
                     {% if page.title == 'Contact' %}
                         <a class="page-scroll underline" href="/contact">Contact</a>
@@ -56,12 +56,10 @@
                 </li>
             </ul>
             <button type="button" class="closeButton" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                
+
             </button>
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
 </nav>
-
-
